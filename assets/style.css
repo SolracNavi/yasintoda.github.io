@@ -28,19 +28,16 @@ h2.hidey {
 
 
 #masthead {
-  background-color: #277650;
   width: 100%;
   margin: 0; }
   #masthead .masthead-inner {
     height: 80px;
-/*
-    background: #5e9ee3 url(images/riseup-masthead-blue.png) 0px 0px no-repeat; }
-*/
-		background: #277650; }
+		}
 #top-menu {
   position: absolute;
   bottom: 0px;
-  margin: 0; }
+  margin: 0; 
+  }
   #top-menu li {
     float: left; }
   #top-menu a {
@@ -51,9 +48,9 @@ h2.hidey {
     line-height: 20px;
     background-color: rgba(0, 0, 0, 0.15); }
   #top-menu a.active {
-    background-color: #e6e3dc;
+    background-color: rgba(239, 239, 239, 0.85);
     color: black;
-    box-shadow: inset 1px 1px 2px #fff; }
+    }
 
 @media only screen and (max-width: 500px) {
   #top-menu a {
@@ -65,19 +62,21 @@ h2.hidey {
         }
         }
 #main {
-  margin-top: 15px; }
+  margin-top: 0px; }
 
 body {
-  background-color: #e6e3dc; }
+	/* Background pattern from subtlepatterns.com */
+  background-image: url(images/congruent_pentagon.png); 
+  }
 
 .shadow-box {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 4px #CCC9C3; }
+  background-color: rgba(255, 255, 255, 0.95);
+  }
 
 .title-box {
   color: black;
-  background-color: #efefef;
+  background-color: rgba(239, 239, 239, 1);
+
   padding: 20px;
   border-bottom: 1px dotted #ccc; }
   .title-box h1 {
@@ -140,7 +139,8 @@ html, body {
   padding-top: 20px; }
   #footer #footer-inner {
     height: 50px;
-    background-color: #7B7B7B; }
+    background-color: rgba(0, 0, 0, 0.3 );
+    }
 
 @media (max-width: 767px) {
   #footer .footer-text {
@@ -150,7 +150,7 @@ html, body {
   text-align: right;
   padding-top: 10px; }
   #footer .footer-text a, #footer .footer-text {
-    color: #ddd;
+    color: #FFFFFF;
     margin: 4px 5px; }
 
 .image-right {
@@ -161,7 +161,8 @@ html, body {
   min-height: 110px;
   padding-left: 290px;
   padding-top: 15px;
-  background: url(images/logo_uzume2.png) no-repeat; }
+  background: url(images/logo_uzume2.png) no-repeat; 
+  }
   
 
 @media only screen and (max-width: 590px) {
