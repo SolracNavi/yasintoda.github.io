@@ -10,7 +10,10 @@ a:visited {
 h2.hidey {
   font-size: 0;
   position: absolute;
-  z-index: -1000; }
+/*
+  z-index: -1000;
+*/
+   }
     #gallery {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
@@ -18,11 +21,12 @@ h2.hidey {
     
     #gallery li {
         list-style: none;
+        margin-bottom: 15px;
     }
     
     #gallery li img {
         cursor: pointer;
-        margin-bottom: 25px;
+        
         
 /*
         margin-bottom: 5px;
