@@ -7,7 +7,12 @@ $(document).ready(function(){
 		var index = $(this).parent('li').index();   
 		
 		var html = '';
-		html += img;                
+		
+		//html += '<div class="modal-header">';
+		html += '<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+		//TODO : add its title to each image
+		//html += '<h4 class="modal-title">' + (index) + '</h4>';
+		html += img;
 		html += '<div style="height:25px;clear:both;display:block;">';
 		html += '<a class="controls next" href="'+ (index+2) + '">suiv. &raquo;</a>';
 		html += '<a class="controls previous" href="' + (index) + '">&laquo; préc.</a>';

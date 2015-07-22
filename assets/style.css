@@ -41,11 +41,11 @@ h2.hidey {
 
     
     .modal-body {
-        padding: 5px !important;
+        padding: 3px 0px 5px 0px !important;
     }
     
     .modal-content {
-        border-radius: 0;
+        border-radius: 5;
     }
     
     .modal-dialog img {
@@ -53,16 +53,29 @@ h2.hidey {
         margin: 0 auto;
     }
     
+    .close {
+			margin-bottom: 5px;
+			margin-right: 10px;
+/*
+			margin-top: 5px;
+*/
+		}
+    
     .controls {
         width: 50px;
         display: block;
         font-size: 1em;
-        padding-top: 5px;
+        padding-top: 3px;
 
     }
         .next {
-        float: right;
-        text-align: right;
+					float: right;
+					text-align: right;
+					margin-right: 10px;
+        }
+        
+        .previous {
+					margin-left: 10px;
     }
 sup {
 	font-size: 0.75em;
