@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>
+    Le solaire thermique
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='./assets/style.css'>
+  <link rel='icon' type='image/x-icon' href='./assets/images/favicon.png'>
+
+  <script type="text/javascript" src="./assets/jquery.js"></script>
+  <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
+  TODO : make the photo-gallery.js work properly-->
+  <script type="text/javascript" src="./assets/d3.v3.min.js"></script>
+  <script type="text/javascript" src="./assets/topojson.v1.min.js"></script>
+  <script type="text/javascript" src="./assets/datamaps.world.min.js"></script>
+</head>
+
+<body>
+  <div id="warning">
+    <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
+  </div>
+  <div id="wrap">
+    <div id='masthead'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='masthead-inner'>
+              <ul class='list-unstyled' id='top-menu'>
+                <li class=''>
+                  <a class='' href='./index.html'>Accueil</a>
+                </li>
+                <li class='active'>
+                  <a class='active' href='./PST.html'>Le solaire thermique</a>
+                </li>
+                <li class=''>
+                  <a class='' href='./a_propos.html'>À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="main">
+      <div class="row">
+
+        <div class="col-sm-10">
+          <div class="shadow-box">
+            <div class="title-box">
+              <h2>Les Systèmes Solaires Thermiques</h2>
+            </div>
+            <div class="content-box">
+              <h2>Plan</h2>
+              <div id="TOC">
+                <ol>
+                  <li><a href="#intro">Introduction</a></li>
+                  <li><a href="#principe">Le principe</a></li>
+                  <li><a href="#composants">Les composants principaux</a></li>
+                </ol>
+              </div>
+              <h2>
+                <a name="intro"></a>Introduction</h2>
+              <hr>
+              <p>Les capteurs solaires
+                <em>thermiques</em>, récupèrent l'énergie du soleil et la transforment en chaleur. Il ne faut pas les confondre avec les panneaux solaires
+                <em>photovoltaïques</em> qui récupèrent aussi l'énergie du soleil, mais pour la convertir en électricité. L'énergie récupérée par les capteurs permet de produire de l'eau chaude sanitaire ou de chauffer une maison, généralement grâce à un
+                plancher solaire direct (PSD).</p>
+              <p>Plusieurs arguments sont en faveur de l'utilisation des panneaux solaires thermiques :
+                <ul>
+                  <li>il est possible de réaliser un système solaire thermique (SST) efficace avec des matériaux courants et une technologie simple;</li>
+                  <li>L'énergie solaire est à la fois abondante, renouvelable, gratuite et sous-utilisée<a class="ref" href="#references"> (GIEC, 2012)</a>;</li>
+                  <li>Un SST bien réalisé pourra fonctionner plusieurs dizaines d'années.</li>
+                </ul>
+                Auquels se rajoutent certaines contraintes, notamment liées au fait que la production de chaleur est maximale en été et minimale en hiver, alors que les besoins sont minimaux en été et maximaux en hiver :
+                <ul>
+                  <li>La conception du système demande un minimum de réflexion pour éviter les surchauffes d'été et donc la détérioration prématurée du système;</li>
+                  <li>Dans la grande majorité des cas, les SST doivent être couplés à un chauffage d'appoint classique (électricité, fioul, gaz, bois..) pour répondre aux besoins hivernaux;</li>
+                </ul>
+              </p>
+
+              <h2>
+                <a name="principe"></a>Le principe</h2>
+              <hr>
+              <p>Le rayonnement du soleil est converti en chaleur par un capteur de couleur sombre. Celui-ci transmet cette chaleur à un fluide caloporteur qui, à son tour, la transmet à de l'eau sanitaire pour la chauffer. C'est un principe simple et facile
+                à mettre en oeuvre : il suffit de laisser au soleil un fût peint en noir et rempli d'eau pour constater que la température de l'eau qu'il contient augmente. Les premières expériences en université sur ce type de système datent de la fin
+                des années 1930.</p>
+              <ul class="row gallery">
+                <li class="col-xs-6">
+                  <img class="img-responsive" src="./assets/images/climax_solar_water_heater.png">
+                </li>
+                <li class="col-xs-6">
+                  <img class="img-responsive" src="./assets/images/bare_boiler_tank_1936.png">
+                </li>
+              </ul>
+              <p class="subtitle">Figure : À gauche, réclame pour le premier capteur solaire commercial (1891); à droite, un expérience de F.A. Brooks au centre d'expérience agricole de l'université de Californie (1936).</br>
+                Source : Bainbridge (1981).</p>
+              <h2>
+                <a name="composants"></a>Les composants principaux</h2>
+              <hr>
+              <h3>Le capteur</h3>
+              <p>C'est un caisson isolé avec une face vitrée pour laisser passer le rayonnement solaire. Dans ce caisson se trouve un absorbeur metallique peint d'une couleur sombre. Ainsi, l'absorbeur est chauffé par le rayonnement solaire et la chaleur
+                produite se trouve piégée et s'accumule dans le caisson : c'est l'effet de serre <a class="ref" href="#references">(Wood, 1909)</a>.</p>
+              <h3>Les circuits primaire et secondaire</h3>
+              <p>Cette chaleur accumulée est transmise à un fluide caloporteur, c'est-à-dire un fluide qui permet de transporter l'énergie, qui circule dans une série de tubes appelée le circuit primaire. Celui-ci permet d'amener la chaleur jusqu'à un système
+                de stockage permettant de produire de l'eau chaude sanitaire (avec un cumulus, par exemple) ou du chauffage (des radiateurs muraux ou un plancher chauffant, par exemple).</p>
+              <p>Si la chaleur produite sert à chauffer de l'eau chaude sanitaire (dans le circuit secondaire), alors le fluide caloporteur est en est séparé (il reste dans le circuit primaire). En effet, sous les climats tempérés, on répond au risque de
+                gel en ajoutant un liquide antigel dans le circuit primaire : du mono-propylène-glycol, comme dans le circuit de refroidissement des voitures.</p>
+              <h3>Le stockage</h3>
+              <p>l'énergie solaire est une ressource intermittente : elle dépend de la météo, de l'heure du jour et de la saison. Il faut donc pouvoir accumuler cette énergie pour l'utiliser plus tard. C'est le rôle des composants de stockage : les cumulus
+                et les PSD.</p>
+              <ul class="row gallery">
+                <li class="col-xs-6">
+                  <img class="img-responsive" src="./assets/images/schema_SST_p348.png">
+                </li>
+                <li class="col-xs-6">
+                  <img class="img-responsive" src="./assets/images/schema_capteur_p347.png">
+                </li>
+              </ul>
+              <p class="subtitle">Figures : À gauche, schéma d'un SST classique; à droite, schéma d'un capteur plan.</br>
+                Source : GIEC (2012 p. 337).</p>
+
+
+
+              <h3>
+                <a name="references"></a>Références</h3>
+              <div class="EndFoot">
+                <ol>
+                  <li>GIEC, 2012, p. 337. <em>Renewable Energy Sources and Climate Change Mitigation: Special Report of the IPCC</em>. Disponible <a href="http://srren.ipcc-wg3.de/report/IPCC_SRREN_Full_Report.pdf">ici</a>. "Solar energy is the most abundant of all energy resources. Indeed, the rate at which solar energy is intercepted by the Earth is about 10,000 times greater than the rate at which humankind consumes energy."                  </li>
+                    <li>David A. Bainbridge, 1981. <em>The Integral Passive Solar Water Heater Book</em>.</p></li>
+                  <li>R.W. Wood, 1909. <em>Note on the Theory of the Greenhouse</em>. Disponible <a href="http://planet-terre.ens-lyon.fr/article/effet-de-serre-wood.xml">ici</a>.</li>
+                </ol>
+
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="navigation-box">
+            <h2>Navigation</h2>
+            <div id="navigation">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="level1">
+                  <a href="./index.html">Accueil</a>
+                </li>
+                <li class="level1">
+                  <a href="./SST.html">Le solaire thermique</a>
+                </li>
+                <li class="level2">
+                  <a href="./SST.html">Les SST</a>
+                </li>
+                <li class="level2">
+                  <a href="./etat_lieux.html">Un état des lieux</a>
+                </li>
+                <li class="level2">
+                  <a href="./solarduino.html">Le solarduino</a>
+                </li>
+                <li class="level1">
+                  <a href="./a_propos.html">À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div id='footer-inner'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='footer-text'>
+              Ce site est géré et (bientôt) auto-hébergé par Uzume.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

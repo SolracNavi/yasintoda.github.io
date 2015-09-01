@@ -138,6 +138,28 @@ span.FootOuter:hover .HoverFoot {
   background-color: rgba(239, 239, 239, 0.85);
   color: black;
 }
+
+#masthead .masthead-bottom {
+  height: 30px;
+}
+#bottom-menu {
+  position: absolute;
+  bottom: 0px;
+  margin: 0;
+  border-bottom: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+}
+#bottom-menu li {
+  float: left;
+}
+#bottom-menu a {
+  display: block;
+  padding: 5px 14px;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(239, 239, 239, 1);
+}
 @media only screen and (max-width: 500px) {
   #top-menu a {
     padding: 5px 6px;
@@ -158,10 +180,34 @@ body {
 .shadow-box {
   background-color: rgba(255, 255, 255, 0.95);
 }
-.title-box {
+
+.navigation-box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin-left: -20px;
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+
+
+.navigation-box h2 {
   color: black;
   background-color: rgba(239, 239, 239, 1);
   padding: 20px;
+  border-bottom: 1px dotted #ccc;
+  margin-top: 0px;
+}
+
+.title-box {
+  color: black;
+  background-color: rgba(239, 239, 239, 1);
+  /*position : absolute;*/
+  /*margin-top : -10px;*/
+  padding-top: 1px;
+  padding-left: 20px;
+padding-bottom: 10px;
   border-bottom: 1px dotted #ccc;
 }
 .title-box h1 {
@@ -196,12 +242,16 @@ body {
   background-color: #CCC9C4;
   color: #000;
 }
-#sidebar li.level2 a {
-  padding-left: 30px;
+
+.active {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
 }
-#sidebar li.level3 a {
-  padding-left: 45px;
+
+#navigation li.level2 a {
+  padding-left: 35px;
 }
+
 #sidebar .sidebar-addendum {
   margin-top: 15px;
 }
@@ -250,8 +300,14 @@ html, body {
   margin-left: 15px;
   margin-bottom: 15px;
 }
+
+a.ref {
+  color : rgba(0, 0, 0, 0.5);
+}
+
 .logo {
   min-height: 110px;
+  margin-top: 10px;
   padding-left: 290px;
   padding-top: 15px;
   background: url(images/logo_uzume2.png) no-repeat;
