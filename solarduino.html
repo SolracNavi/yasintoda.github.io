@@ -66,8 +66,8 @@
                   <div id="TOC">
                     <ol>
                       <li><a href="#a_quoi">À quoi sert une régulation ?</a></li>
-                      <li><a href="#regul_existantes">Les régulations existantes</a></li>
-                      <li><a href="#sch">Les schémas</a></li>
+                      <li><a href="#solarduino">Le Solarduino</a></li>
+                      <li><a href="#sch">Le schéma</a></li>
                       <li><a href="#alim">L'alimentation</a></li>
                       <li><a href="#sondes">L'interface des sondes</a></li>
                       <li><a href="#relais">La commande des relais</a></li>
@@ -84,9 +84,16 @@
                 <p>Le régulateur doit enclencher le fonctionnement du circulateur lorsque la différence de température entre le fluide en sortie du champ de capteurs et l'eau dans le ballon de stockage est suffisante pour qu'il y ait un échange thermique
                   efficace (en général, on prend une différence de température égale à 10°C), d'où le nom de régulation différentielle. Il faut aussi que le régulateur prenne en compte un hystérésis (c'est-à-dire qu'il attend que la température diminue
                   jusqu'à 5°C environ avant de relancer le circulateur) pour que le circulateur ne soit pas arrêté et remis en marche trop souvent.</p>
+                  <p>Au delà de ce principe de base, une régulation doit prendre en compte plusieurs autres paramètres, surtout lorsque le système se complexifie : plusieurs champs de capteurs, plusieurs cumulus, des planchers solaires directs, etc..</p>
                 <h2>
                   <a name="solarduino"></a>Le Solarduino</h2>
                 <hr>
+                <ul class="row gallery">
+                  <li class="col-xs-6 col-xs-offset-3">
+                    <img class="img-responsive" src="./assets/images/solarduino_v1.jpg">
+                  </li>
+                </ul>
+                <p class="subtitle">Figure : premier prototype du Solarduino soudé sur une plaque à pastilles.</p>
                 <p>Nous avons développé une régulation open-source, peu coûteuse qui permet de remplacer les régulations propriétaires du commerce : le Solarduino. Basée sur le travail de <a class="ref" href="#references">Bioulez (2012)</a>, elle se place
                   en complément d'une autre régulation open-source créée par <a class="ref" href="#references">Nies (2009)</a> : le Minisun.</p>
                 <p>Voici un tableau comparant le Solarduino à une partie des régulations existantes.</p>
@@ -105,15 +112,6 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">SOLARDUINO</th>
-                      <td>85 €</td>
-                      <td>6</td>
-                      <td>6</td>
-                      <td>oui</td>
-                      <td>oui</td>
-                      <td>oui</td>
-                    </tr>
-                    <tr>
                       <th scope="row">MINISUN</th>
                       <td>45 €</td>
                       <td>2</td>
@@ -121,6 +119,15 @@
                       <td>non</td>
                       <td>non</td>
                       <td>oui</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">SOLARDUINO</th>
+                      <td><strong>85 €</strong></td>
+                      <td><strong>6</strong></td>
+                      <td><strong>6</strong></td>
+                      <td><strong>oui</strong></td>
+                      <td><strong>oui</strong></td>
+                      <td><strong>oui</strong></td>
                     </tr>
                     <tr>
                       <th scope="row">PICO</th>
@@ -170,16 +177,37 @@
                     </tr>
                   </tbody>
                 </table>
-                <h2>Les schémas</h2>
+                <h3>
+                  <a name="sch"></a>Le schéma</h3>
                 <hr>
-                <img src="./assets/images/solarduino_V1.svg" class="img-responsive" alt="Responsive image" />
+                <p>Voici le schéma électronique du Solarduino. Il y a quatre parties distinctes dans le système :
+                  <ol>
+                    <li>
+                      <strong>L'alimentation</strong> permet de fournir une tension stable aux trois autres parties. Elle fournit deux tensions : 12 Vcc (volts en courant continu) et 5 Vcc.</li>
+                    <li>
+                      <strong>L'interface des sondes</strong> permet d'utiliser des sondes de température classiques : des KTY81-210. Ces sondes sont des compsants dont la résistance varie avec la température. Plus il fait chaud, plus leur résistance augmente.
+                      En la mesurant, on peut donc connaitre la température du milieu dans lequel les sondes sont positionnées.</li>
+                    <li>
+                      <strong>La commande des relais</strong> permet d'utiliser des.. relais. Les relais sont des interrupteur commandables. Lorsque l'arduino donne l'ordre de mettre en route un circulateur ou de modifier la position d'une vanne trois voies,
+                      l'un des relais ferme le circuit correspondant.</li>
+                    <li>
+                      <strong>L'arduino</strong> est un microcontrolleur open-source. Ses plans de fabrication sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Son principe de fonctionnement est le suivant : on commence par le brancher à un ordinateur. À partir de cet ordinateur, on lui transfère un code. On débranche ensuite l'arduino pour le mettre en place. Une fois allumé, l'arduino exécute en boucle le code qui a été transféré. On peut ainsi lui faire exécuter des taches complexes à notre place.</li>
+                  </ol>
+                  Le schéma a été réalisé grâce à logiciel open-source : KiCAD, disponible <a href="http://www.kicad-pcb.org/ ">ici</a>.
+                </p>
+                <img src="./assets/images/solarduino_schema_V1.png" class="img-responsive" alt="Responsive image" />
+
                 <h2>Les choix constructifs</h2>
                 <hr>
                 <h3>
                   <a name="alim"></a>L'alimentation</h3>
                 <img src="./assets/images/alim_solarduino_2.png" class="img-responsive" alt="Responsive image" />
+                <!-- TODO : remplacer les i par les vrai nums -->
                 <p>Calcul et choix des composants :</p>
                 <ol>
+                  <li>
+                    <strong>Le fusible et la varistance :</strong> Le circuit est protégé des sur-intensités grâce au fusible et la varistance le protège des sur-tensions. Il faut choisir un fusible de type
+                    <em>rapide</em> pour qu'il grille avant le reste du circuit en cas de sur-intensité.</li>
                   <li>
                     <strong>Le transformateur :</strong> Il a été choisi pour obtenir du \(15 Vca\) soit, en amplitude \(15\sqrt{2}V\) . En effet, le régulateur de tension à besoin d'une tension supérieure à sa tension de régulation pour pouvoir fonctionner correctement.
                     Les données constructeur indiquent \(V_{min}=14.5V\) . Ensuite, le pont de diode redresse le signal de sorte qu'il double sa fréquence \(f=50Hz\) et les diodes provoquent une chute de tension de \(1.4V\) . L'amplitude maximale du signal
@@ -199,7 +227,12 @@
                 </ol>
                 <h3>
                   <a name="sondes"></a>L'interface des sondes</h3>
-                <img src="./assets/images/interface_sonde.png" class="img-responsive" alt="Responsive image" />
+                <ul class="row gallery">
+                  <li class="col-xs-10 col-xs-offset-1">
+                    <img src="./assets/images/interface_sonde.png" class="img-responsive" alt="Responsive image" />
+                  </li>
+                </ul>
+
 
                 <p>Calcul et choix des composants :</p>
                 <ol>
@@ -238,9 +271,18 @@
                     dépasser \(V_{ceo}\) et de détruire le transistor. C'est pourquoi on ajoute une diode pour protéger le transistor. </br>
                     On choisit une diode de type 1N4007 parce que c'est un composant classique, facile à trouver, qui supporte jusqu'à 1000 V de tension.</li>
                 </ol>
+                <h3>
+                  <a name="relais"></a>L'arduino</h3>
+                  <ul class="row gallery">
+                    <li class="col-xs-6 col-xs-offset-3">
+                      <img src="./assets/images/arduino.png" class="img-responsive" alt="Responsive image" />
+                    </li>
+                  </ul>
+                <p>Le microcontrolleur utilisé est un arduino Uno, dont les caractéristiques sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Peu cher, open-source, robuste, il permet d'interfacer 6 sondes de température et de commander 14 relais. D'autres versions, comme <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">l'arduino Mega 2560</a> permettent d'interfacer plus de sondes et de commander plus de relais.</p>
               </div>
               <h3>
                 <a name="references"></a>Références</h3>
+                <hr>
               <div class="EndFoot">
                 <ol>
                   <li>Bioulez, 2013.
