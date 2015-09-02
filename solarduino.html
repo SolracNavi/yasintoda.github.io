@@ -68,9 +68,7 @@
                       <li><a href="#a_quoi">À quoi sert une régulation ?</a></li>
                       <li><a href="#solarduino">Le Solarduino</a></li>
                       <li><a href="#sch">Le schéma</a></li>
-                      <li><a href="#alim">L'alimentation</a></li>
-                      <li><a href="#sondes">L'interface des sondes</a></li>
-                      <li><a href="#relais">La commande des relais</a></li>
+                      <li><a href="#choix">Les choix constructifs</a></li>
                     </ol>
                   </div>
                 </div>
@@ -84,7 +82,7 @@
                 <p>Le régulateur doit enclencher le fonctionnement du circulateur lorsque la différence de température entre le fluide en sortie du champ de capteurs et l'eau dans le ballon de stockage est suffisante pour qu'il y ait un échange thermique
                   efficace (en général, on prend une différence de température égale à 10°C), d'où le nom de régulation différentielle. Il faut aussi que le régulateur prenne en compte un hystérésis (c'est-à-dire qu'il attend que la température diminue
                   jusqu'à 5°C environ avant de relancer le circulateur) pour que le circulateur ne soit pas arrêté et remis en marche trop souvent.</p>
-                  <p>Au delà de ce principe de base, une régulation doit prendre en compte plusieurs autres paramètres, surtout lorsque le système se complexifie : plusieurs champs de capteurs, plusieurs cumulus, des planchers solaires directs, etc..</p>
+                <p>Au delà de ce principe de base, une régulation doit prendre en compte plusieurs autres paramètres, surtout lorsque le système se complexifie : plusieurs champs de capteurs, plusieurs cumulus, des planchers solaires directs, etc..</p>
                 <h2>
                   <a name="solarduino"></a>Le Solarduino</h2>
                 <hr>
@@ -122,12 +120,24 @@
                     </tr>
                     <tr>
                       <th scope="row">SOLARDUINO</th>
-                      <td><strong>85 €</strong></td>
-                      <td><strong>6</strong></td>
-                      <td><strong>6</strong></td>
-                      <td><strong>oui</strong></td>
-                      <td><strong>oui</strong></td>
-                      <td><strong>oui</strong></td>
+                      <td>
+                        <strong>85 €</strong>
+                      </td>
+                      <td>
+                        <strong>6</strong>
+                      </td>
+                      <td>
+                        <strong>6</strong>
+                      </td>
+                      <td>
+                        <strong>oui</strong>
+                      </td>
+                      <td>
+                        <strong>oui</strong>
+                      </td>
+                      <td>
+                        <strong>oui</strong>
+                      </td>
                     </tr>
                     <tr>
                       <th scope="row">PICO</th>
@@ -177,8 +187,8 @@
                     </tr>
                   </tbody>
                 </table>
-                <h3>
-                  <a name="sch"></a>Le schéma</h3>
+                <h2>
+                  <a name="sch"></a>Le schéma</h2>
                 <hr>
                 <p>Voici le schéma électronique du Solarduino. Il y a quatre parties distinctes dans le système :
                   <ol>
@@ -191,13 +201,16 @@
                       <strong>La commande des relais</strong> permet d'utiliser des.. relais. Les relais sont des interrupteur commandables. Lorsque l'arduino donne l'ordre de mettre en route un circulateur ou de modifier la position d'une vanne trois voies,
                       l'un des relais ferme le circuit correspondant.</li>
                     <li>
-                      <strong>L'arduino</strong> est un microcontrolleur open-source. Ses plans de fabrication sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Son principe de fonctionnement est le suivant : on commence par le brancher à un ordinateur. À partir de cet ordinateur, on lui transfère un code. On débranche ensuite l'arduino pour le mettre en place. Une fois allumé, l'arduino exécute en boucle le code qui a été transféré. On peut ainsi lui faire exécuter des taches complexes à notre place.</li>
+                      <strong>L'arduino</strong> est un microcontrolleur open-source. Ses plans de fabrication sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Son principe de fonctionnement est le suivant : on commence par le
+                      brancher à un ordinateur. À partir de cet ordinateur, on lui transfère un code. On débranche ensuite l'arduino pour le mettre en place. Une fois allumé, l'arduino exécute en boucle le code qui a été transféré. On peut ainsi lui faire
+                      exécuter des taches complexes à notre place.</li>
                   </ol>
                   Le schéma a été réalisé grâce à logiciel open-source : KiCAD, disponible <a href="http://www.kicad-pcb.org/ ">ici</a>.
                 </p>
                 <img src="./assets/images/solarduino_schema_V1.png" class="img-responsive" alt="Responsive image" />
 
-                <h2>Les choix constructifs</h2>
+                <h2>
+                  <a name="choix"></a>Les choix constructifs</h2>
                 <hr>
                 <h3>
                   <a name="alim"></a>L'alimentation</h3>
@@ -273,16 +286,17 @@
                 </ol>
                 <h3>
                   <a name="relais"></a>L'arduino</h3>
-                  <ul class="row gallery">
-                    <li class="col-xs-6 col-xs-offset-3">
-                      <img src="./assets/images/arduino.png" class="img-responsive" alt="Responsive image" />
-                    </li>
-                  </ul>
-                <p>Le microcontrolleur utilisé est un arduino Uno, dont les caractéristiques sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Peu cher, open-source, robuste, il permet d'interfacer 6 sondes de température et de commander 14 relais. D'autres versions, comme <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">l'arduino Mega 2560</a> permettent d'interfacer plus de sondes et de commander plus de relais.</p>
+                <ul class="row gallery">
+                  <li class="col-xs-6 col-xs-offset-3">
+                    <img src="./assets/images/arduino.png" class="img-responsive" alt="Responsive image" />
+                  </li>
+                </ul>
+                <p>Le microcontrolleur utilisé est un arduino Uno, dont les caractéristiques sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Peu cher, open-source, robuste, il permet d'interfacer 6 sondes de température
+                  et de commander 14 relais. D'autres versions, comme <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">l'arduino Mega2560</a> permettent d'interfacer plus de sondes et de commander plus de relais.</p>
               </div>
+              <hr>
               <h3>
                 <a name="references"></a>Références</h3>
-                <hr>
               <div class="EndFoot">
                 <ol>
                   <li>Bioulez, 2013.
