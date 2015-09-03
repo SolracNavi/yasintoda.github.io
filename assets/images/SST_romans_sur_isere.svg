@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1184.2858"
+   height="565.71429"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="SST_romans_sur_isere.svg"
+   inkscape:export-filename="/home/yasintoda/Documents/websites/yasintoda.github.io/assets/images/SST_romans_sur_isere.png"
+   inkscape:export-xdpi="75.995171"
+   inkscape:export-ydpi="75.995171">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5813">
+      <stop
+         style="stop-color:#84b6e1;stop-opacity:0.90769231;"
+         offset="0"
+         id="stop5815" />
+      <stop
+         style="stop-color:#ea2929;stop-opacity:0.86923075;"
+         offset="1"
+         id="stop5817" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5759">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5761" />
+      <stop
+         id="stop5767"
+         offset="0.5"
+         style="stop-color:#420000;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#634a6a;stop-opacity:0.24705882;"
+         offset="0.75"
+         id="stop5769" />
+      <stop
+         style="stop-color:#8595d4;stop-opacity:0;"
+         offset="1"
+         id="stop5763" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5735"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#588dd1;stop-opacity:1;"
+         offset="0"
+         id="stop5737" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5725">
+      <stop
+         id="stop5777"
+         offset="0"
+         style="stop-color:#588dd0;stop-opacity:1;" />
+      <stop
+         id="stop5775"
+         offset="1"
+         style="stop-color:#ec3e3e;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5717"
+       osb:paint="gradient">
+      <stop
+         id="stop5719"
+         offset="0"
+         style="stop-color:#588dd1;stop-opacity:1;" />
+      <stop
+         id="stop5721"
+         offset="1"
+         style="stop-color:#588dd1;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5699">
+      <stop
+         style="stop-color:#588d00;stop-opacity:1;"
+         offset="0"
+         id="stop5701" />
+      <stop
+         id="stop5707"
+         offset="0.5"
+         style="stop-color:#000000;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5703" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5687">
+      <stop
+         style="stop-color:#588dd1;stop-opacity:1;"
+         offset="0"
+         id="stop5689" />
+      <stop
+         id="stop5695"
+         offset="0.5"
+         style="stop-color:#588dd1;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#588dd1;stop-opacity:0;"
+         offset="1"
+         id="stop5691" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient5675">
+      <stop
+         style="stop-color:#588dd1;stop-opacity:1;"
+         offset="0"
+         id="stop5677" />
+      <stop
+         id="stop5685"
+         offset="0.25"
+         style="stop-color:#42699c;stop-opacity:0.74901961;" />
+      <stop
+         id="stop5683"
+         offset="0.5"
+         style="stop-color:#2c4668;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5679" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="76.79392 : 302.49749 : 0"
+       inkscape:vp_y="1000 : 0 : 0"
+       inkscape:vp_z="729.30184 : 1271.8361 : 1"
+       inkscape:persp3d-origin="690.87763 : 240.71778 : 1"
+       id="perspective2985" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5725"
+       id="linearGradient5733"
+       x1="413.94144"
+       y1="717.26025"
+       x2="415.34116"
+       y2="649.73633"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5813"
+       id="linearGradient5787"
+       x1="386.47836"
+       y1="743.37567"
+       x2="386.35303"
+       y2="478.88901"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5813"
+       id="linearGradient4098"
+       gradientUnits="userSpaceOnUse"
+       x1="386.47836"
+       y1="743.37567"
+       x2="386.35303"
+       y2="478.88901" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5725"
+       id="linearGradient4100"
+       gradientUnits="userSpaceOnUse"
+       x1="413.94144"
+       y1="717.26025"
+       x2="415.34116"
+       y2="649.73633" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5725"
+       id="linearGradient4149"
+       gradientUnits="userSpaceOnUse"
+       x1="413.94144"
+       y1="717.26025"
+       x2="415.34116"
+       y2="649.73633"
+       gradientTransform="translate(-78.791898,109.65481)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497474"
+     inkscape:cx="536.52404"
+     inkscape:cy="309.61173"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1231"
+     inkscape:window-height="776"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:snap-nodes="false"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(85.142853,-410.93359)">
+    <rect
+       style="opacity:0.4526749;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect3089"
+       width="1184.2858"
+       height="565.71429"
+       x="-85.142853"
+       y="410.93359" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="88.986435"
+       y="894.83868"
+       id="text3823-4-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="88.986435"
+         y="894.83868"
+         style="font-size:13px;text-align:start;text-anchor:start"
+         id="tspan3926-2">Eau Froide </tspan><tspan
+         sodipodi:role="line"
+         x="88.986435"
+         y="911.08868"
+         style="font-size:13px;text-align:start;text-anchor:start"
+         id="tspan3965">Sanitaire</tspan></text>
+    <path
+       style="fill:none;stroke:#598ed1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 524.26917,829.67681 419.40105,0 0,-270.44682 -14.79406,-0.45903"
+       id="path5597"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <g
+       sodipodi:type="inkscape:box3d"
+       style="opacity:0.92592594;fill:#bfb35a;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="g2987"
+       inkscape:perspectiveID="#perspective2985"
+       inkscape:corner0="0.55952592 : 0.28602417 : 0 : 1"
+       inkscape:corner7="0.51975454 : 0.15948923 : 0.16085875 : 1"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2999"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="11"
+         d="m 894.46347,447.24762 -2.63098,10.36366 -109.00115,0 2.63098,-10.36366 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2995"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="14"
+         d="m 931.67294,578.70566 -126.53494,0 -22.30666,-121.09438 109.00115,0 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2991"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="5"
+         d="m 934.72714,566.67492 -3.0542,12.03074 -39.84045,-121.09438 2.63098,-10.36366 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2989"
+         style="fill:#353564;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="6"
+         d="m 934.72714,566.67492 -126.53494,0 -22.72988,-119.4273 109.00115,0 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2997"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="13"
+         d="m 808.1922,566.67492 -3.0542,12.03074 -22.30666,-121.09438 2.63098,-10.36366 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2993"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="3"
+         d="m 934.72714,566.67492 -3.0542,12.03074 -126.53494,0 3.0542,-12.03074 z" />
+    </g>
+    <g
+       id="g5829"
+       transform="translate(-78.791898,109.65481)"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 456.34023,738.08864 c 0,0 -11.19047,12.11906 -70.35714,12.17857 -59.16667,0.0595 -70.20561,-11.99997 -70.20561,-11.99997 l 0.12195,-237.39427 c 0,0 11.16089,-29.94891 70.32756,-30.00842 59.16667,-0.0595 70.23519,29.57732 70.23519,29.57732 l -0.12196,237.64681"
+         id="path3797"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czcczcc" />
+      <path
+         sodipodi:nodetypes="czcczcc"
+         inkscape:connector-curvature="0"
+         id="path5445"
+         d="m 447.82878,731.70313 c 0,0 -9.83406,11.4104 -61.82911,11.46642 -51.99503,0.056 -61.69595,-11.29826 -61.69595,-11.29826 l 0.10717,-223.51256 c 0,0 9.80808,-28.19764 61.80312,-28.25366 51.99504,-0.056 61.72193,27.84776 61.72193,27.84776 l -0.10717,223.75034"
+         style="fill:url(#linearGradient4098);fill-opacity:1;stroke:#000000;stroke-width:0.90961629;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+    <path
+       style="fill:none;stroke:url(#linearGradient4149);stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 468.52952,768.37414 c 0,0 -206.95865,-2.56332 -206.92857,8.21428 0.0301,10.7776 91.72023,5.48075 91.85714,15.57143 0.13691,10.09068 -91.4223,-3.32675 -91.5,7.71429 -0.0777,11.04104 91.52867,1.14703 91.71429,10.35714 0.18562,9.21011 -91.99725,0.74722 -91.89286,11.5 0.10439,10.75278 226.92857,9.9286 226.92857,9.9286"
+       id="path5483"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czzzzzc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <rect
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect5528"
+       width="48.665501"
+       height="4.049397"
+       x="335.00299"
+       y="674.42511"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <g
+       style="fill-rule:evenodd"
+       id="g5558"
+       transform="translate(-31.016313,508.33537)"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <path
+         transform="matrix(0.71974778,0,0,0.75150134,150.98906,73.256757)"
+         d="m 561.42855,330.21933 c 0,13.41263 -11.35278,24.28571 -25.35714,24.28571 -14.00436,0 -25.35714,-10.87308 -25.35714,-24.28571 0,-13.41263 11.35278,-24.28572 25.35714,-24.28572 14.00436,0 25.35714,10.87309 25.35714,24.28572 z"
+         sodipodi:ry="24.285715"
+         sodipodi:rx="25.357143"
+         sodipodi:cy="330.21933"
+         sodipodi:cx="536.07141"
+         id="path5556"
+         style="opacity:0.86000001;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:transform-center-y="0.029486762"
+         inkscape:transform-center-x="-4.196534"
+         transform="matrix(1.3857161,-0.08636834,0.08636834,1.3857161,66.128171,19.424579)"
+         d="m 337.14286,238.79076 -9.41644,4.7223 -9.41644,4.7223 0.61859,-10.51603 0.61859,-10.51602 8.79785,5.79373 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.1059534"
+         sodipodi:arg1="0.058755823"
+         sodipodi:r2="6.0819235"
+         sodipodi:r1="12.163847"
+         sodipodi:cy="238.07648"
+         sodipodi:cx="325"
+         sodipodi:sides="3"
+         id="path5515-6"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
+    </g>
+    <path
+       style="fill:none;stroke:#df2424;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 469.62883,770.69561 -2.0203,-305.78185 320.46702,0"
+       id="path5562"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <g
+       id="g5618"
+       transform="translate(-46.446712,36.92383)"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <rect
+         ry="15.657365"
+         y="825.58295"
+         x="442.44684"
+         height="50.002575"
+         width="38.890881"
+         id="rect5612"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path5614"
+         d="m 442.57308,850.33168 38.76461,-10e-6"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         transform="matrix(0.99977805,0.0210676,-0.0210676,0.99977805,100.31484,23.893781)"
+         inkscape:transform-center-y="-1.5734192"
+         inkscape:transform-center-x="-0.010066947"
+         d="m 384.86813,828.6134 -5.47911,0.13291 -5.47911,0.13291 2.62446,-4.8115 2.62445,-4.8115 2.85465,4.67859 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.5465443"
+         sodipodi:arg1="0.49934672"
+         sodipodi:r2="3.1642938"
+         sodipodi:r1="6.3285875"
+         sodipodi:cy="825.58295"
+         sodipodi:cx="379.31229"
+         sodipodi:sides="3"
+         id="path5616"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
+    </g>
+    <path
+       style="fill:none;stroke:#588dd0;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 416.18285,863.01184 -1.01016,-32.32488"
+       id="path5623"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#588dd1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 309.10667,845.33417 10e-6,74.24621 -219.203108,0"
+       id="path5625"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#df2424;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 309.10668,600.37218 0,-46.46702"
+       id="path5627"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#588dd1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 289.89347,533.70211 c -4.04061,0 -107.05586,0 -107.05586,0 l -0.0203,384.88842"
+       id="path5629"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#b96d82;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.88627451;stroke-dasharray:none"
+       d="m 327.28942,535.72241 54.22336,0 -0.0203,-86.87311 -290.614248,0"
+       id="path5631"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <g
+       style="fill-rule:evenodd"
+       id="g5551"
+       transform="translate(-118.07761,212.51195)"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100">
+      <path
+         inkscape:transform-center-y="0.021234066"
+         inkscape:transform-center-x="-3.0225553"
+         transform="matrix(0.99806328,-0.06220688,0.06220688,0.99806328,74.492394,105.28093)"
+         d="m 337.14286,238.79076 -9.41644,4.7223 -9.41644,4.7223 0.61859,-10.51603 0.61859,-10.51602 8.79785,5.79373 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.1059534"
+         sodipodi:arg1="0.058755823"
+         sodipodi:r2="6.0819235"
+         sodipodi:r1="12.163847"
+         sodipodi:cy="238.07648"
+         sodipodi:cx="325"
+         sodipodi:sides="3"
+         id="path5515"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
+      <path
+         sodipodi:type="star"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="path5519"
+         sodipodi:sides="3"
+         sodipodi:cx="325"
+         sodipodi:cy="238.07648"
+         sodipodi:r1="12.163847"
+         sodipodi:r2="6.0819235"
+         sodipodi:arg1="0.058755823"
+         sodipodi:arg2="1.1059534"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         d="m 337.14286,238.79076 -9.41644,4.7223 -9.41644,4.7223 0.61859,-10.51603 0.61859,-10.51602 8.79785,5.79373 z"
+         transform="matrix(-0.99806328,-0.06220688,-0.06220688,0.99806328,778.18106,105.28093)"
+         inkscape:transform-center-x="3.022555"
+         inkscape:transform-center-y="0.021234066" />
+      <path
+         inkscape:transform-center-y="-3.0225583"
+         inkscape:transform-center-x="0.021236683"
+         transform="matrix(0.06220688,-0.99806328,-0.99806328,-0.06220688,643.75612,674.54465)"
+         d="m 337.14286,238.79076 -9.41644,4.7223 -9.41644,4.7223 0.61859,-10.51603 0.61859,-10.51602 8.79785,5.79373 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0"
+         inkscape:flatsided="false"
+         sodipodi:arg2="1.1059534"
+         sodipodi:arg1="0.058755823"
+         sodipodi:r2="6.0819235"
+         sodipodi:r1="12.163847"
+         sodipodi:cy="238.07648"
+         sodipodi:cx="325"
+         sodipodi:sides="3"
+         id="path5521"
+         style="opacity:0.92592594;fill:#000000;fill-opacity:0.0694464;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="star" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="387.98328"
+       y="674.25275"
+       id="text3823"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         id="tspan3825"
+         x="387.98328"
+         y="674.25275"
+         style="font-size:13px">Résistance </tspan><tspan
+         sodipodi:role="line"
+         x="387.98328"
+         y="690.50275"
+         id="tspan3827"
+         style="font-size:13px">électrique</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="308.64435"
+       y="631.31006"
+       id="text3823-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="310.71368"
+         y="631.31006"
+         id="tspan3827-5"
+         style="font-size:13px;text-align:center;text-anchor:middle">Ballon de </tspan><tspan
+         sodipodi:role="line"
+         x="308.64435"
+         y="647.56006"
+         style="font-size:13px;text-align:center;text-anchor:middle"
+         id="tspan3855">stockage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="417.3205"
+       y="927.42389"
+       id="text3823-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="419.38983"
+         y="927.42389"
+         id="tspan3827-8"
+         style="font-size:13px;text-align:center;text-anchor:middle">Vase </tspan><tspan
+         sodipodi:role="line"
+         x="417.3205"
+         y="943.67389"
+         style="font-size:13px;text-align:center;text-anchor:middle"
+         id="tspan3898">d'expansion</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="474.71664"
+       y="862.77411"
+       id="text3823-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="474.71664"
+         y="862.77411"
+         id="tspan3827-2"
+         style="font-size:13px">Circulateur</tspan><tspan
+         sodipodi:role="line"
+         x="474.71664"
+         y="879.02411"
+         style="font-size:13px"
+         id="tspan3894" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="309.11664"
+       y="503.66492"
+       id="text3823-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="311.18597"
+         y="503.66492"
+         id="tspan3827-9"
+         style="font-size:13px;text-align:center;text-anchor:middle">Mitigeur </tspan><tspan
+         sodipodi:role="line"
+         x="309.11664"
+         y="519.91492"
+         style="font-size:13px;text-align:center;text-anchor:middle"
+         id="tspan3926">thermostatique</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="91.047867"
+       y="465.50363"
+       id="text3823-4-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="91.047867"
+         y="465.50363"
+         style="font-size:13px;text-align:start;text-anchor:start"
+         id="tspan3926-3">Eau Chaude </tspan><tspan
+         sodipodi:role="line"
+         x="91.047867"
+         y="481.75363"
+         style="font-size:13px;text-align:start;text-anchor:start"
+         id="tspan3969">Sanitaire</tspan></text>
+    <rect
+       style="fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:#b96d82;stroke-width:0;stroke-miterlimit:4;stroke-opacity:0.88627451;stroke-dasharray:none"
+       id="rect3976"
+       width="73.741135"
+       height="39.39595"
+       x="533.3606"
+       y="584.20972"
+       ry="8.5863113"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="535.32587"
+       y="640.54053"
+       id="text3823-8"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="535.32587"
+         y="640.54053"
+         id="tspan3827-26"
+         style="font-size:13px">Régulation</tspan></text>
+    <rect
+       style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#b96d82;stroke-width:0;stroke-miterlimit:4;stroke-opacity:0.88627451;stroke-dasharray:none"
+       id="rect4004"
+       width="22.5"
+       height="5.3571429"
+       x="544.63672"
+       y="601.30273"
+       ry="2.6785715"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#1a1a1a;fill-opacity:1;fill-rule:evenodd;stroke:#b96d82;stroke-width:0;stroke-miterlimit:4;stroke-opacity:0.88627451;stroke-dasharray:none"
+       id="path4006"
+       sodipodi:cx="667.32141"
+       sodipodi:cy="497.71933"
+       sodipodi:rx="8.3928576"
+       sodipodi:ry="7.5"
+       d="m 675.71427,497.71933 c 0,4.14214 -3.75761,7.5 -8.39286,7.5 -4.63525,0 -8.39286,-3.35786 -8.39286,-7.5 0,-4.14214 3.75761,-7.5 8.39286,-7.5 4.63525,0 8.39286,3.35786 8.39286,7.5 z"
+       transform="translate(-82.006184,106.08338)"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 1;stroke-dashoffset:0"
+       d="m 789.92239,475.30271 -306.57143,0 2.14285,121 47.85715,0"
+       id="path4008"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m 533.32686,609.07691 -26.17025,10e-6 -0.25,202.14285"
+       id="path4010"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="489.97855"
+       y="552.578"
+       id="text3823-8-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="489.97855"
+         y="552.578"
+         id="tspan3827-26-8"
+         style="font-size:13px">Sonde</tspan><tspan
+         sodipodi:role="line"
+         x="489.97855"
+         y="568.828"
+         style="font-size:13px"
+         id="tspan4033" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:4, 1;stroke-dashoffset:0"
+       d="m 360.46496,801.5358 126.26397,0.0613 -0.46919,-199.18687 47.85715,0"
+       id="path4008-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="515.43756"
+       y="716.92291"
+       id="text3823-8-5-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="515.43756"
+         y="716.92291"
+         id="tspan3827-26-8-6"
+         style="font-size:13px">Câble </tspan><tspan
+         sodipodi:role="line"
+         x="515.43756"
+         y="733.17291"
+         style="font-size:13px"
+         id="tspan3888">relais</tspan><tspan
+         sodipodi:role="line"
+         x="515.43756"
+         y="749.42291"
+         style="font-size:13px"
+         id="tspan4033-3" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="406.86145"
+       y="797.90515"
+       id="text3823-8-5-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="406.86145"
+         y="797.90515"
+         id="tspan3827-26-8-1"
+         style="font-size:13px">Sonde</tspan><tspan
+         sodipodi:role="line"
+         x="406.86145"
+         y="814.15515"
+         style="font-size:13px"
+         id="tspan4033-0" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="816.42407"
+       y="596.35144"
+       id="text3823-8-5-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/yasintoda/Documents/Uzume/PST/illustrations/text3823-4-7.png"
+       inkscape:export-xdpi="100"
+       inkscape:export-ydpi="100"><tspan
+         sodipodi:role="line"
+         x="816.42407"
+         y="596.35144"
+         id="tspan3827-26-8-9"
+         style="font-size:13px">Capteurs solaires</tspan><tspan
+         sodipodi:role="line"
+         x="816.42407"
+         y="612.60144"
+         style="font-size:13px"
+         id="tspan4033-7" /></text>
+  </g>
+</svg>
