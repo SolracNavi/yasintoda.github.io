@@ -100,18 +100,18 @@
                 <p class="subtitle">Figure : premier prototype du Solarduino soudé sur une plaque à pastilles.</p>
                 <p>Nous avons développé une régulation open-source, peu coûteuse qui permet de remplacer les régulations propriétaires du commerce : le Solarduino. Basée sur le travail de <a class="ref" href="#references">Bioulez (2012)</a>, elle se place
                   en complément d'une autre régulation open-source créée par <a class="ref" href="#references">Nies (2009)</a> : le Minisun.</p>
-                <p>Voici un tableau comparant le Solarduino à une partie des régulations existantes.</p>
-                <!-- TODO : vérifier les chiffres/donner les sources -->
+                <p>Voici un tableau comparant le Solarduino à une partie des régulations existantes. Les prix prennent en compte deux sondes de température et sont basés sur le groupement d'achat de l'APPER, disponible <a href="http://www.apper-solaire.org/Pages/Groupement/tarif/tarif/index.htm">ici</a>.</p>
                 <table class="table table-striped">
                   <thead>
                     <tr>
                       <th>Nom</th>
                       <th>Coût</th>
-                      <th>Nb. de </br>capteurs</th>
-                      <th>Nb. relais</th>
-                      <th>Régulation d'une </br>chaudière externe</th>
-                      <th>Programmable</th>
-                      <th>Open-Source</th>
+                      <th>Nb. de </br>sondes</th>
+                      <th>Nb. de </br>relais</th>
+                      <th>Régulation </br>d'une chaudière</br>externe</th>
+                      <th>Program-</br>mable</th>
+                      <th>Open-</br>Source</th>
+                      <th>Référence</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -123,6 +123,7 @@
                       <td>non</td>
                       <td>non</td>
                       <td>oui</td>
+                      <td><a href="http://www.apper-solaire.org/Pages/Electronique/Electro/minisun/Doc_minisun.pdf">lien</a></td>
                     </tr>
                     <tr>
                       <th scope="row">SOLARDUINO</th>
@@ -144,15 +145,19 @@
                       <td>
                         <strong>oui</strong>
                       </td>
+                      <td>
+                        <strong>ce site</strong>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">PICO</th>
+                      <th scope="row">PICO 400</th>
                       <td>90 €</td>
                       <td>2</td>
                       <td>1</td>
                       <td>non</td>
                       <td>non</td>
                       <td>non</td>
+                      <td><a href="http://www.solaire-panneau-thermique.com/documentation/12_notice_controleur_solaire_thermique_pico400.pdf">lien</a></td>
                     </tr>
                     <tr>
                       <th scope="row">BASIC</th>
@@ -162,34 +167,37 @@
                       <td>non</td>
                       <td>non</td>
                       <td>non</td>
-
+                      <td><a href="http://www.apper-solaire.org/Pages/Groupement/basic_energy.pdf">lien</a></td>
                     </tr>
                     <tr>
                       <th scope="row">VISION+</th>
                       <td>215 €</td>
-                      <td>2</td>
+                      <td>6</td>
                       <td>3</td>
                       <td>oui</td>
                       <td>non</td>
                       <td>non</td>
+                      <td><a href="http://www.apper-solaire.org/Pages/Groupement/vision.pdf">lien</a></td>
                     </tr>
                     <tr>
                       <th scope="row">GENIUS+</th>
                       <td>385 €</td>
-                      <td>2</td>
+                      <td>9</td>
                       <td>6</td>
                       <td>oui</td>
                       <td>oui</td>
                       <td>non</td>
+                      <td><a href="http://www.apper-solaire.org/Pages/Groupement/genius.pdf">lien</a></td>
                     </tr>
                     <tr>
                       <th scope="row">MILLENIUM3</th>
-                      <td>580 €</td>
-                      <td>2</td>
-                      <td>10</td>
+                      <td>625 €</td>
+                      <td>12</td>
+                      <td>8</td>
                       <td>oui</td>
                       <td>oui</td>
                       <td>non</td>
+                      <td>voir note <a class="ref" href="#notes">[1]</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -301,6 +309,14 @@
                   et de commander 14 relais. D'autres versions, comme <a href="https://www.arduino.cc/en/Main/ArduinoBoardMega2560">l'arduino Mega2560</a> permettent d'interfacer plus de sondes et de commander plus de relais.</p>
               </div>
               <hr>
+              <h3>
+                <a name="notes"></a>Notes</h3>
+              <div class="EndFoot">
+                <ol>
+                    <li>Un API MILLENIUM 3 avec 12 entrées et 8 sorties coûte <a href="http://www.conrad.com/ce/en/product/196941/Crouzet-Millenium-3-CD20-R-230VAC-SMART-Expandable-Logic-Controller-88974053">235€</a> ; le cable d'interfaçage <a href="http://www.conrad.com/ce/en/product/197107/Crouzet-PROGUSB-Millenium-3-USB-PC-connection-cable-3-m/?ref=detview1&rt=detview1&rb=1">105€</a> ; le logiciel <a href="http://www.conrad.com/ce/en/product/197249/Crouzet-M3-SOFT-Millenium-3-Programming-Logic-Software?ref=searchDetail">70€</a> ; les convertisseurs pour sondes de température <a href="http://ex-en.alliedelec.com/crouzet-automation-88950150/70158912/">100€ ($110)</a> l'unité.</li>
+                </ol>
+              </div>
+
               <h3>
                 <a name="references"></a>Références</h3>
               <div class="EndFoot">
