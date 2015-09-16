@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>
+    Le solaire thermique
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='./assets/style.css'>
+  <link rel='icon' type='image/x-icon' href='./assets/images/favicon.png'>
+  <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ "HTML-CSS": { scale: 80 }});
+  </script>
+  <script type="text/javascript" src="./assets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="./assets/datamaps.world.min.js"></script>
+
+</head>
+
+<body>
+  <div id="warning">
+    <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
+  </div>
+  <div id="wrap">
+    <div id='masthead'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='masthead-inner'>
+              <ul class='list-unstyled' id='top-menu'>
+                <li class=''>
+                  <a class='' href='./index.html'>Accueil</a>
+                </li>
+                <li class='active'>
+                  <a class='active' href="./solaire_thermique.html">Le solaire thermique</a>
+                </li>
+                <li class=''>
+                  <a class='' href='./a_propos.html'>À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container" id="main"> -->
+    <div class="container">
+      <div class="row">
+
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+        <div class="col-sm-10">
+          <div class="shadow-box">
+
+            <div class="title-box">
+              <h2>Un logiciel de dimensionnement</h2>
+            </div>
+            <div class="content-box">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2>Plan</h2>
+                  <div id="TOC">
+                    <ol>
+                      <li><a href="#a_quoi">À quoi sert un logiciel de dimensionnement ?</a></li>
+                      <li><a href="#pourquoi">Pourquoi un logiciel gratuit et open-source ?</a></li>
+                      <li><a href="#demarche">La démarche de développement</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h2>
+                  <a name="a_quoi"></a>À quoi sert un logiciel de dimensionnement ?</h2>
+                <hr>
+                <p>En résumé, un logiciel de dimensionnement permet de créer des systèmes solaires thermiques adaptés au lieu et à la consommation des occupants. Ces systèmes ne surchaufferont pas et dureront bien plus longtemps que s'il n'y avait pas eu
+                  de dimensionnement correct.</p>
+                <p>La ressource solaire n'est pas commandable. Malheureusement, elle ne coincide pas avec les besoins d'eau chaude et de chauffage. En effet, c'est en hiver que les besoins énergétiques sont les plus grands alors que c'est aussi à ce moment
+                  que l'influx solaire est le plus faible. Et c'est l'inverse en été.</p>
+                <p>Le danger est de surchauffer l'installation en été, ce qui conduirait à une détérioration du système. Dans ce cas, le fluide caloporteur (glycol) perd ses propriétés anti-gel ; les fluides se dilatent dans le circuit primaire comme dans
+                  le circuit secondaire, ce qui entraine la rupture de la tuyauterie ; la colle de l'isolant des capteurs (souvent laine de roche ou de verre) se gazeïfie et vient former un voile opaque sur la vitre du capteur ; etc. </p>
+                <p>Ceci a conduit les installateurs à mettre en place différentes stratégies :
+                  <ul>
+                    <li>incliner fortement les capteurs (entre 60 et 90° par rapport à l'horizontale)</li>
+                    <li>mettre en place des masques permanents (débord de toit) ou temporaires (bâches, volets) pour occulter les capteurs en été ; </li>
+                    <li>créer un circuit de décharge dans le sol au Nord d'un bâtiment et mettre en place une régulation adaptée </li>
+                  </ul>
+                  Néanmoins, seul un dimensionnement fin du système permet d'obtenir un bon ratio solaire sans complexifier l'installation ni risquer de la surchauffer. </p>
+                <h2>
+                  <a name="pourquoi"></a>Pourquoi un logiciel gratuit et open-source ?</h2>
+                <hr>
+                <p>Les logiciels actuels du commerce sont inadaptés à l'auto-construction. Les licences sont trop chères par rapport au coût de revient d'une installation classique<a class="ref" href="#notes">[1]</a>. Il ne s'agit pas d'un manque à gagner
+                  pour l'association puisqu'elle se rémunère sur les stages de formation. Ce sont eux qui lui permettent d'être viable. D'autre part, son but n'est pas le profit, mais le développement des technologies appropriées.</p>
+                <p>L'open-source permet la collaboration effective de différents acteurs autour d'un projet. Le code est disponible et modifiable par les utilisateurs du logiciel. C'est une démarche à la fois éducative et collaborative.<br>
+                Il faut aussi réaliser qu'une grande part du travail de développement d'un logiciel, ou d'un outil, consiste à réutiliser le travail effectué et mis à disposition par d'autres (voir la partie suivante pour s'en rendre compte). En ce sens, mettre à son tour son travail à disposition des autres n'est qu'un juste retour des choses : prendre d'un côté, et donner de l'autre.</p>
+                <h2>
+                  <a name="demarche"></a>La démarche de développement</h2>
+                <hr>
+                <p>La première étape consiste à identifier les fonctionnalités voulues du logiciel. Ici, on souhaite trois choses :
+                  <ol>
+                    <li>Connaître la température journalière journalière maximale des capteurs ;</li>
+                    <li>Connaître le ratio solaire de l'installation ;</li>
+                    <li>Éditer des masques solaires</li>
+                  </ol>
+                  La seconde étape consiste à décomposer le phénomène physique en une série de sous-problèmes solvables indépendament.
+                </p>
+                <ul class="row gallery">
+                  <li class="col-xs-10 col-xs-offset-1">
+                    <img class="img-responsive" src="./assets/images/decomposition_probleme.svg">
+                  </li>
+                </ul>
+                <p>Reste maintenant à traiter chacun de ces problèmes :
+                  <ol>
+                    <li>Comment connaître la position du soleil à chaque instant et pour une position géographique donnée ?</li>
+                    <p>
+                      <strong>Entrée(s) :</strong> date ; latitude</br>
+                      <strong>Sortie(s) :</strong> position du soleil (inclinaison, azimuth)</br>
+                      <strong>Description :</strong> la solution théorique à ce problème est donnée par <a class="ref" href="#references">Reda et Andreas (2008)</a>. Elle a été implémentée en python par <a class="ref" href="#references">Stafford et al (2015)</a>.</p>
+                    <li>Comment connaître l'irradiance solaire atténuée par l'atmosphère et arrivant sur une surface au sol ?</li>
+                    <p>
+                      <strong>Entrée(s) :</strong> position du soleil (inclinaison, azimuth) ; altitude du système ; orientation des capteurs (angle, inclinaison) ; surface des capteurs ; position des masques</br>
+                      <strong>Sortie(s) :</strong> puissance instantanée reçue par les capteurs en fonction du temps</br>
+                      <strong>Description :</strong>la solution théorique à ce problème est donnée par <a class="ref" href="#references">Bishop et al (1997)</a>. Elle a aussi été implémentée en python par <a class="ref" href="#references">Stafford et al (2015)</a>. Reste à calculer l'influence de l'orientation des capteurs (angle, inclinaison) sur la puissance reçue.</p>
+                    <li>Comment connaître la température de l'ensemble capteurs + stockage en fonction de la puissance arrivant sur les capteurs ?</li>
+                    <p>
+                      <strong>Entrée(s) :</strong> puissance instantanée reçue par les capteurs en fonction du temps ; température externe ; température de l'eau ; caractéristiques des capteurs, de la tuyauterie et du stockage ; données de consommation du foyer</br>
+                      <strong>Sortie(s) :</strong> température de l'ensemble capteurs + stockage en fonction du temps pour chaque jour de l'année</br>
+                      <strong>Description :</strong> la solution théorique de ce problème pour des capteurs de type plan est donnée par <a class="ref" href="#references">Saleh (2012)</a>. Reste à l'implémenter.</p>
+                  </ol>
+                </p>
+              </div>
+              <hr>
+              <h3>
+                <a name="notes"></a>Notes</h3>
+              <div class="EndFoot">
+                <ol>
+                  <li>Une license du logiciel de dimensionnement Polysun coûte par exemple 1599 €. Voir <a href="https://secure.velasolaris.com/shop/Order.php?level=3&lang=en&dummy=1">ici</a>.</li>
+                </ol>
+              </div>
+
+              <h3>
+                <a name="references"></a>Références</h3>
+              <div class="EndFoot">
+                <ol>
+                  <li>I. Reda et A. Andreas, 2005. <em>Solar Position Algorithm for Solar Radiation Applications National Renewable Energy Laboratory</em>, NREL/TP-560-34302. Disponible <a href="http://www.nrel.gov/docs/fy08osti/34302.pdf">ici</a>.</li>
+                  <li>Stafford et al, 2015. <em>Pysolar: staring directly at the sun since 2007</em>. Mode d'emploi disponible <a href="https://pysolar.readthedocs.org/en/latest/">ici</a> et code disponible <a href="https://github.com/pingswept/pysolar">là</a>.</li>
+                  <li>J. K. B. Bishop, W. B. Rossow, et E. G. Dutton, 1997. <em>Surface solar irradiance from the International Satellite Cloud Climatology Project 1983-1991,</em>, Journal of Geophysical Research, vol. 102, no. D6, March 27, 1997, pp. 6883-6910. Disponible <a href="http://pubs.giss.nasa.gov/docs/1997/1997_Bishop_etal_1.pdf">ici</a>.</li>
+                  <li>Ahmad M. Saleh, 2012. <em>Modeling of flat-plate solar collector operation in transient state</em>. Disponible <a href="https://www.ipfw.edu/dotAsset/f1cc8708-a3f3-40dc-912c-0579a5afcacd.pdf">ici</a>.</li>
+                </ol>
+
+              </div>
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="navigation-box">
+            <h2>Navigation</h2>
+            <div id="navigation">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="level1">
+                  <a href="./index.html">Accueil</a>
+                </li>
+                <li class="level1">
+                  <a href="./solaire_thermique.html">Le solaire thermique</a>
+                </li>
+                <li class="level2">
+                  <a href="./SST.html">Les SST</a>
+                </li>
+                <li class="level2">
+                  <a href="./etat_lieux.html">Un état des lieux</a>
+                </li>
+                <li class="level2">
+                  <a href="./solarduino.html">Le solarduino</a>
+                </li>
+                <li class="level2">
+                  <a href="./logiciel.html">Un logiciel de dimensionnement</a>
+                </li>
+                <li class="level1">
+                  <a href="./a_propos.html">À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div id='footer-inner'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='footer-text'>
+              Ce site est géré et (bientôt) auto-hébergé par Uzume.
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                <img alt="Creative Commons License" style="border-width:0;" src="./assets/images/88x31.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
