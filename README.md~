@@ -1,2 +1,2 @@
 # uzume-asso-trailer
-website for uzume-asso
+website for uzume-asso.org
