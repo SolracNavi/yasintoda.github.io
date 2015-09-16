@@ -93,10 +93,13 @@
                 <h2>
                   <a name="pourquoi"></a>Pourquoi un logiciel gratuit et open-source ?</h2>
                 <hr>
-                <p>Les logiciels actuels du commerce sont inadaptés à l'auto-construction. Les licences sont trop chères par rapport au coût de revient d'une installation classique<a class="ref" href="#notes">[1]</a>. Il ne s'agit pas d'un manque à gagner
-                  pour l'association puisqu'elle se rémunère sur les stages de formation. Ce sont eux qui lui permettent d'être viable. D'autre part, son but n'est pas le profit, mais le développement des technologies appropriées.</p>
-                <p>L'open-source permet la collaboration effective de différents acteurs autour d'un projet. Le code est disponible et modifiable par les utilisateurs du logiciel. C'est une démarche à la fois éducative et collaborative.<br>
-                Il faut aussi réaliser qu'une grande part du travail de développement d'un logiciel, ou d'un outil, consiste à réutiliser le travail effectué et mis à disposition par d'autres (voir la partie suivante pour s'en rendre compte). En ce sens, mettre à son tour son travail à disposition des autres n'est qu'un juste retour des choses : prendre d'un côté, et donner de l'autre.</p>
+                <p>Les logiciels actuels du commerce sont inadaptés à l'auto-construction. Les licences sont trop chères par rapport au coût de revient d'une installation classique<a class="ref" href="#notes">[1]</a>. Ces solutions seraient adaptées à un
+                  artisan installateur de systèmes solaires thermiques, puisqu'il pourrait rentabiliser le coût d'achat de la license sur plusieurs installations. <br>En revanche, ce n'est pas une solution envisageable pour les auto-constructeurs et le auto-installateurs.
+                  <br>D'autre part, il ne s'agit pas d'un manque à gagner pour l'association puisqu'elle se rémunère sur les stages de formation. Ce sont eux qui lui permettent d'être viable. Le but de l'association n'est pas le profit, mais le développement
+                  des technologies appropriées.</p>
+                <p>L'open-source permet la collaboration effective de différents acteurs autour d'un projet. Le code est disponible et modifiable par les utilisateurs du logiciel. C'est une démarche à la fois éducative et collaborative.
+                  <br> Il faut aussi réaliser qu'une grande part du travail de développement d'un logiciel, ou d'un outil, consiste à réutiliser le travail effectué et mis à disposition par d'autres (voir la partie suivante pour s'en rendre compte). En ce
+                  sens, mettre à son tour son travail à disposition des autres n'est qu'un juste retour des choses : prendre d'un côté, et donner de l'autre.</p>
                 <h2>
                   <a name="demarche"></a>La démarche de développement</h2>
                 <hr>
@@ -124,7 +127,8 @@
                     <p>
                       <strong>Entrée(s) :</strong> position du soleil (inclinaison, azimuth) ; altitude du système ; orientation des capteurs (angle, inclinaison) ; surface des capteurs ; position des masques</br>
                       <strong>Sortie(s) :</strong> puissance instantanée reçue par les capteurs en fonction du temps</br>
-                      <strong>Description :</strong>la solution théorique à ce problème est donnée par <a class="ref" href="#references">Bishop et al (1997)</a>. Elle a aussi été implémentée en python par <a class="ref" href="#references">Stafford et al (2015)</a>. Reste à calculer l'influence de l'orientation des capteurs (angle, inclinaison) sur la puissance reçue.</p>
+                      <strong>Description :</strong>la solution théorique à ce problème est donnée par <a class="ref" href="#references">Bishop et al (1997)</a>. Elle a aussi été implémentée en python par <a class="ref" href="#references">Stafford et al (2015)</a>.
+                      Reste à calculer l'influence de l'orientation des capteurs (angle, inclinaison) sur la puissance reçue.</p>
                     <li>Comment connaître la température de l'ensemble capteurs + stockage en fonction de la puissance arrivant sur les capteurs ?</li>
                     <p>
                       <strong>Entrée(s) :</strong> puissance instantanée reçue par les capteurs en fonction du temps ; température externe ; température de l'eau ; caractéristiques des capteurs, de la tuyauterie et du stockage ; données de consommation du foyer</br>
@@ -146,10 +150,14 @@
                 <a name="references"></a>Références</h3>
               <div class="EndFoot">
                 <ol>
-                  <li>I. Reda et A. Andreas, 2005. <em>Solar Position Algorithm for Solar Radiation Applications National Renewable Energy Laboratory</em>, NREL/TP-560-34302. Disponible <a href="http://www.nrel.gov/docs/fy08osti/34302.pdf">ici</a>.</li>
-                  <li>Stafford et al, 2015. <em>Pysolar: staring directly at the sun since 2007</em>. Mode d'emploi disponible <a href="https://pysolar.readthedocs.org/en/latest/">ici</a> et code disponible <a href="https://github.com/pingswept/pysolar">là</a>.</li>
-                  <li>J. K. B. Bishop, W. B. Rossow, et E. G. Dutton, 1997. <em>Surface solar irradiance from the International Satellite Cloud Climatology Project 1983-1991,</em>, Journal of Geophysical Research, vol. 102, no. D6, March 27, 1997, pp. 6883-6910. Disponible <a href="http://pubs.giss.nasa.gov/docs/1997/1997_Bishop_etal_1.pdf">ici</a>.</li>
-                  <li>Ahmad M. Saleh, 2012. <em>Modeling of flat-plate solar collector operation in transient state</em>. Disponible <a href="https://www.ipfw.edu/dotAsset/f1cc8708-a3f3-40dc-912c-0579a5afcacd.pdf">ici</a>.</li>
+                  <li>I. Reda et A. Andreas, 2005.
+                    <em>Solar Position Algorithm for Solar Radiation Applications National Renewable Energy Laboratory</em>, NREL/TP-560-34302. Disponible <a href="http://www.nrel.gov/docs/fy08osti/34302.pdf">ici</a>.</li>
+                  <li>Stafford et al, 2015.
+                    <em>Pysolar: staring directly at the sun since 2007</em>. Mode d'emploi disponible <a href="https://pysolar.readthedocs.org/en/latest/">ici</a> et code disponible <a href="https://github.com/pingswept/pysolar">là</a>.</li>
+                  <li>J. K. B. Bishop, W. B. Rossow, et E. G. Dutton, 1997.
+                    <em>Surface solar irradiance from the International Satellite Cloud Climatology Project 1983-1991,</em>, Journal of Geophysical Research, vol. 102, no. D6, March 27, 1997, pp. 6883-6910. Disponible <a href="http://pubs.giss.nasa.gov/docs/1997/1997_Bishop_etal_1.pdf">ici</a>.</li>
+                  <li>Ahmad M. Saleh, 2012.
+                    <em>Modeling of flat-plate solar collector operation in transient state</em>. Disponible <a href="https://www.ipfw.edu/dotAsset/f1cc8708-a3f3-40dc-912c-0579a5afcacd.pdf">ici</a>.</li>
                 </ol>
 
               </div>
