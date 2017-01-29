@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Le dimensionnement des Batchrockets
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='./assets/style.css'>
+    <link rel='icon' type='image/x-icon' href='./assets/images/favicon.png'>
+
+    <script type="text/javascript" src="./assets/jquery.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
+  TODO : make the photo-gallery.js work properly-->
+    <script type="text/javascript" src="./assets/d3.v3.min.js"></script>
+    <script type="text/javascript" src="./assets/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="./assets/datamaps.world.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
+    </script>
+    <script type="text/javascript" src="./assets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+    <div id="warning">
+        <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
+    </div>
+    <div id="wrap">
+        <div id='masthead'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='masthead-inner'>
+                            <ul class='list-unstyled' id='top-menu'>
+                                <li class=''>
+                                    <a class='' href='./index.html'>Accueil</a>
+                                </li>
+                                <li class='active'>
+                                    <a class='active' href="./poeles_de_masse.html">Les poêles de masse</a>
+                                </li>
+                                <li class=''>
+                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class=''>
+                                    <a class='' href='./a_propos.html'>À propos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="main">
+            <div class="row">
+
+                <div class="col-sm-10">
+                    <div class="shadow-box">
+                        <div class="title-box">
+                            <h2>Le Dimensionnement des Batchrockets</h2>
+                        </div>
+                        <div class="content-box">
+                            <h2>Plan</h2>
+                            <div id="TOC">
+                                <ol>
+                                    <li><a href="#principe">Le principe</a></li>
+                                    <li><a href="#deperditions">Les déperditions thermiques d'une maison ou d'une pièce</a></li>
+                                    <li><a href="#puissance">La puissance des Batchrockets</a></li>
+                                    <li><a href="#puissance2">La puissance des rocket stoves</a></li>
+                                </ol>
+                            </div>
+                            <h2>
+                <a name="principe"></a>Le principe</h2>
+                            <hr>
+                            <p>Le dimensionnement d'un poêle commence par le calcul des déperditions thermiques de la maison ou de la pièce à chauffer. En effet, le poêle de masse va maintenir une température intérieure constante en compensant les pertes
+                                d'énergie vers l'extérieur. Trois facteurs entrent en compte pour le calcul de ces déperditions : la température intérieure par rapport à la température extérieure, l'isolation et le volume total à chauffer. Par exemple,
+                                un plus grand volume à chauffer ou une moins bonne isolation nécessiteront un poêle plus puissant pour maintenir la même température intérieure.
+                            </p>
+                            <p>La puissance d'un poêle de masse correspond à la puissance moyenne qu'il dégage sur une période de 24h, en considérant une ou deux flambées par jour et un rendement total (combustion x récupération de la chaleur) de 80%. Pour
+                                information, un bon poêle de masse a un rendement total de 80% et un excellent poêle de masse peut monter à 90%.</p>
+                            <p>On choisit ensuite la puissance du poêle en fonction des déperditions du volume à chauffer. La puissance du poêle doit être supérieure aux déperditions. Il est TRÈS important de toujours surdimensionner le poêle de masse.</p>
+                            <h2>
+                <a name="deperditions"></a>Les déperditions thermiques d'une maison ou d'une pièce</h2>
+                            <hr>
+                            <p>Les déperditions thermiques sont calculées à partir de la formule suivante :</p>
+                            <p class="text-center"> \(Q=G*V*\Delta T\)</p>
+                            <p>Avec \(Q\) les déperditions thermiques en W, \(G\) le coefficient d'isolation, \(V\) le volume de la maison ou de la pièce à chauffer en m3 et \(\Delta T\) la différence de température entre l'intérieur et l'extérieur de la
+                                maison, en °C.</p>
+                            <p>Le coefficient d'isolation \(G\) est estimé en comparaison d'une série de valeurs de référence :</p>
+                            <ol>
+                                <ul>\(G=1.8\) pour une maison ancienne non isolée type ferme ou mas</ul>
+                                <ul>\(G=1.6\) pour une maison non isolée en briques, pierres maçonnées, parpaings béton</ul>
+                                <ul>\(G=1.4\) pour une maison isolée avec 4cm de polystyrène</ul>
+                                <ul>\(G=1.2\) pour une maison isolée avec 10cm de polystyrène</ul>
+                                <ul>\(G=0.8\) pour une maison type RT2000 en briques Monomur de 37cm par exemple</ul>
+                                <ul>\(G=0.5\) pour une maison type RT2012 en paille porteuse par exemple</ul>
+                            </ol>
+                            <p>Prenons par exemple une maison ancienne de type mas provençal non isolée, de 50m2 au sol et de 2,5m sous plafond. Nous voulons que le poêle de masse maintienne la température intérieure à 20°C lorsqu'il fait -5°C à l'extérieur.
+                                La plupart du temps, une flambée par jour suffit, mais s'il fait -5°C dehors les occupants peuvent faire 2 flambées par jour. Dans ce cas, le calcul des déperditions donne :</p>
+                            <p class="text-center">\(Q=1.8*50*2.5*25=5700W\)</p>
+                            <p>Si on regarde maintenant les déperditions du même volume mais pour une construction récente de type RT2012, on obtient :</p>
+                            <p class="text-center">\(Q=0.5*50*2.5*25=1600W\)</p>
+                            <p>Bien sûr la méthode proposée ici est grossière et un bureau d'étude pourrait obtenir des résultats beaucoup plus précis. Néanmoins, les poêles de masse, à la différence des poêles en fonte traditionnels, peuvent être surdimensionnés
+                                sans aucun problème de rendement. En effet, un poêle en fonte surdimensionné va devoir brûler au ralenti la très grande majorité du temps pour ne pas surchauffer l'habitation. Or, au ralenti les rendements chutent et les
+                                conduites s'encrassent. Avec les poêles de masse cette situation n'arrive jamais car la flambée est toujours vive. On régule la restitution de chaleur en espaçant plus ou moins les flambées : par temps d'hiver normal une
+                                flambée par jour suffit, en automne un flambée tous les deux jours peut aussi suffire et lors de froids plus intenses on passe à deux flambées par jour ou plus. Au delà de 3 ou 4 flambées par jour on atteint la limite de
+                                restitution de chaleur pour un poêle de masse. Il n'arrive plus a récupérer la chaleur et les rendements diminuent.</p>
+                            <h2>
+                <a name="puissance"></a>La puissance des Batchrockets</h2>
+                            <hr>
+                            <div class="container col-sm-12">
+                                <p>La quantité de bois que peut brûler un Batchrocket en une flambée est dictée par le volume du foyer. Plus le diamètre de la cheminée interne est important, plus le foyer peut accueillir une quantité importante de bois,
+                                    donc plus le poêle est puissant.</p>
+                                <table class="table table-bordered text-center">
+
+                                    <thead>
+                                        <tr>
+                                            <th class='text-left'>Diamètre de la cheminée interne (mm)</th>
+                                            <th class='text-center'>125</th>
+                                            <th class='text-center'>140</th>
+                                            <th class='text-center'>150</th>
+                                            <th class='text-center'>180</th>
+                                            <th class='text-center'>200</th>
+                                            <th class='text-center'>230</th>
+                                            <th class='text-center'>250</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class='text-left'>
+                                                <strong>Quantité de bois par flambée (kg)</strong>
+                                            </td>
+                                            <td>3,5</td>
+                                            <td>4,9</td>
+                                            <td>6,0</td>
+                                            <td>10,4</td>
+                                            <td>14,2</td>
+                                            <td>21,6</td>
+                                            <td>27,8</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <th class='text-center' colspan="7">Puissance moyenne (W)</th>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-left'>
+                                                <strong>En considérant 1 flambée par jour</strong>
+                                            </td>
+                                            <td>500</td>
+                                            <td>800</td>
+                                            <td>900</td>
+                                            <td>1600</td>
+                                            <td>2200</td>
+                                            <td>3300</td>
+                                            <td>4300</td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-left'>
+                                                <strong>En considérant 2 flambées par jour</strong>
+                                            </td>
+                                            <td>1100</td>
+                                            <td>1500</td>
+                                            <td>1800</td>
+                                            <td>3200</td>
+                                            <td>4400</td>
+                                            <td>6700</td>
+                                            <td>8600</td>
+                                        </tr>
+                                        <tr>
+                                            <td class='text-left'>
+                                                <strong>En considérant 3 flambées par jour</strong>
+                                            </td>
+                                            <td>2200</td>
+                                            <td>3000</td>
+                                            <td>3700</td>
+                                            <td>6400</td>
+                                            <td>8800</td>
+                                            <td>13300</td>
+                                            <td>17100</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Reprenons nos deux exemples :
+                                    <p/>
+                                    <p>Pour chauffer le mas provencal avec les critères précédents, il faudrait un Batchrocket dont le diamètre de la cheminée interne mesure 230 mm. S'il fait -5°C à l'extérieur, les occupants devront brûler deux flambées
+                                        soit \(2*21.6=43 kg\) de bois sec par jour pour maintenir une température intérieure supérieure à 20°C.</p>
+
+                                    <p>Si on revient sur la construction récente de type RT2012, il faut alors un Batchrocket dont le diamètre de la cheminée interne mesure 150 mm. S'il fait -5°C à l'extérieur, les occupants devront brûler deux flambées
+                                        soit \(2*6.0=12 kg\) de bois sec par jour pour maintenir une température intérieure supérieure à 20°C.</p>
+
+                            </div>
+                            <h2>
+                <a name="puissance2"></a>La puissance des rocket stoves</h2>
+                            <hr>
+                            <p>Les Batchrockets ont été développés pour chauffer des volumes plus importants ou moins bien isolés en gardant les caractéristiques de rendement des rocket stoves. Comme expliqué dans l'article <a href="./batchrocket.html#rocket_stove">Le Batchrocket > Les limites du Rocket stove</a>, les Batchrockets sont environ <strong>3,5 fois plus puissants</strong> que les Rocket Stoves à diamètre de cheminée interne équivalent.</p>
+                            <p>Cela ne signifie pas que les Rocket Stoves ne doivent pas être utilisés, mais qu'<strong>il ne faut en construire que pour des petits volumes ou des maisons très bien isolées</strong>. Il est aussi impératif de prévoir un clapet d'obstruction juste avant la cheminée externe et un autre clapet pour fermer le foyer après la flambée.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="navigation-box">
+                        <h2>Navigation</h2>
+                        <div id="navigation">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="level1">
+                                    <a href="./index.html">Accueil</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./poeles_de_masse.html">Les poêles de masse</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket.html">Le Batchrocket</a>
+                                </li>
+                                <li class="level2 active">
+                                    <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_cloche.html">Les cloches</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_realisations.html">Nos réalisations</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./SST.html">Les SST</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./etat_lieux.html">Un état des lieux</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./solarduino.html">Le solarduino</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./logiciel.html">Un logiciel de dimensionnement</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./a_propos.html">À propos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='footer'>
+        <div id='footer-inner'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='footer-text'>
+                            Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" style="border-width:0;" src="./assets/images/88x31.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
