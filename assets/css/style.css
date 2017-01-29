@@ -310,7 +310,7 @@ a.ref {
   margin-top: 10px;
   padding-left: 290px;
   padding-top: 15px;
-  background: url(images/logo_uzume2.png) no-repeat;
+  background: url(../images/logo_uzume2.png) no-repeat;
 }
 @media only screen and (max-width: 590px) {
   .logo {
