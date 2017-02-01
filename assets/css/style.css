@@ -175,7 +175,7 @@ span.FootOuter:hover .HoverFoot {
 }
 body {
   /* Background pattern from subtlepatterns.com */
-  background-image: url(../images/congruent_pentagon.png);
+  background-image: url(../img/congruent_pentagon.png);
 }
 .shadow-box {
   background-color: rgba(255, 255, 255, 0.95);
@@ -310,7 +310,7 @@ a.ref {
   margin-top: 10px;
   padding-left: 290px;
   padding-top: 15px;
-  background: url(../images/logo_uzume2.png) no-repeat;
+  background: url(../img/logo_uzume2.png) no-repeat;
 }
 @media only screen and (max-width: 590px) {
   .logo {

@@ -2,149 +2,153 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>
-    Le solaire thermique
-  </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
-  <link rel='icon' type='image/x-icon' href='./assets/images/favicon.png'>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Le solaire thermique
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
+    <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
-  <script type="text/javascript" src="./assets/js/jquery.js"></script>
-  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
   TODO : make the photo-gallery.js work properly-->
-  <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
-  <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
-  <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
+    <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
 </head>
 
 <body>
-  <div id="warning">
-    <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
-  </div>
-  <div id="wrap">
-    <div id='masthead'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div class='masthead-inner'>
-              <ul class='list-unstyled' id='top-menu'>
-                <li class=''>
-                  <a class='' href='./index.html'>Accueil</a>
-                </li>
-                <li class='active'>
-                  <a class='active' href="./poeles_de_masse.html">Les poêles de masse</a>
-                </li>
-                <li>
-                  <a href="./solaire_thermique.html">Le solaire thermique</a>
-                </li>
-                <li class=''>
-                  <a class='' href='./a_propos.html'>À propos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="warning">
+        <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
     </div>
-    <div class="container" id="main">
-      <div class="row">
-
-        <div class="col-sm-10">
-          <div class="shadow-box">
-            <div class="title-box">
-              <h2>Les Poêles de masse</h2>
+    <div id="wrap">
+        <div id='masthead'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='masthead-inner'>
+                            <ul class='list-unstyled' id='top-menu'>
+                                <li class=''>
+                                    <a class='' href='./index.html'>Accueil</a>
+                                </li>
+                                <li class='active'>
+                                    <a class='active' href="./poeles_de_masse.html">Les poêles de masse</a>
+                                </li>
+                                <li>
+                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class=''>
+                                    <a class='' href='./a_propos.html'>À propos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content-box">
-              <h2>Plan</h2>
-              <div id="TOC">
-                <ol>
-                  <li><a href="#pk">Pourquoi les poêles de masse ?</a></li>
-                  <li><a href="#origines">Origines</a></li>
-                </ol>
-              </div>
-              <h2>
+        </div>
+        <div class="container" id="main">
+            <div class="row">
+
+                <div class="col-sm-10">
+                    <div class="shadow-box">
+                        <div class="title-box">
+                            <h2>Les Poêles de masse</h2>
+                        </div>
+                        <div class="content-box">
+                            <h2>Plan</h2>
+                            <div id="TOC">
+                                <ol>
+                                    <li><a href="#pk">Pourquoi les poêles de masse ?</a></li>
+                                    <li><a href="#origines">Origines</a></li>
+                                </ol>
+                            </div>
+                            <h2>
                 <a name="pk"></a>Pourquoi les poêles de masse ?</h2>
-              <hr>
-              <!-- <p>conso bois; chauffage radiatif; bois buche</p> -->
+                            <hr>
+                            <!-- <p>conso bois; chauffage radiatif; bois buche</p> -->
 
-              <h2>
+                            <h2>
                 <a name="origines"></a>Origines</h2>
-              <hr>
-              <div class="col-sm-12">
-                  <img src="./assets/images/poeles_de_masse/poele_de_masse_baviere_1200.jpg" class="img-responsive">
-              </div>
-              <p class="subtitle">Image : Reconstruction d'un poêle de masse datant du 13ème siècle en Bavière.</br>Source : <a href="http://furnologia.de/bibliothek/artikel/hinterm-ofen-ist-mit-wohl-zum-einsatz-von-keramik-im-mittelalterlichen-kachelofenbau/">http://furnologia.de/bibliothek/artikel/hinterm-ofen-ist-mit-wohl-zum-einsatz-von-keramik-im-mittelalterlichen-kachelofenbau/</a></p>
+                            <hr>
+                            <div class="col-sm-12">
+                                <img src="./assets/img/poeles_de_masse/poele_de_masse_baviere_1200.jpg" class="img-responsive">
+                            </div>
+                            <p class="subtitle">Image : Reconstruction d'un poêle de masse datant du 13ème siècle en Bavière.</br>Source : <a href="http://furnologia.de/bibliothek/artikel/hinterm-ofen-ist-mit-wohl-zum-einsatz-von-keramik-im-mittelalterlichen-kachelofenbau/">http://furnologia.de/bibliothek/artikel/hinterm-ofen-ist-mit-wohl-zum-einsatz-von-keramik-im-mittelalterlichen-kachelofenbau/</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="navigation-box">
+                        <h2>Navigation</h2>
+                        <div id="navigation">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="level1">
+                                    <a href="./index.html">Accueil</a>
+                                </li>
+                                <li class="level1 active">
+                                    <a href="./poeles_de_mass.html">Les poêles de masse</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket.html">Le Batchrocket</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_cloche.html">Les cloches</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_realisations.html">Nos réalisations</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./fabrication_adobes.html">La fabrication d'adobes</a>
+                                </li>
+                                </li>
+                                <li class="level1">
+                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./SST.html">Les SST</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./etat_lieux.html">Un état des lieux</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./solarduino.html">Le solarduino</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./logiciel.html">Un logiciel de dimensionnement</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./a_propos.html">À propos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-sm-2">
-          <div class="navigation-box">
-            <h2>Navigation</h2>
-            <div id="navigation">
-              <ul class="nav nav-pills nav-stacked">
-                <li class="level1">
-                  <a href="./index.html">Accueil</a>
-                </li>
-                <li class="level1 active">
-                  <a href="./poeles_de_mass.html">Les poêles de masse</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket.html">Le Batchrocket</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_cloche.html">Les cloches</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_realisations.html">Nos réalisations</a>
-                </li>
-                <li class="level1">
-                  <a href="./solaire_thermique.html">Le solaire thermique</a>
-                </li>
-                <li class="level2">
-                  <a href="./SST.html">Les SST</a>
-                </li>
-                <li class="level2">
-                  <a href="./etat_lieux.html">Un état des lieux</a>
-                </li>
-                <li class="level2">
-                  <a href="./solarduino.html">Le solarduino</a>
-                </li>
-                <li class="level2">
-                  <a href="./logiciel.html">Un logiciel de dimensionnement</a>
-                </li>
-                <li class="level1">
-                  <a href="./a_propos.html">À propos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div id='footer'>
-    <div id='footer-inner'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div class='footer-text'>
-              Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
-              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                <img alt="Creative Commons License" style="border-width:0;" src="./assets/images/88x31.png" />
-              </a>
+    <div id='footer'>
+        <div id='footer-inner'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='footer-text'>
+                            Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" style="border-width:0;" src="./assets/img/88x31.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
 </body>
 
