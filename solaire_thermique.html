@@ -2,197 +2,203 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <title>
-    Le solaire thermique
-  </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
-  <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>
+        Le solaire thermique
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
+    <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
-  <script type="text/javascript" src="./assets/js/jquery.js"></script>
-  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-  <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
   TODO : make the photo-gallery.js work properly-->
-  <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
-  <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
-  <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
+    <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
+    <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
 </head>
 
 <body>
-  <div id="warning">
-    <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
-  </div>
-  <div id="wrap">
-    <div id='masthead'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div class='masthead-inner'>
-              <ul class='list-unstyled' id='top-menu'>
-                <li class=''>
-                  <a class='' href='./index.html'>Accueil</a>
-                </li>
-              <li class=''>
-                <a class='' href="./poeles_de_masse.html">Les poêles de masse</a>
-              </li>
-                <li class='active'>
-                  <a class='active' href="./solaire_thermique.html">Le solaire thermique</a>
-                </li>
-                <li class=''>
-                  <a class='' href='./a_propos.html'>À propos</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="warning">
+        <p>Avertissement : Le site est en cours de construction. Il sera complété sous peu.</p>
     </div>
-    <div class="container" id="main">
-      <div class="row">
-
-        <div class="col-sm-10">
-          <div class="shadow-box">
-            <div class="title-box">
-              <h2>Les Systèmes Solaires Thermiques</h2>
-            </div>
-            <div class="content-box">
-              <h2>Plan</h2>
-              <div id="TOC">
-                <ol>
-                  <li><a href="#pk">Pourquoi le solaire thermique ?</a></li>
-                  <li><a href="#actions">Nos actions</a></li>
-                </ol>
-              </div>
-              <h2>
-                <a name="pk"></a>Pourquoi le solaire thermique ?</h2>
-              <hr>
-              <p>Les Systèmes Solaires Thermiques (SST) ont beaucoup d'atouts :
-                <ul>
-                  <li>ils répondent à un besoin vital sous nos latitude : le chauffage ;</li>
-                  <li>ils sont assez simples pour être auto-construits et entretenus par leur utilisateurs ;</li>
-                  <li>ils récupérent une énergie gratuite, abondante, non-polluante et pourtant sous-utilisée ;</li>
-                  <li>ils utilisent des matériaux basiques (verre, métal, isolant, peinture) voire même des matériaux de récupération ;</li>
-                  <li>ils restent relativement peu chers en auto-construction (2000 à 10 000€) par rapport aux énergies produites (jusqu'à 20 MWh)<a class="ref" href="#notes">[1]</a>.</li>
-                </ul>
-              </p>
-
-              <h2>
-                <a name="actions"></a>Nos actions</h2>
-              <hr>
-                <ol>
-                  <li>Pour arriver à ce constat, nous avons commencé par comprendre le principe de fonctionnement et les techniques de construction utilisés par les SST actuels. Un résumé de ce travail est donné dans l'onglet "<a href="./SST.html">Les SST</a>".</li>
-                <li>Nous avons ensuite essayé de comprendre l'état et l'évolution de la filière solaire thermique en France et par rapport au reste de l'Europe. Beaucoup d'interrogations s'enchaînent : <ul>
-                  <li>Comment a évolué l'utilisation des SST ces dernières années ?</li>
-                  <li>Pourquoi la filière est-elle si peu reconnue, au point qu'on confond régulièrement solaire photovoltaïque et solaire thermique ?</li>
-                  <li>Pourquoi l'<a class="ref" href="#references"> ADEME (2015)</a> dans son rapport "Vers un mix électrique 100% renouvelable en 2050", ne mentionne pas les SST ?</li>
-                </ul>
-                Un résumé de ce travail est donné dans l'onglet "<a href="./etat_lieux.html">Un état des lieux</a>".</li>
-                <li>Il est apparu que les SST actuels sont basés sur des régulations et des logiciels de dimensionnement trop coûteux par rapport à la situation économique de ceux qui souffrent du froid <a class="ref" href="#references">(ADEME, 2013 p. 46)</a>. Nous avons donc décidé de construire une régulation open-source, dont une notice explicative est donnée dans l'onglet "<a href="./solarduino.html">Le Solarduino</a>".</li>
-                <li>Nous sommes aussi entrain de créer un logiciel de dimensionnement gratuit et open-source. Un résumé du travail en cours est donné dans l'onglet "<a href="./logiciel.html">Un logiciel de dimensionnement</a>".</li>
-              </ol>
-              <hr>
-              <h3>
-                <a name="notes"></a>Notes</h3>
-              <div class="EndFoot">
-                <ol>
-                    <li>Pour avoir une idée des énergies en jeu, voir <a href="http://www.manicore.com/documentation/esclaves.html">ici</a> la comparaison temps de travail humain vs. kWh de Jean-Marc Jancovici.</li>
-                </ol>
-              </div>
-              <h3>
-                <a name="references"></a>Références</h3>
-              <div class="EndFoot">
-                <ol>
-                  <li>ADEME, 2013.
-                    <em>Chiffres clés du bâtiment</em>. Disponible <a href="http://www.ademe.fr/sites/default/files/assets/documents/chiffres-cles-batiment-edition-2013-8123.pdf">ici</a>.</li>
-                  <li>ADEME, 2015.
-                    <em>Vers un mix électrique 100% renouvelable en 2050</em>. Disponible <a href="http://www.ademe.fr/sites/default/files/assets/documents/rapport100enr_comite.pdf">ici</a>.</li>
-                </ol>
-
-              </div>
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
+    <div id="wrap">
+        <div id='masthead'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='masthead-inner'>
+                            <ul class='list-unstyled' id='top-menu'>
+                                <li class=''>
+                                    <a class='' href='./index.html'>Accueil</a>
+                                </li>
+                                <li class=''>
+                                    <a class='' href="./poeles_de_masse.html">Les poêles de masse</a>
+                                </li>
+                                <li class='active'>
+                                    <a class='active' href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class=''>
+                                    <a class='' href='./a_propos.html'>À propos</a>
+                                </li>
+                                <li class=''>
+                                    <a class='' href='./contact.html'>Contact</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="col-sm-2">
-          <div class="navigation-box">
-            <h2>Navigation</h2>
-            <div id="navigation">
-              <ul class="nav nav-pills nav-stacked">
-                <li class="level1">
-                  <a href="./index.html">Accueil</a>
-                </li>
-                <li class="level1">
-                  <a href="./poeles_de_masse.html">Les poêles de masse</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket.html">Le Batchrocket</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
-                </li>
-                <li class="level2">
-                    <a href="./batchrocket_construction.html">La construction</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_cloche.html">Les cloches</a>
-                </li>
-                <li class="level2">
-                  <a href="./batchrocket_realisations.html">Nos réalisations</a>
-</li><li class="level2">
-    <a href="./fabrication_adobes.html">La fabrication d'adobes</a>
-</li>
-                </li>
-                <li class="level1 active">
-                  <a href="./solaire_thermique.html">Le solaire thermique</a>
-                </li>
-                <li class="level2">
-                  <a href="./SST.html">Les SST</a>
-                </li>
-                <li class="level2">
-                  <a href="./etat_lieux.html">Un état des lieux</a>
-                </li>
-                <li class="level2">
-                  <a href="./solarduino.html">Le solarduino</a>
-                </li>
-                <li class="level2">
-                  <a href="./logiciel.html">Un logiciel de dimensionnement</a>
-                </li>
-                <li class="level1">
-                  <a href="./a_propos.html">À propos</a>
-                </li>
-              </ul>
+        <div class="container" id="main">
+            <div class="row">
+
+                <div class="col-sm-10">
+                    <div class="shadow-box">
+                        <div class="title-box">
+                            <h2>Les Systèmes Solaires Thermiques</h2>
+                        </div>
+                        <div class="content-box">
+                            <h2>Plan</h2>
+                            <div id="TOC">
+                                <ol>
+                                    <li><a href="#pk">Pourquoi le solaire thermique ?</a></li>
+                                    <li><a href="#actions">Nos actions</a></li>
+                                </ol>
+                            </div>
+                            <h2>
+                <a name="pk"></a>Pourquoi le solaire thermique ?</h2>
+                            <hr>
+                            <p>Les Systèmes Solaires Thermiques (SST) ont beaucoup d'atouts :
+                                <ul>
+                                    <li>ils répondent à un besoin vital sous nos latitude : le chauffage ;</li>
+                                    <li>ils sont assez simples pour être auto-construits et entretenus par leur utilisateurs ;</li>
+                                    <li>ils récupérent une énergie gratuite, abondante, non-polluante et pourtant sous-utilisée ;</li>
+                                    <li>ils utilisent des matériaux basiques (verre, métal, isolant, peinture) voire même des matériaux de récupération ;</li>
+                                    <li>ils restent relativement peu chers en auto-construction (2000 à 10 000€) par rapport aux énergies produites (jusqu'à 20 MWh)<a class="ref" href="#notes">[1]</a>.</li>
+                                </ul>
+                            </p>
+
+                            <h2>
+                <a name="actions"></a>Nos actions</h2>
+                            <hr>
+                            <ol>
+                                <li>Pour arriver à ce constat, nous avons commencé par comprendre le principe de fonctionnement et les techniques de construction utilisés par les SST actuels. Un résumé de ce travail est donné dans l'onglet "<a href="./SST.html">Les SST</a>".</li>
+                                <li>Nous avons ensuite essayé de comprendre l'état et l'évolution de la filière solaire thermique en France et par rapport au reste de l'Europe. Beaucoup d'interrogations s'enchaînent :
+                                    <ul>
+                                        <li>Comment a évolué l'utilisation des SST ces dernières années ?</li>
+                                        <li>Pourquoi la filière est-elle si peu reconnue, au point qu'on confond régulièrement solaire photovoltaïque et solaire thermique ?</li>
+                                        <li>Pourquoi l'<a class="ref" href="#references"> ADEME (2015)</a> dans son rapport "Vers un mix électrique 100% renouvelable en 2050", ne mentionne pas les SST ?</li>
+                                    </ul>
+                                    Un résumé de ce travail est donné dans l'onglet "<a href="./etat_lieux.html">Un état des lieux</a>".</li>
+                                <li>Il est apparu que les SST actuels sont basés sur des régulations et des logiciels de dimensionnement trop coûteux par rapport à la situation économique de ceux qui souffrent du froid <a class="ref" href="#references">(ADEME, 2013 p. 46)</a>.
+                                    Nous avons donc décidé de construire une régulation open-source, dont une notice explicative est donnée dans l'onglet "<a href="./solarduino.html">Le Solarduino</a>".</li>
+                                <li>Nous sommes aussi entrain de créer un logiciel de dimensionnement gratuit et open-source. Un résumé du travail en cours est donné dans l'onglet "<a href="./logiciel.html">Un logiciel de dimensionnement</a>".</li>
+                            </ol>
+                            <hr>
+                            <h3>
+                <a name="notes"></a>Notes</h3>
+                            <div class="EndFoot">
+                                <ol>
+                                    <li>Pour avoir une idée des énergies en jeu, voir <a href="http://www.manicore.com/documentation/esclaves.html">ici</a> la comparaison temps de travail humain vs. kWh de Jean-Marc Jancovici.</li>
+                                </ol>
+                            </div>
+                            <h3>
+                <a name="references"></a>Références</h3>
+                            <div class="EndFoot">
+                                <ol>
+                                    <li>ADEME, 2013.
+                                        <em>Chiffres clés du bâtiment</em>. Disponible <a href="http://www.ademe.fr/sites/default/files/assets/documents/chiffres-cles-batiment-edition-2013-8123.pdf">ici</a>.</li>
+                                    <li>ADEME, 2015.
+                                        <em>Vers un mix électrique 100% renouvelable en 2050</em>. Disponible <a href="http://www.ademe.fr/sites/default/files/assets/documents/rapport100enr_comite.pdf">ici</a>.</li>
+                                </ol>
+
+                            </div>
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="navigation-box">
+                        <h2>Navigation</h2>
+                        <div id="navigation">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="level1">
+                                    <a href="./index.html">Accueil</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./poeles_de_masse.html">Les poêles de masse</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket.html">Le Batchrocket</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_construction.html">La construction</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_cloche.html">Les cloches</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./batchrocket_realisations.html">Nos réalisations</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./fabrication_adobes.html">La fabrication d'adobes</a>
+                                </li>
+                                </li>
+                                <li class="level1 active">
+                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./SST.html">Les SST</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./etat_lieux.html">Un état des lieux</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./solarduino.html">Le solarduino</a>
+                                </li>
+                                <li class="level2">
+                                    <a href="./logiciel.html">Un logiciel de dimensionnement</a>
+                                </li>
+                                <li class="level1">
+                                    <a href="./a_propos.html">À propos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <div id='footer'>
-    <div id='footer-inner'>
-      <div class='container'>
-        <div class='row'>
-          <div class='col-sm-12'>
-            <div class='footer-text'>
-              Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
-              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-                <img alt="Creative Commons License" style="border-width:0;" src="./assets/img/88x31.png" />
-              </a>
+    <div id='footer'>
+        <div id='footer-inner'>
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-sm-12'>
+                        <div class='footer-text'>
+                            Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
+                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" style="border-width:0;" src="./assets/img/88x31.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 
 </body>
 
