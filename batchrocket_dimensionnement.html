@@ -13,9 +13,6 @@
     <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
-    <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
     </script>
@@ -76,14 +73,21 @@
                             <h2>
                 <a name="principe"></a>Le principe</h2>
                             <hr>
-                            <p>Le dimensionnement d'un poêle consiste à trouver la taille de poêle adaptée au volume à chauffer : un poêle sur-dimensionné en excès coûtera trop cher, sous-dimensionné il ne permettra pas de chauffer le volume à la température désirée.</p>
-                              <p>On commence par le calcul des déperditions thermiques de la maison ou de la pièce à chauffer. En effet, le poêle de masse va maintenir une température intérieure constante en compensant les pertes
-                                d'énergie vers l'extérieur. Trois facteurs entrent en compte pour le calcul de ces déperditions : la température intérieure par rapport à la température extérieure, l'isolation et le volume total à chauffer. Par exemple,
-                                un plus grand volume à chauffer ou une moins bonne isolation nécessiteront un poêle plus puissant pour maintenir la même température intérieure. Ce n'est donc pas la puissance du poêle qui détermine la quantité de bois à brûler, ce sont ces trois facteurs.
+                            <p>Le dimensionnement d'un poêle consiste à trouver la taille de poêle adaptée au volume à chauffer : un poêle surdimensionné en excès coûtera trop cher, sous-dimensionné il ne permettra pas de chauffer le volume à la température
+                                désirée.</p>
+                            <p>On commence par le calcul des <b>déperditions thermiques</b> de la maison ou de la pièce à chauffer. En effet, le poêle de masse va maintenir une température intérieure constante en compensant les pertes d'énergie vers l'extérieur.
+                                Trois facteurs entrent en compte pour le calcul de ces déperditions :
+                                <ol>
+                                    <li>La température intérieure par rapport à la température extérieure;</li>
+                                    <li>La qualité de l'isolation;</li>
+                                    <li>Le volume total à chauffer.</li>
+                                </ol>
+                                Par exemple, un plus grand volume à chauffer ou une moins bonne isolation nécessiteront un poêle plus puissant pour maintenir la même température intérieure. Ce n'est donc pas la puissance du poêle qui détermine la quantité de bois à brûler, ce sont ces
+                                trois facteurs.
                             </p>
-                            <p>La puissance d'un poêle de masse correspond à la puissance moyenne qu'il dégage sur une période de 24h, en considérant une ou deux flambées par jour et un rendement total (combustion x récupération de la chaleur) de 80%. Pour
+                            <p>La puissance d'un poêle de masse correspond à la puissance moyenne qu'il dégage sur une période de 24h, en considérant une ou deux flambées par jour et un rendement total (combustion x récupération de la chaleur) de 80%. </br>Pour
                                 information, un bon poêle de masse a un rendement total de 80% et un excellent poêle de masse peut monter à 90%.</p>
-                            <p>On choisit ensuite la puissance du poêle en fonction des déperditions du volume à chauffer. La puissance du poêle doit être supérieure aux déperditions. Il est TRÈS important de toujours surdimensionner le poêle de masse.</p>
+                            <p>On choisit ensuite la puissance du poêle en fonction des déperditions du volume à chauffer. <b>La puissance du poêle doit être supérieure aux déperditions</b>. Il est TRÈS important de toujours <b>surdimensionner</b> le poêle de masse.</p>
                             <p></p>
                             <h2>
                 <a name="deperditions"></a>Les déperditions thermiques d'une maison ou d'une pièce</h2>
@@ -107,8 +111,8 @@
                             <p>Si on regarde maintenant les déperditions du même volume mais pour une construction récente de type RT2012, on obtient :</p>
                             <p class="text-center">\(Q=0.5*50*2.5*25=1600W\)</p>
                             <p>Bien sûr la méthode proposée ici est grossière et un bureau d'étude pourrait obtenir des résultats beaucoup plus précis. Néanmoins, les poêles de masse, à la différence des poêles en fonte traditionnels, peuvent être surdimensionnés
-                                sans aucun problème de rendement. En effet, un poêle en fonte surdimensionné va devoir brûler au ralenti la très grande majorité du temps pour ne pas surchauffer l'habitation. Or, au ralenti les rendements chutent et les
-                                conduites s'encrassent. Avec les poêles de masse cette situation n'arrive jamais car la flambée est toujours vive. On régule la restitution de chaleur en espaçant plus ou moins les flambées : par temps d'hiver normal une
+                                sans aucun problème de rendement. </br>En effet, un poêle en fonte surdimensionné va devoir brûler au ralenti la très grande majorité du temps pour ne pas surchauffer l'habitation. Or, au ralenti les rendements chutent, la pollution s'envole et les
+                                conduites s'encrassent. </br>Avec les poêles de masse cette situation n'arrive jamais car la flambée est toujours vive. On régule la restitution de chaleur en espaçant plus ou moins les flambées : par temps d'hiver normal une
                                 flambée par jour suffit, en automne un flambée tous les deux jours peut aussi suffire et lors de froids plus intenses on passe à deux flambées par jour ou plus. Au delà de 3 ou 4 flambées par jour on atteint la limite de
                                 restitution de chaleur pour un poêle de masse. Il n'arrive plus a récupérer la chaleur et les rendements diminuent.</p>
                             <h2>
