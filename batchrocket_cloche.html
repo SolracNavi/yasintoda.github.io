@@ -2,223 +2,243 @@
 <html lang="fr">
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>
-        Le principe des cloches et leur utilisation avec les Batchrockets
-    </title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
-    <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>
+    Le principe des cloches et leur utilisation avec les Batchrockets
+  </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
-    <script type="text/javascript" src="./assets/js/jquery.js"></script>
-    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-    <!-- <script type="text/javascript" src="./assets/photo-gallery.js"></script>
-  TODO : make the photo-gallery.js work properly-->
-    <script type="text/javascript" src="./assets/js/d3.v3.min.js"></script>
-    <script type="text/javascript" src="./assets/js/topojson.v1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/datamaps.world.min.js"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
-    </script>
-    <script type="text/javascript" src="./assets/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
+  </script>
+  <script type="text/javascript" src="./assets/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
-    <div id="wrap">
-        <div id='masthead'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='masthead-inner'>
-                            <ul class='list-unstyled' id='top-menu'>
-                                <li class=''>
-                                    <a class='' href='./index.html'>Accueil</a>
-                                </li>
-                                <li class='active'>
-                                    <a class='active' href="./poeles_de_masse.html">Les poêles de masse</a>
-                                </li>
-                                <li class=''>
-                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
-                                </li>
-                                <li class=''>
-                                    <a class='' href='./a_propos.html'>À propos</a>
-                                </li>
-                                <li class=''>
-                                    <a class='' href='./contact.html'>Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+  <div id="wrap">
+    <div id='masthead'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='masthead-inner'>
+              <ul class='list-unstyled' id='top-menu'>
+                <li class=''>
+                  <a class='' href='./index.html'>Accueil</a>
+                </li>
+                <li class='active'>
+                  <a class='active' href="./poeles_de_masse.html">Les poêles de masse</a>
+                </li>
+                <li class=''>
+                  <a href="./solaire_thermique.html">Le solaire thermique</a>
+                </li>
+                <li class=''>
+                  <a class='' href='./a_propos.html'>À propos</a>
+                </li>
+                <li class=''>
+                  <a class='' href='./contact.html'>Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="container" id="main">
-            <div class="row">
-
-                <div class="col-sm-10">
-                    <div class="shadow-box">
-                        <div class="title-box">
-                            <h2>Le principe des cloches et leur utilisation avec les Batchrockets</h2>
-                        </div>
-                        <div class="content-box">
-                            <h2>Plan</h2>
-                            <div id="TOC">
-                                <ol>
-                                    <li><a href="#principe">Le principe des cloches</a></li>
-                                    <li><a href="#dimensionnement">Le dimensionnement des cloches</a></li>
-                                    <li><a href="#peau">Simple ou double peau ?</a></li>
-                                </ol>
-                            </div>
-                            <h2>
-                <a name="principe"></a>Le principe</h2>
-                            <hr>
-                            <p>Il y a environ 3300 ans, sous la dynastie Shang, les chinois inventèrent le "four dragon" basé sur le principe des cloches.
-                            </p>
-                            <p>
-                                <ul class="row gallery">
-                                    <li class="col-xs-6">
-                                        <img class="img-responsive" src="./assets/img/batchrocket_cloche/chinese_kiln_self_reliant_potter.png">
-                                    </li>
-                                    <li class="col-xs-6">
-                                        <img class="img-responsive" src="./assets/img/batchrocket_cloche/climbing_kiln_Mashiko.jpg">
-                                    </li>
-                                </ul>
-                                <p class="subtitle">À gauche, four à briques chinois fonctionnant sous le principe des cloches; à droite, adaptation de ce type de four au Japon </br>Sources : <a class="ref">The Self-Reliant Potter: Refractories and Kilns, Henrik Norsker, 1987, p. 58; et <a href="https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg">https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg</a></p>
-                                <p>
-                                    <ul class="row gallery">
-                                        <li class="col-xs-6">
-                                            <img class="img-responsive" src="./assets/img/batchrocket_cloche/missouri_masonry_heater_front.png">
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <img class="img-responsive" src="./assets/img/batchrocket_cloche/missouri_masonry_heater_side.png">
-                                        </li>
-                                    </ul>
-                                </p>
-                                <p class="subtitle"></br>Source : Missouri Designed Masonry Stove, The Missouri Department Of Natural Resources, 1987, disponible sur ce <a href="http://dnr.mo.gov/pubs/pub781.pdf">lien</a>.</p>
-                                <p>
-                                    <ul class="row gallery">
-                                        <li class="col-xs-6">
-                                            <img class="img-responsive" src="./assets/img/batchrocket_cloche/smoke_channel_patterns_russian_stove.jpg">
-                                        </li>
-                                        <li class="col-xs-6">
-                                            <img class="img-responsive" src="./assets/img/batchrocket_cloche/roman_hypocaust.jpg">
-                                        </li>
-                                    </ul>
-                                </p>
-                                <p class="subtitle">À gauche, vue schématique du passage des fumées pour différents types de poêles russes. La partie hachurée correspond au coeur de chauffe. À droite, restes d'un hypocauste romain à Chedworth en Angleterre. </br>Sources : The Book of Masonry Stoves, David Lyle, 1984, p. 97 et 76.</p>
-                                <div class="col-sm-12">
-                                    <img class="img-responsive" src="./assets/img/batchrocket_cloche/norwegian_cast_iron_stoves.jpg">
-                                </div>
-                                <p class="subtitle">Schémas de poêles en fonte Norvégiens des années 1800. </br>Source : The Book of Masonry Stoves, David Lyle, 1984, p. 53.</p>
-                                <div class="col-sm-12">
-                                    <img class="img-responsive" src="./assets/img/batchrocket_cloche/double_bell_USSR.jpg">
-                                </div>
-                                <p class="subtitle">Schéma : plan d'un poêle de masse en double cloche, L. A. Semenov, 1950, URSS. </br>Source : The Book of Masonry Stoves, David Lyle, 1984, p. 171.</p>
-                                <h2>
-                <a name="dimensionnement"></a>Le dimensionnement des cloches</h2>
-                                <hr>
-                                <p>sdf</p>
-
-                                <h2>
-                <a name="peau"></a>Simple ou double peau ?</h2>
-                                <hr>
-                                <p>zef</p>
-                                <hr>
-                                <h3>
-                <a name="notes"></a>Notes</h3>
-                                <div class="EndFoot">
-                                    <ol>
-                                        <li>sd.</li>
-                                    </ol>
-                                </div>
-
-                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-body">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="navigation-box">
-                        <h2>Navigation</h2>
-                        <div id="navigation">
-                            <ul class="nav nav-pills nav-stacked">
-                                <li class="level1">
-                                    <a href="./index.html">Accueil</a>
-                                </li>
-                                <li class="level1">
-                                    <a href="./poeles_de_masse.html">Les poêles de masse</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./batchrocket.html">Le Batchrocket</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./batchrocket_construction.html">La construction</a>
-                                </li>
-                                <li class="level2 active">
-                                    <a href="./batchrocket_cloche.html">Les cloches</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./batchrocket_realisations.html">Nos réalisations</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./batchrocket_plans.html">Les plans</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./fabrication_adobes.html">La fabrication d'adobes</a>
-                                </li>
-                                </li>
-                                <li class="level1">
-                                    <a href="./solaire_thermique.html">Le solaire thermique</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./SST.html">Les SST</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./etat_lieux.html">Un état des lieux</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./solarduino.html">Le solarduino</a>
-                                </li>
-                                <li class="level2">
-                                    <a href="./logiciel.html">Un logiciel de dimensionnement</a>
-                                </li>
-                                <li class="level1">
-                                    <a href="./a_propos.html">À propos</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <div id='footer'>
-        <div id='footer-inner'>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-sm-12'>
-                        <div class='footer-text'>
-                            Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
-                            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+    <div class="container" id="main">
+      <div class="row">
+
+        <div class="col-sm-10">
+          <div class="shadow-box">
+            <div class="title-box">
+              <h2>Le principe des cloches et leur utilisation avec les Batchrockets</h2>
+            </div>
+            <div class="content-box">
+              <h2>Plan</h2>
+              <div id="TOC">
+                <ol>
+                  <li><a href="#principe">Le principe des cloches</a></li>
+                  <li><a href="#dimensionnement">Le dimensionnement des cloches</a></li>
+                  <li><a href="#peau">Simple ou double peau ?</a></li>
+                </ol>
+              </div>
+              <h2>
+                <a name="principe"></a>Le principe</h2>
+              <hr>
+              <p>Il y a environ 3300 ans, sous la dynastie Shang, les chinois inventèrent le "four dragon" basé sur le principe des cloches. C'est ce même principe que nous réutilisons dans nos poêles de masse pour extraire la chaleur des fumées issues de
+                la combustion du bois.
+              </p>
+              <div class="col-sm-12">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/chinese_kiln_self_reliant_potter.png">
+              </div>
+              <p class="subtitle">Schéma d'un four "dragon" de potier chinois fonctionnant sous le principe des cloches;</br>Source : <a class="ref">The Self-Reliant Potter: Refractories and Kilns, Henrik Norsker, 1987, p. 58;</a></p>
+
+
+              <p>Le principe des cloche se conçoit par analogie avec l'eau : dans un lac, l'eau coule très lentement. Ceci lui laisse le temps de se stratifier par couche de température. L'eau la plus froide est en bas, donc si avec un tuyau on pompait l'eau
+                du fond du lac, on obtiendrait l'eau la plus froide.</p>
+              <p>A contrario, dans un torrent le débit est plus rapide et le chemin plus tortueux : tout se mélange et on ne peut extraire qu'une eau à une température moyenne.</p>
+              <p>L'idée des cloches est de faire entrer les gaz rapides et turbulent issus du coeur de chauffe (l'eau du torrent) dans un grand espace (le lac) de sorte que les gaz ralentissent suffisament pour qu'ils se stratifient naturellement par couche
+                de température : les gaz chauds en haut et les gaz froids en bas. </p>
+              <p>Ainsi, en créant une ouverture tout en bas de la cloche, on récupère toujours les gaz les plus froids. Ce sont des gaz "d'échappement" qui seront évacués par la cheminée.</p>
+              <p>
+                <ul class="row gallery">
+                  <li class="col-xs-6">
+                    <img class="img-responsive" src="./assets/img/batchrocket/down-draught_kiln_self_reliant_potter.png">
+                  </li>
+                  <li class="col-xs-6">
+                    <img class="img-responsive" src="./assets/img/batchrocket_cloche/climbing_kiln_Mashiko.jpg">
+                  </li>
+                </ul>
+              </p>
+              <p class="subtitle">À gauche, schéma d'un four à briques en simple cloche; à droite, four dragon réalisé au Japon avec des cloches en série.</br>Sources : <a class="ref">The Self-Reliant Potter: Refractories and Kilns, Henrik Norsker, 1987, p. 50.</a> et <a href="https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg">https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg</a></p>
+              <p>Les gaz qui arrivent dans une cloche sont donc triés naturellement en fonction de leur température. Les gaz les plus chauds vont donc stagner au sommet de la cloche. Étant en contact avec les briques, les gaz vont transmettre leur chaleur.
+                Seulement, plus les gaz donnent leur chaleur, plus ils se refroidissent eux-mêmes, et plus ils descendent dans la cloche jusqu'à arriver en bas au niveau de l'évacuation.
+              </p>
+              <p>Ainsi, plus les gaz sont en contact avec une surface importante de briques, plus ils seront froids en sortie. On peut soit avoir toute cette surface dans une unique cloche, soit dans une série de petites cloches comme pour le four "dragon".</p>
+              <h2>
+                <a name="autres_systemes"></a>Les autres systèmes</h2>
+              <hr>
+              <p>Un système très classique en Europe de l'Ouest est de faire passer les gaz dans une série de chicanes empilées les unes sur les autres.</p>
+                <p>
+                  <ul class="row gallery">
+                    <li class="col-xs-6">
+                      <img class="img-responsive" src="./assets/img/batchrocket_cloche/missouri_masonry_heater_front.png">
+                    </li>
+                    <li class="col-xs-6">
+                      <img class="img-responsive" src="./assets/img/batchrocket_cloche/missouri_masonry_heater_side.png">
+                    </li>
+                  </ul>
+                </p>
+                <p class="subtitle">
+                  </br>Source : Missouri Designed Masonry Stove, The Missouri Department Of Natural Resources, 1987, disponible sur ce <a href="http://dnr.mo.gov/pubs/pub781.pdf">lien</a>.</p>
+                <p>
+                  <ul class="row gallery">
+                    <li class="col-xs-6">
+                      <img class="img-responsive" src="./assets/img/batchrocket_cloche/smoke_channel_patterns_russian_stove.jpg">
+                    </li>
+                    <li class="col-xs-6">
+                      <img class="img-responsive" src="./assets/img/batchrocket_cloche/roman_hypocaust.jpg">
+                    </li>
+                  </ul>
+                </p>
+                <p class="subtitle">À gauche, vue schématique du passage des fumées pour différents types de poêles russes. La partie hachurée correspond au coeur de chauffe. À droite, restes d'un hypocauste romain à Chedworth en Angleterre. </br>Sources : The Book of Masonry
+                  Stoves, David Lyle, 1984, p. 97 et 76.</p>
+                <div class="col-sm-12">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/norwegian_cast_iron_stoves.jpg">
+                </div>
+                <p class="subtitle">Schémas de poêles en fonte Norvégiens des années 1800. </br>Source : The Book of Masonry Stoves, David Lyle, 1984, p. 53.</p>
+                <div class="col-sm-12">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/double_bell_USSR.jpg">
+                </div>
+                <p class="subtitle">Schéma : plan d'un poêle de masse en double cloche, L. A. Semenov, 1950, URSS. </br>Source : The Book of Masonry Stoves, David Lyle, 1984, p. 171.</p>
+                <h2>
+                <a name="dimensionnement"></a>Le dimensionnement des cloches</h2>
+                <hr>
+                <p>sdf</p>
+
+                <h2>
+                <a name="peau"></a>Simple ou double peau ?</h2>
+                <hr>
+                <p>zef</p>
+                <hr>
+                <h3>
+                <a name="notes"></a>Notes</h3>
+                <div class="EndFoot">
+                  <ol>
+                    <li>sd.</li>
+                  </ol>
+                </div>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="navigation-box">
+            <h2>Navigation</h2>
+            <div id="navigation">
+              <ul class="nav nav-pills nav-stacked">
+                <li class="level1">
+                  <a href="./index.html">Accueil</a>
+                </li>
+                <li class="level1">
+                  <a href="./poeles_de_masse.html">Les poêles de masse</a>
+                </li>
+                <li class="level2">
+                  <a href="./batchrocket.html">Le Batchrocket</a>
+                </li>
+                <li class="level2">
+                  <a href="./batchrocket_dimensionnement.html">Le dimensionnement</a>
+                </li>
+                <li class="level2">
+                  <a href="./batchrocket_construction.html">La construction</a>
+                </li>
+                <li class="level2 active">
+                  <a href="./batchrocket_cloche.html">Les cloches</a>
+                </li>
+                <li class="level2">
+                  <a href="./batchrocket_realisations.html">Nos réalisations</a>
+                </li>
+                <li class="level2">
+                  <a href="./batchrocket_plans.html">Les plans</a>
+                </li>
+                <li class="level2">
+                  <a href="./fabrication_adobes.html">La fabrication d'adobes</a>
+                </li>
+                </li>
+                <li class="level1">
+                  <a href="./solaire_thermique.html">Le solaire thermique</a>
+                </li>
+                <li class="level2">
+                  <a href="./SST.html">Les SST</a>
+                </li>
+                <li class="level2">
+                  <a href="./etat_lieux.html">Un état des lieux</a>
+                </li>
+                <li class="level2">
+                  <a href="./solarduino.html">Le solarduino</a>
+                </li>
+                <li class="level2">
+                  <a href="./logiciel.html">Un logiciel de dimensionnement</a>
+                </li>
+                <li class="level1">
+                  <a href="./a_propos.html">À propos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id='footer'>
+    <div id='footer-inner'>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-sm-12'>
+            <div class='footer-text'>
+              Ce site est géré par Uzume. Les textes sont écrits par Yasin GACH, sauf mention contraire.
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
                                 <img alt="Creative Commons License" style="border-width:0;" src="./assets/img/88x31.png" />
                             </a>
-                        </div>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
 </body>
 
