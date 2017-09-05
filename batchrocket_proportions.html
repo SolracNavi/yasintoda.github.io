@@ -13,11 +13,6 @@
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
-  </script>
-  <script type="text/javascript" src="./assets/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -64,6 +59,7 @@
                   <li><a href="#intro">Introduction</a></li>
                   <li><a href="#principe">Le principe</a></li>
                   <li><a href="#dimensions_batchrocket">Les dimensions des Batchrockets</a></li>
+                  <li><a href="#cheminees">Les cheminées d'évacuation</a></li>
                 </ol>
               </div>
               <h2>
@@ -118,7 +114,7 @@
               </p>
               <p class="subtitle">Vues 3D de l'arrivée d'air secondaire.</p>
               <p>
-              L'arrivée d'air secondaire est posée dans une "tranchée" en bas du foyer, de sorte que le dessus de la partie horizontale de l'arrivée d'air secondaire corresponde au sol du foyer.</p>
+                L'arrivée d'air secondaire est posée dans une "tranchée" en bas du foyer, de sorte que le dessus de la partie horizontale de l'arrivée d'air secondaire corresponde au sol du foyer.</p>
               <h2>
 
                 <a name="dimensions_batchrocket"></a>Les dimensions des Batchrockets</h2>
@@ -314,6 +310,41 @@
               </div>
               <p>* : SIA signifie Surface Interne Absorbante.</p>
               <p>La feuille de calcul complète avec les détails des formules utilisées est disponible ici : <a href="./assets/docs/Batchrocket_dimensions_version_simplifiee.ods">Batchrocket_dimensions_version_simplifiee.ods</a></p>
+              <h2>
+                <a name="cheminees"></a>Les cheminées d'évacuation</h2>
+              <hr>
+              <h3>La théorie</h3>
+              <p>Pour les Rocket Stoves, la tradition voulait qu'on utilise des cheminées d'évacuation du même diamètre que celui de la cheminée interne. C'est une règle de base précieuse pour les rockets mais insuffisante pour les Batchrockets.</p>
+              <p>L'objectif de la cheminée d'évacuation est de créer un <b>tirage</b> suffisant pour que les gaz y passent et sortent de la maison. Le tirage est une aspiration créée par une différence de pression négative (une dépression) entre la sortie
+                et l'entrée de la cheminée d'évacuation. </p>
+              <p>Si la cheminée d'évacuation ne produit pas une dépression suffisante, les gaz préfèreront prendre un chemin plus naturel pour eux.. celui de la pièce à vivre et des interstices dans le toit !
+              </p>
+              <p> Les facteurs de base qui influencent le tirage sont :
+                <ul>
+                  <li>La différence de <b>hauteur</b> entre le bas et le haut de la cheminée d'évacuation.
+                    <p>En effet, de la même manière que plus on descend sous l'eau plus la pression augmente, plus on monte dans l'air plus la pression diminue. On perd environ 12 Pa de pression par m de hauteur.</p>
+                  </li>
+                  <li>La <b>température</b> des gaz dans la cheminée d'évacuation.
+                    <p>Les gaz chauds, plus légers, montent. Telle est la loi. L'air étant visqueux, il va coller aux autres molécules d'air et les entrainer dans son sillage. Donc plus les gaz entrant dans la cheminée d'évacuation sont chauds, plus ils créeront du tirage.</p>
+                  </li>
+                  <li>Les <b>"pertes de charge"</b> (frottements, dévoiements) sur le chemin des gaz.
+                    <p>On constate tous les jours le même phénomène avec les conduite d'eau. Plus le conduit est petit, tordu, pincé, moins le débit en sortie est fort.</p>
+                  </li>
+                  <li>Les <b>défauts d'étanchéité dans la toiture</b> et la différence de hauteur entre le sommet de la toiture et la sortie de la cheminée d'évacuation.
+                    <p>Une maison dont le toit est percé représente une cheminée gigantesque. Elle concurrence la cheminée d'évacuation et peut même, dans certains cas, la vaincre. Dans ce cas on dit que le poêle <b>refoule</b>. c'est que les gaz sont aspirés par ces deux "cheminées" en même temps, et que la cheminée/maison l'aspire plus fortement. </br>Pour s'en convaincre, il suffit d'ouvrir un velux pendant qu'un poêle fonctionne pour le voir ralentir et parfois même refouler.</p>
+                  </li>
+                </ul>
+              </p>
+              <h3>La pratique</h3> En clair, une cheminée d'évacuation idéale est :
+              <ul>
+                <li>Haute d'au moins 4-5 m.</li>
+                <li>Isolée au moins sur la partie au dessus du toit. Les gaz qui y rentrent doivent être suffisament chauds.</li>
+                <li>Lisse à l'intérieure et de section suffisament importante.</li>
+                <li>Plus haute que le sommet du toit d'au moins 40 cm. Le toit doit être suffisament étanche de l'intérieur pour ne pas concurrencer la cheminée d'évacuation. </li>
+              </ul>
+              <p>Pour gérer toutes ces contraintes prevoyez impérativement un <b>clapet de démarrage</b> (aussi appelé "starter" ou "by-pass"). Celui-ci va permettre d'envoyer des gaz chauds directement dans la cheminée d'évacuation au démarrage du poêle. On réchauffe ainsi pendant 5-10 minutes la cheminée pour créer un bon tirage puis on ferme le clapet.</p>
+              <p>La cheminée d'évacuation, si elle n'est pas isolée, doit être prise en compte dans le dimensionnement de la cloche. Voir l'article <a href="./batchrocket_cloche.html#dimensionnement">correspondant</a> pour plus de détails.</p>
+              <p>Dans tous les cas, une cheminée d'évacuation de diamètre 180 ou 200 mm suffit. Pour les plus petits poêles (Batchrocket de diam. 140 mm), une cheminée de diamètre 150 mm peut suffire.</p>
             </div>
           </div>
         </div>
