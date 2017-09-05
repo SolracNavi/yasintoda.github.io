@@ -133,25 +133,25 @@
                                         <tr>
                                             <th scope="row">SOLARDUINO</th>
                                             <td>
-                                                <strong>85 €</strong>
+                                                <b>85 €</b>
                                             </td>
                                             <td>
-                                                <strong>6</strong>
+                                                <b>6</b>
                                             </td>
                                             <td>
-                                                <strong>6</strong>
+                                                <b>6</b>
                                             </td>
                                             <td>
-                                                <strong>oui</strong>
+                                                <b>oui</b>
                                             </td>
                                             <td>
-                                                <strong>oui</strong>
+                                                <b>oui</b>
                                             </td>
                                             <td>
-                                                <strong>oui</strong>
+                                                <b>oui</b>
                                             </td>
                                             <td>
-                                                <strong>ce site</strong>
+                                                <b>ce site</b>
                                             </td>
                                         </tr>
                                         <tr>
@@ -212,15 +212,15 @@
                                 <p>Voici le schéma électronique du Solarduino. Il y a quatre parties distinctes dans le système :
                                     <ol>
                                         <li>
-                                            <strong>L'alimentation</strong> permet de fournir une tension stable aux trois autres parties. Elle fournit deux tensions : 12 Vcc (volts en courant continu) et 5 Vcc.</li>
+                                            <b>L'alimentation</b> permet de fournir une tension stable aux trois autres parties. Elle fournit deux tensions : 12 Vcc (volts en courant continu) et 5 Vcc.</li>
                                         <li>
-                                            <strong>L'interface des sondes</strong> permet d'utiliser des sondes de température classiques : des KTY81-210. Ces sondes sont des compsants dont la résistance varie avec la température. Plus il fait chaud,
+                                            <b>L'interface des sondes</b> permet d'utiliser des sondes de température classiques : des KTY81-210. Ces sondes sont des compsants dont la résistance varie avec la température. Plus il fait chaud,
                                             plus leur résistance augmente. En la mesurant, on peut donc connaitre la température du milieu dans lequel les sondes sont positionnées.</li>
                                         <li>
-                                            <strong>La commande des relais</strong> permet d'utiliser des.. relais. Les relais sont des interrupteur commandables. Lorsque l'arduino donne l'ordre de mettre en route un circulateur ou de modifier la position
+                                            <b>La commande des relais</b> permet d'utiliser des.. relais. Les relais sont des interrupteur commandables. Lorsque l'arduino donne l'ordre de mettre en route un circulateur ou de modifier la position
                                             d'une vanne trois voies, l'un des relais ferme le circuit correspondant.</li>
                                         <li>
-                                            <strong>L'arduino</strong> est un microcontrolleur open-source. Ses plans de fabrication sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Son principe de fonctionnement est
+                                            <b>L'arduino</b> est un microcontrolleur open-source. Ses plans de fabrication sont disponibles <a href="https://www.arduino.cc/en/Main/ArduinoBoardUno">ici</a>. Son principe de fonctionnement est
                                             le suivant : on commence par le brancher à un ordinateur. À partir de cet ordinateur, on lui transfère un code. On débranche ensuite l'arduino pour le mettre en place. Une fois allumé, l'arduino exécute en boucle
                                             le code qui a été transféré. On peut ainsi lui faire exécuter des taches complexes à notre place.</li>
                                     </ol>
@@ -238,23 +238,23 @@
                                 <p>Calcul et choix des composants :</p>
                                 <ol>
                                     <li>
-                                        <strong>Le fusible et la varistance :</strong> Le circuit est protégé des sur-intensités grâce au fusible et la varistance le protège des sur-tensions. Il faut choisir un fusible de type
+                                        <b>Le fusible et la varistance :</b> Le circuit est protégé des sur-intensités grâce au fusible et la varistance le protège des sur-tensions. Il faut choisir un fusible de type
                                         <em>rapide</em> pour qu'il grille avant le reste du circuit en cas de sur-intensité.</li>
                                     <li>
-                                        <strong>Le transformateur :</strong> Il a été choisi pour obtenir du \(15 Vca\) soit, en amplitude \(15\sqrt{2}V\) . En effet, le régulateur de tension à besoin d'une tension supérieure à sa tension de régulation
+                                        <b>Le transformateur :</b> Il a été choisi pour obtenir du \(15 Vca\) soit, en amplitude \(15\sqrt{2}V\) . En effet, le régulateur de tension à besoin d'une tension supérieure à sa tension de régulation
                                         pour pouvoir fonctionner correctement. Les données constructeur indiquent \(V_{min}=14.5V\) . Ensuite, le pont de diode redresse le signal de sorte qu'il double sa fréquence \(f=50Hz\) et les diodes provoquent une
                                         chute de tension de \(1.4V\) . L'amplitude maximale du signal arrivant aux bornes du condensateur vaut donc \(V_{in}=15\sqrt{2}-1.4\)</li>
                                     <li>
-                                        <strong>La capacité réservoir :</strong> pour que la tension aux bornes du régulateur ne diminue pas en dessous de \(V_{min}\) , il faut choisir la capacitance \(C_{1}\) telle que : \(C_{1}=I_{max}/2f(V_{in}-V_{min})\)
+                                        <b>La capacité réservoir :</b> pour que la tension aux bornes du régulateur ne diminue pas en dessous de \(V_{min}\) , il faut choisir la capacitance \(C_{1}\) telle que : \(C_{1}=I_{max}/2f(V_{in}-V_{min})\)
                                         soit \(C_{1}=700\mu F\) . En pratique, le condensateur choisi est de type électrolytique et possède une capacitance de \(1000\mu F\) pouvant fonctionner jusqu'à 50 Vcc.</li>
                                     <li>
-                                        <strong>Le régulateur de tension 12 Vcc :</strong> le régulateur choisi est de type L7812CV parce qu'il supporte des courant allant jusqu'à 1.5 A, ce qui suffit largement ici.</li>
+                                        <b>Le régulateur de tension 12 Vcc :</b> le régulateur choisi est de type L7812CV parce qu'il supporte des courant allant jusqu'à 1.5 A, ce qui suffit largement ici.</li>
                                     <li>Contrairement à la solution de Bioulez (2013), il a été choisi de ne pas utiliser un régulateur de tension 9 Vcc, mais de mettre à la place un régulateur 5 Vcc et d'alimenter directement l'arduino sans passer par son
                                         régulateur interne. En effet, le courant maximal consommé par l'arduino est de \(I_{max}=60mA\) donc la puissance d'échauffement vaut \(P_{\acute{e}chauff}=(9-5)*I_{max}\) soit \(P_{\acute{e}chauff}=420mW\) . Or,
                                         d'après les données constructeur, la résistance thermique du régulateur interne de l'arduino vaut 160 °C/W donc celui ci s'échauffera de 21°C. C'est acceptable pour une carte de prototypage, mais dans l'optique
                                         de créer une carte robuste, il vaut mieux limiter l'échauffement des composants. De plus, ce changement ne rajoute aucun surcoût.</li>
                                     <li>
-                                        <strong> Les condensateurs de filtrage :</strong> les données constructeur indiquent l'utilisation d'un condensateur de capacitance \(C_{3}=0.1\mu F\) pour lisser les oscillation en sortie du régulateur. Un condensateur
+                                        <b> Les condensateurs de filtrage :</b> les données constructeur indiquent l'utilisation d'un condensateur de capacitance \(C_{3}=0.1\mu F\) pour lisser les oscillation en sortie du régulateur. Un condensateur
                                         \(C_{2}=100\mu F\) a aussi été rajouté en entrée pour atténuer les fluctuations liées aux relais.</li>
                                 </ol>
                                 <h3>
@@ -269,13 +269,13 @@
                                 <p>Calcul et choix des composants :</p>
                                 <ol>
                                     <li>
-                                        <strong>Les sondes :</strong> on utilise des sondes de type KTY81-210 parce qu'elles ont une bonne sensiblilité aux variations de température. Les données constructeur indiquent qu'elles sont utilisables entre -55°C
+                                        <b>Les sondes :</b> on utilise des sondes de type KTY81-210 parce qu'elles ont une bonne sensiblilité aux variations de température. Les données constructeur indiquent qu'elles sont utilisables entre -55°C
                                         et 150°C et qu'entre ces deux valeurs leur résistance varie entre \(980\Omega\) et \(4280\Omega\)</li>
                                     <li>
-                                        <strong>Le condensateur \(C_{i}\) :</strong> il permet de réaliser un filtre passe-bas avec la résistance \(R_{3}\). La constante de temps de ce filtre vaut \(\tau=R_{i}C_{i}=0.024s\) soit une fréquence de coupure
+                                        <b>Le condensateur \(C_{i}\) :</b> il permet de réaliser un filtre passe-bas avec la résistance \(R_{3}\). La constante de temps de ce filtre vaut \(\tau=R_{i}C_{i}=0.024s\) soit une fréquence de coupure
                                         égale à \(f_{c}=\tfrac{1}{2\pi R_{i} C_{i}}=6.6 Hz\). Ainsi, toutes les fréquences supérieures à \(f_{c}\) seront atténuées.</li>
                                     <li>
-                                        <strong>La résistance \(R_{i}\) :</strong> Celle-ci permet de réaliser un pont diviseur de tension tel que la tension mesurée par l'arduino \(V_{analog}\) corresponde à \(V_{analog}=\frac{R_{sonde}}{R_{sonde}+R_{i}}\),
+                                        <b>La résistance \(R_{i}\) :</b> Celle-ci permet de réaliser un pont diviseur de tension tel que la tension mesurée par l'arduino \(V_{analog}\) corresponde à \(V_{analog}=\frac{R_{sonde}}{R_{sonde}+R_{i}}\),
                                         d'où \(V_{analog} \in [1.45 ; 3.20 V]\) pour \(R_{i}=2,4k\Omega\). On obtient ainsi une plage de variation de 1,75V. Les ports de mesure de l'arduino acceptent des tensions entre 0 et 5 Vcc qu'ils transforment en
                                         1024 points (10 bits). Ainsi, les 205 °C de variation permises par les sondes sont codées sur 358 bits, d'où une précision de 0,6°C/bit.</li>
                                 </ol>
@@ -286,11 +286,11 @@
                                 <p>Calcul et choix des composants :</p>
                                 <ol>
                                     <li>
-                                        <strong>Les relais :</strong> ce sont des interrupteurs commandés. On utilise des relais Finder de type 40.61 parce qu'ils sont commandables en 12 Vcc et qu'on peut les utiliser dans un circuit de puissance sous
+                                        <b>Les relais :</b> ce sont des interrupteurs commandés. On utilise des relais Finder de type 40.61 parce qu'ils sont commandables en 12 Vcc et qu'on peut les utiliser dans un circuit de puissance sous
                                         230 Vca et 16A. C'est très largement suffisant pour controler le fonctionnement d'un circulateur ou d'une vanne 3 voies.</br>
                                         Ils possèdent une résistance interne de \(R_{relais} = 220\Omega\) et demandent une puissance minimale de 500 mW pour être commandés.</li>
                                     <li>
-                                        <strong>Le transistor et la résistance \(R_{i}\) :</strong> d'après les données constructeur, les sorties de l'arduino peuvent fournir \(I_{max} = 40 mA\) sous 5 V, soit 200 mW de puissance. Il est donc impossible
+                                        <b>Le transistor et la résistance \(R_{i}\) :</b> d'après les données constructeur, les sorties de l'arduino peuvent fournir \(I_{max} = 40 mA\) sous 5 V, soit 200 mW de puissance. Il est donc impossible
                                         pour ces sortie de commander un relais sans être amplifiées. Un transistor peut être utilisé pour amplifier la puissance de ces sorties.</br>
                                         Si on note \(I_{c}\) le courant circulant entre le collecteur et l'émetteur du transistor et \(V_{relais}\) la tension d'alimentation des relais, il faut choisir un transistor capable de supporter un courant \(I_{c} = \frac{V_{relais}}{R_{relais}} = 55
                                         mA\).
@@ -299,7 +299,7 @@
                                         Si on note \(I_{arduino}\) la tension en sortie de l'arduino et \(h_{fe}\) le gain en courant du transistor tel que \(I_{c}=h_{fe} I_{arduino}\), il faut que \(I_{arduino} = \frac{I_c}{h_{fe}} \leq I_{max}\).</br>
                                         En choisissant \(R_{i} = 20 k\Omega\) et un transistor de type BC547C, on obtient \(I_{c_{max}} = 100 mA\), \(V_{ceo} = 45V\), \(h_{fe}=220\) et \(I_{arduino} = 0,25 mA\). Donc tout est OK.</li>
                                     <li>
-                                        <strong>Diodes :</strong> on fait passer un courant \(I_{c}\) dans la bobine tel que \(V_{L}=-L \frac{dI_{c} }{dt} \). Ainsi, une variation brusque de \(I_{c}\) créera une tension importante aux bornes de la bobine.
+                                        <b>Diodes :</b> on fait passer un courant \(I_{c}\) dans la bobine tel que \(V_{L}=-L \frac{dI_{c} }{dt} \). Ainsi, une variation brusque de \(I_{c}\) créera une tension importante aux bornes de la bobine.
                                         Cette tension risque de dépasser \(V_{ceo}\) et de détruire le transistor. C'est pourquoi on ajoute une diode pour protéger le transistor. </br>
                                         On choisit une diode de type 1N4007 parce que c'est un composant classique, facile à trouver, qui supporte jusqu'à 1000 V de tension.</li>
                                 </ol>
