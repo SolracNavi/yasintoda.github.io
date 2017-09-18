@@ -1,0 +1,51 @@
+COMMANDE SANS MARGE :
+
+brique_220x110x60	50
+linteau_600x110x60	3
+
+COMMANDE AVEC MARGE :
+
+brique_220x110x60	60
+linteau_600x110x60	3
+
+
+DÉBIT :
+
+bati_foyer_batch140	1
+bidon1_200L_580x880	1
+bidon_200L_580x880	1
+brique_030x055x60	1
+brique_050x110x60	3
+brique_060x110x60	1
+brique_065x060x60_biseautee	1
+brique_075x110x60	1
+brique_085x110x60	1
+brique_110x110x60	5
+brique_135x070x60_biseautee	1
+brique_135x110x60	1
+brique_145x110x60	1
+brique_160x110x60	1
+brique_165x110x60	4
+brique_170x055x60	1
+brique_170x110x60	3
+brique_180x110x60	2
+brique_200x110x60	2
+brique_210x110x60	1
+brique_220x055x60	2
+brique_220x110x60	24
+brique_220x110x60_entaille_port	1
+brique_220x110x60_fendue	1
+canal_de_sol_batch140_sidewinder	1
+cheminee_interne_140_900mm	1
+conduite_reduction_180_150	1
+corniere_inegale_30x50x5_90mm	1
+dalle_siporex_550x550x50	1
+joint_porte_plat_foyer_10x2mm	1
+laine_ceramique_bati	1
+linteau_300x105x60	1
+linteau_300x110x60	3
+linteau_550x110x60	1
+porte_foyer_batch140	1
+tole_pliee_190x110x055x2mm	1
+triangle_allongé_095x065x60	11
+vermiculite_argile	1
