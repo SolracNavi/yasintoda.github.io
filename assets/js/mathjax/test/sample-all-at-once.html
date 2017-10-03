@@ -13,7 +13,7 @@
  |  "flicker" that occurs as source TeX code is removed from the page and
  |  then typeset.  You probably don't want to do this on a page with lots
  |  of math.
- |  
+ |
  |-->
 
 <script type="text/x-mathjax-config">
@@ -41,8 +41,8 @@ h2 {
 </head>
 <body>
 
-<!-- 
- | 
+<!--
+ |
  | This DIV keeps the page blank until after the math is typeset.
  |-->
 <div id="hide_page" style="visibility:hidden">
@@ -53,14 +53,14 @@ h2 {
 requires JavaScript to process the mathematics on this page.<br />
 If your browser supports JavaScript, be sure it is enabled.</b>
 </div>
-<hr>
+
 </noscript>
 
 <h1>Sample MathJax Equations</h1>
 
 <blockquote>
 
-<h2>The Lorenz Equations</h2>
+<h2 class="title">The Lorenz Equations</h2>
 
 <p>
 \begin{align}
@@ -70,14 +70,14 @@ If your browser supports JavaScript, be sure it is enabled.</b>
 \end{align}
 </p>
 
-<h2>The Cauchy-Schwarz Inequality</h2>
+<h2 class="title">The Cauchy-Schwarz Inequality</h2>
 
 <p>\[
 \left( \sum_{k=1}^n a_k b_k \right)^{\!\!2} \leq
  \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 \]</p>
 
-<h2>A Cross Product Formula</h2>
+<h2 class="title">A Cross Product Formula</h2>
 
 <p>\[
   \mathbf{V}_1 \times \mathbf{V}_2 =
@@ -88,11 +88,11 @@ If your browser supports JavaScript, be sure it is enabled.</b>
    \end{vmatrix}
 \]</p>
 
-<h2>The probability of getting \(k\) heads when flipping \(n\) coins is:</h2>
+<h2 class="title">The probability of getting \(k\) heads when flipping \(n\) coins is:</h2>
 
 <p>\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \]</p>
 
-<h2>An Identity of Ramanujan</h2>
+<h2 class="title">An Identity of Ramanujan</h2>
 
 <p>\[
    \frac{1}{(\sqrt{\phi \sqrt{5}}-\phi) e^{\frac25 \pi}} =
@@ -100,7 +100,7 @@ If your browser supports JavaScript, be sure it is enabled.</b>
       {1+\frac{e^{-8\pi}} {1+\ldots} } } }
 \]</p>
 
-<h2>A Rogers-Ramanujan Identity</h2>
+<h2 class="title">A Rogers-Ramanujan Identity</h2>
 
 <p>\[
   1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots =
@@ -108,7 +108,7 @@ If your browser supports JavaScript, be sure it is enabled.</b>
      \quad\quad \text{for $|q|<1$}.
 \]</p>
 
-<h2>Maxwell's Equations</h2>
+<h2 class="title">Maxwell's Equations</h2>
 
 <p>
 \begin{align}
@@ -119,7 +119,7 @@ If your browser supports JavaScript, be sure it is enabled.</b>
 \end{align}
 </p>
 
-<h2>In-line Mathematics</h2>
+<h2 class="title">In-line Mathematics</h2>
 
 <p>Finally, while display equations look good for a page of samples, the
 ability to mix math and text in a paragraph is also important.  This
