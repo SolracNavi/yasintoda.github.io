@@ -87,15 +87,9 @@
                   </a>
                 </th>
                 <th class="active">
-                  <a href="#sidewinder_8600W ">
-                    <div class="clearfix"><img src="./assets/img/experiences/.png" alt="" class="img-rounded center-block"></div>
-                    <p style="text-align: center;"></p>
-                  </a>
-                </th>
-                <th class="active">
-                  <a href="#cuisiniere">
-                    <div class="clearfix"><img src="./assets/img/experiences/" alt=" " class="img-rounded center-block"></div>
-                    <p style="text-align: center;"></p>
+                  <a href="#chauffe_eau">
+                    <div class="clearfix"><img src="./assets/img/experiences/eau_chaude/rocket_stove_eau_chaude_mini.JPG" alt="" class="img-rounded center-block"></div>
+                    <p style="text-align: center;">Chauffe-eau Rocket Stove</p>
                   </a>
                 </th>
               </tr>
@@ -117,8 +111,7 @@
                 Cuisinière de 2500W</h2>
 
           <p>Malgré des apparences toutes simples, cette cuisinière est là pour tester un Batchrocket différent suite aux récentes expériences de Peter vd Berg.</p>
-          <p>Elle est aussi conçue dans l'optique d'être extensible : il est possible de construire cette
-            cuisinière sans banc. Dans ce cas on profite tout de même d'une masse conséquente (650 kg environ) et d'un rendement correct.</p>
+          <p>Elle est aussi conçue dans l'optique d'être extensible : il est possible de construire cette cuisinière sans banc. Dans ce cas on profite tout de même d'une masse conséquente (650 kg environ) et d'un rendement correct.</p>
           <p>Les différences par rapport à un Batchrocket classique :
             <ul>
               <li>La cheminée interne est un tiers moins haute : 600 mm au lieu de 915 mm</li>
@@ -184,7 +177,137 @@
           <p class="subtitle">Vues 3D du poêle sans la plancha.</p>
 
           </br>
+          <a name="chauffe_eau"></a>
+          <h2 class="title">
+                Chauffe-eau Rocket Stove</h2>
+          <div class="col-sm-7">
+            <p>Ce chauffe-eau à bois, encore appelé poêle bouilleur, sert à chauffer directement l'eau à l'intérieur d'un cumulus. </p>
+            <p>Le <b>principe d'utilisation</b> est simple :
+              <ol>
+                <li>On fait une flambée dans le Rocket Stove.</li>
+                <li>L'eau du cumulus est directement chauffée. Pas d'échangeur ni de circuit secondaire.</li>
+                <li>Une fois l'eau suffisament chaude, on arrête la flambée. L'eau chaude est disponible par le réseau d'eau sous pression de la maison. Pas de différence à ce niveau là par rapport à un cumulus électrique.</li>
+                <li>Le poêle est isolé, ce qui lui permet de garder l'eau chaude pendant un certain temps.</li>
+              </ol>
+            </p>
+            <p>Le développement initial a été réalisé par l'association <u>Les Outils de l'Autonomie</u>. Le tutoriel de fabrication est disponible sur cette page : <a href="https://www.outils-autonomie.fr/outils/chauffe-eau-%C3%A0-bois/">outils-autonomie.fr/outils/chauffe-eau-à-bois/</a>.
+              </br>Nous poursuivons le développement conjointement.</p>
+            <p>
+              </br>Les <b>objectifs du développement</b> sont :
+              <ol>
+                <li>Améliorer le rendement de combustion et le rendement total sur l'eau (combustion x récupération de la chaleur par l'eau).</li>
+                <li>Permettre un chargement par lot (Batchrocket !) pour chauffer en une seule fois toute l'eau.</li>
+                <li>Permettre une sortie des gaz directement par le mur (sortie "en ventouse").</li>
+              </ol>
+            </p>
+          </div>
+          <div class="col-sm-5">
+            <a href="./assets/img/experiences/eau_chaude/rocket_stove_eau_chaude.JPG"><img class="img-responsive" src="./assets/img/experiences/eau_chaude/rocket_stove_eau_chaude.JPG"></a>
+            <p class="subtitle">Chauffe eau à bois dont le coeur de chauffe est un Rocket Stove. Sur la photo, il manque l'isolation qui vient autour de l'ensemble.</br>Source : <a class="ref">Les Outils de l'autonomie.</a></p>
+          </div>
 
+          <h3>Pourquoi faire ça ?</h3>
+          <p>L'objectif est de faire un poêle dédié <b>uniquement</b> à la production d'eau chaude sanitaire.</p>
+          <p>Nous ne recommandons pas les poêles de masse combinant chauffage et eau chaude. L'idée est séduisante : chauffer de l'eau en même temps que l'on chauffe sa maison avec son poêle de masse. Pour le faire, la solution classique consiste à placer
+            un échangeur dans le poêle et à le coupler à un ballon d'eau chaude adapté.</p>
+          <p>En pratique, nous trouvons que ce n'est pas une bonne solution pour les raisons suivantes :</p>
+          <p><b>Premièrement,</b> les besoins d'eau chaude ne sont pas corrélés aux besoins de chauffage. Par exemple, une maison où vivent 4 personnes demandera la même puissance de chauffe si les 4 habitants sont là ou s'il n'y en a que 2 de présents.
+            </br>Par contre, les besoins en eau chaude seront divisés par deux. Dans ce cas il y a alors sur-production d'eau chaude qui nécessite un circuit de décharge et une régulation électronique.</br>
+            Que se passe-t-il en cas de panne d'électricité ? La pression générée par l'eau chaude risque de faire exploser le circuit à l'intérieur du poêle et/ou à l'extérieur.</p>
+          <p><b>Deuxièmement,</b> au minimum, il faut que l'échangeur présent dans le poêle de masse soit installé en thermosyphon. C'est-à-dire que l'échange de chaleur entre le poêle et le cumulus se fasse naturellement sans électronique. Ce système nécessite
+            que le cumulus soit placé au dessus du poêle. C'est une grosse contrainte en pratique.</p>
+          <p><b>Troisièmement,</b> l'échangeur dans le poêle de masse doit être accessible et vidangeable. C'est aussi une grosse contrainte en pratique.</p>
+          <p><b>Quatrièmement,</b> le coût d'un tel système est loin d'être négligeable. Lors de nos tests, le coût s'élevait environ à 1500€ pour un système conçu dans les règles de l'art et pour durer, hors installation.</p>
+          <h3>Les tests effectués :</h3>
+          <p>Début Septembre 2017, nous avons analysé la combustion du poêle, le rendement global et le rendement sur l'eau.</p>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 ">
+              <img src="./assets/img/experiences/eau_chaude/analyse_rocket_stove_eau_chaude_001.JPG" class="img-responsive">
+            </div>
+          </div>
+          <p class="subtitle ">Poêle bouilleur en cours d'analyse avec le Testo 330-2 LL.</p>
+          <h4>Méthodologie :</h4>
+          <p>
+            <ul>
+              <li>On teste l'humidité pour vérifier qu'elle soit inférieure à 20%. Il faut fendre le bois et mesurer immédiatement l'humidité à coeur avec l'humidimètre.</li>
+              <li>Le bois est pesé, mesuré. Les sections utilisées mesurent entre 2x2x25 cm et 4x4x25 cm environ.</li>
+              <li>On mesure la température de l'eau initiale, puis l'évolution des températures au fil du temps.</li>
+            </ul>
+          </p>
+          <h4>Résultats :</h4>
+          <p>
+            <ul>
+              <li>40°C d'augmentation de température de l'eau (de 16 à 56°C) en 70 min et avec 2,5 kg de bois.</li>
+              <li>Rendement total moyen d'environ 90%.</li>
+              <li>Rendement sur l'eau de 23%.</li>
+              <li>Température moyenne des fumées en sortie : environ 130°C.</li>
+              <li>Monoxyde de carbone : entre 1500 et 2000 ppm en moyenne, mais très très variable.</li>
+            </ul>
+          </p>
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 ">
+              <img src="./assets/img/experiences/eau_chaude/testo_rocket_stove_eau_chaude_092017.gif" class="img-responsive">
+            </div>
+          </div>
+          <p class="subtitle ">Analyse de combustion avec le Testo 330-2 LL.</p>
+          <h4>Commentaires :</h4>
+          <p>À première vue, on ne comprend rien au graphique..!</p>
+          <p>En y regardant de plus près, on voit que le rendement total (en rouge) ne descend quasiment jamais en dessous de 90%. C'est excellent. Les températures des fumées en sortie de cheminée (en bleu foncé) varient autour de 130°C. Excellent aussi.</p>
+          <p>Le tirage en fin de flambée était de 1.3 Pa.. autant dire quasiment rien ! Les Rockets Stoves fonctionnent très bien avec des toutes petites cheminées d'évacuation. C'est un gros point positif : pas besoin de cheminée conventionnelle, une sortie
+            ventouse avec deux mètres de conduite verticale suffisent.</p>
+          <p>Là où ça fait mal :</p>
+          <p><b>Premièrement,</b> la combustion n'est pas stable. Pour point de référence, la norme Flamme verte est à 3000 ppm (particules par million) de CO en pleine flambée. Ici, le taux de monoxyde de carbone varie beaucoup. En moyenne c'est dans la
+            norme mais pour un Rocket Stove en pleine flambée on devrait être autour de quelques dizaines de ppm.</p>
+          <p>En cause :
+            <ol>
+              <li>Le Rocket Stove avec le tube de chargement incliné est une mauvaise idée. Mieux vaut utiliser un Rocket Stove en "J". La zone de combustion y est beaucoup plus localisée ce qui évite les emballements et les deux coudes apportent un meilleur
+                mélange des gaz;</li>
+              <li>Pas d'isolation de la cheminée interne du Rocket Stove et une forme carrée qui empêche la formation d'un beau vortex.</li>
+            </ol>
+          </p>
+          <p><b>Deuxièmement,</b> il faut recharger le Rocket Stove assez régulièrement. Toutes les 10 min envion.</p>
+          <p><b>Troisièmement,</b> 2,5 kg de bois ce n'est vraiment pas beaucoup, mais le rendement sur l'eau n'est "que" de 23%. En d'autres termes, 23% de l'énergie sert à chauffer l'eau. Le reste correspond aux pertes liées :
+            <ol>
+              <li>À une combustion incomplète;</li>
+              <li>À la température et à la quantité de gaz en sortie de cheminée;</li>
+              <li>À la chaleur qui chauffe la pièce plutôt que l'eau.</li>
+            </ol>
+            C'est à dire qu'en théorie on pourrait utiliser environ 4 fois moins de bois pour chauffer le même volume d'eau.</p>
+          <p>En cause :
+            <ol>
+              <li>Le Rocket Stove et le cumulus ne sont pas isolés donc une grosse partie de la chaleur chauffe la pièce plutôt que l'eau;</li>
+              <li>Le cumulus à l'intérieur est trop petit. Il n'a pas assez de surface de contact avec les gaz. En isolant l'extérieur du poêle bouilleur, on pourrait au moins doubler le volume du cumulus : passer de 50 à 100 voir 150L de réserve d'eau.</li>
+            </ol>
+          </p>
+          <ul class="row gallery">
+            <li class="col-sm-4">
+              <img class="img-responsive" src="./assets/img/experiences/eau_chaude/analyse_rocket_stove_eau_chaude_002.JPG">
+            </li>
+            <li class="col-sm-4">
+              <img class="img-responsive" src="./assets/img/experiences/eau_chaude/analyse_rocket_stove_eau_chaude_003.JPG">
+            </li>
+            <li class="col-sm-4">
+              <img class="img-responsive" src="./assets/img/experiences/eau_chaude/analyse_rocket_stove_eau_chaude_004.JPG">
+            </li>
+          </ul>
+          <p class="subtitle">Photos du poêle pendant les tests.</p>
+
+
+          <h4>Conclusion :</h4>
+          <p>Pour améliorer ce modèle, les prochains tests inclueront un Batchrocket à la place du Rocket Stove. Un plus grand volume d'eau et une isolation de l'ensemble.</p>
+          <p>Mais restons sur terre : c'est déjà <b>un très bon poêle bouilleur</b> : Bon rendement. Simple à construire. Simple à utiliser. </p>
+          <p>La combustion est déjà bien meilleure que certains poêles bouilleurs vendus en Europe pour les habitations hors réseaux. Dans ceux-ci le feu est fait directement en dessous du cumulus dans un petit foyer. Les flammes se refroidissent directement
+            au contact du cumulus et la combustion des gaz est très incomplète.</p>
+          <p>Dans le reste du monde, des systèmes aussi simples (ou même plus complexes) mais beaucoup moins efficaces sont utilisés :</p>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 ">
+              <img src="./assets/img/experiences/eau_chaude/ane_bouilleur.JPG" class="img-responsive">
+            </div>
+          </div>
+          <p class="subtitle ">Âne Bouilleur utilisé en Australie. Rendement sur l'eau sûrement inférieur à 5%. </br>Copyright : <a class="ref">Johanna (josworld) <a href="https://www.travelblog.org/Oceania/Australia/Queensland/blog-418376.html">travelblog.org/Oceania/Australia/Queensland/blog-418376.html</a></a>
+          </p>
+
+          </br>
         </div>
         <div id='footer'>
           <div id='footer-inner'>
