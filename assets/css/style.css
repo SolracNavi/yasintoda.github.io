@@ -225,6 +225,14 @@ span.FootOuter:hover .HoverFoot {
 .title {
     color: black;
     background-color: rgba(231, 231, 231, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.title-small {
+    color: black;
+    background-color: rgba(184,184,184,0.8);
     padding-top: 5px;
     padding-bottom: 10px;
     text-align: center;
