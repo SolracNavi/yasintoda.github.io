@@ -211,6 +211,10 @@ span.FootOuter:hover .HoverFoot {
     position: absolute;
 }
 
+.navigation-box li {
+    line-height: 1;
+}
+
 .navigation-box h2 {
     color: black;
     padding: 10px;
