@@ -212,7 +212,7 @@ span.FootOuter:hover .HoverFoot {
 }
 
 .navigation-box li {
-    line-height: 1;
+    line-height: 0.9;
 }
 
 .navigation-box h2 {
