@@ -226,6 +226,12 @@ span.FootOuter:hover .HoverFoot {
     padding-right: 20px;
 }
 
+h3 {
+
+    border-bottom: 1px dotted #ccc;
+  
+}
+
 .title {
     color: black;
     background-color: rgba(231, 231, 231, 1);
