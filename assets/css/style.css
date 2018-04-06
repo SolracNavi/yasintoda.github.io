@@ -356,6 +356,15 @@ span.FootOuter:hover .HoverFoot {
   position: absolute;
 }
 
+.navigation-box a {
+    color: rgba(0,0,0, 0.8);
+    text-decoration: none;
+}
+.navigation-box li a:hover {
+    color: black;
+    background-color: rgba(161,191,107, 1);
+}
+
 .navigation-box li {
   line-height: 0.9;
 }
@@ -382,6 +391,9 @@ span.FootOuter:hover .HoverFoot {
   padding-right: 20px;
 }
 
+
+
+
 h3 {
   margin-top: 50px;
   border-bottom: 1px dotted #ccc;
@@ -390,7 +402,7 @@ h3 {
 .title {
   margin-top: 30px;
   color: black;
-  background-color: rgba(231, 231, 231, 1);
+  background-color:  rgba(249,214,46,0.6);
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -398,7 +410,7 @@ h3 {
 
 .title-small {
   color: black;
-  background-color: rgba(184, 184, 184, 0.8);
+  background-color: rgba(161,191,107, 0.8);
   padding-top: 5px;
   padding-bottom: 10px;
   text-align: center;
@@ -406,11 +418,11 @@ h3 {
 
 .title-box {
   color: black;
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(231, 231, 231, 0.5);
   /*position : absolute;*/
   margin-left: -15px;
   margin-right: -15px;
-  padding-top: 1px;
+  padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -439,22 +451,23 @@ h3 {
 }
 
 #sidebar #navigation {
-  /*background-color: rgba(231, 231, 231, 1);*/
   border: 1px solid #bbb;
   box-shadow: 1px 1px 4px #CCC9C3;
 }
 
 #sidebar ul.nav.nav-pills.nav-stacked li a {
-  color: #666;
+  color: #f4f4f3;
   border-radius: 0;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
+
 #sidebar ul.nav.nav-pills.nav-stacked li.active a {
   background-color: #CCC9C4;
-  color: #000;
+  color: #666;
 }
+
 
 .active {
   background-color: rgba(0, 0, 0, 0.1);
