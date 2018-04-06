@@ -35,6 +35,7 @@
                   <li><a href="#avantages_cloches">Les avantages des cloches</a></li>
                   <li><a href="#dimensionnement">Le dimensionnement des cloches</a></li>
                   <li><a href="#regles_cloches">Les règles de construction des cloches</a></li>
+                  <li><a href="#rendement_accumulateurs">Le rendement des accumulateurs</a></li>
                   <li><a href="#autres_systemes">Les autres systèmes</a></li>
                 </ol>
               </div>
@@ -48,7 +49,7 @@
           <h2 class="title">Le principe des cloches et leur utilisation avec les Batchrockets</h2>
         </div>
         <div class="content-box">
-        
+
           <h2 class="title">
                 <a name="principe"></a>Le principe</h2>
 
@@ -143,7 +144,7 @@
             </li>
           </ul>
           <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina et utiliants des cloches.
-          </br>Source : <a href="https://estufasdeinercia.wordpress.com" class="ref">Eduardo Marquina, estufas de inercia</a>
+            </br>Source : <a href="https://estufasdeinercia.wordpress.com" class="ref">Eduardo Marquina, estufas de inercia</a>
           </p>
 
 
@@ -184,8 +185,7 @@
             et sur une longue période de temps.</p>
           <p>L'objectif est que les gaz sortent de la cheminée d'évacuation <b>au minimum à une température d'environ 80-100°C</b>. En dessous de cette température, les gaz risquent de condenser dans la cheminée d'évacuation. Pour information, la température
             de sortie des gaz dans les cheminées industrielles est plutôt aux alentours de 140°C.</p>
-          <p>Parfois, la course aux rendements nous entraîne à essayer de grappiller toutes les calories possibles. Néanmoins, un poêle à 80% de rendement total qui fonctionne vaut mille fois un poêle à 90% de rendement total qui refoule une fois sur deux.
-          </p>
+          <p>Parfois, la course aux rendements nous entraîne à essayer de grappiller toutes les calories possibles. Néanmoins, un poêle à 80% de rendement total qui fonctionne vaut mille fois un poêle à 90% de rendement total qui refoule une fois sur deux.</p>
           <p>Par expérimentation, on a trouvé un lien de proportionnalité entre les surfaces internes du poêle qui sont "absorbantes" et la puissance des coeurs de chauffe. </p>
           <p>Ainsi, chaque taille de batchrocket a une surface de cloche qui lui correspond : </p>
           <div class="row">
@@ -266,7 +266,40 @@
             </ul>
           </p>
           <p>Pour le reste, les formes n'ont quasiment pas d'importance vis-à-vis des cloches.</p>
-          <p></p>
+
+
+          <a name="rendement_accumulateurs"></a>
+          <h2 class="title">
+                Le rendement des accumulateurs</h2>
+          <p>Une cloche est un <em>accumulateur</em> de chaleur. Son objectif est d'extraire la chaleur des fumées et de la restituer doucement par la suite.</p>
+          <p>Pour ceux qui ont déjà construit leur poêle et qui veulent connaitre son rendement, voici un graphique faisant le lien entre la température moyenne des gaz dans la cheminée d'évacuation et le rendement d'extraction de l'accumulateur.</p>
+          <p>Attention, ce graphique n'est valable que pour une flambée vive sur un Batchrocket ! Pour un poêle en fonte par exemple, les rendements doivent être sous-estimés.</p>
+          <p>Les hypothèses de calcul de ce graphique sont les suivantes :</p>
+          <ul>
+            <li>Qualité de la combustion : 500 ppm de CO moyen</li>
+            <li>Excès d'air : 13 % d’O2 moyen (flambée vive)</li>
+            <li>On ne tient pas compte de l'énergie latente de vaporisation de l'eau (rendement PCI)</li>
+            <li>Basé sur la méthode CONDAR de la MHA</li>
+          </ul>
+
+
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <img class="img-responsive" src="./assets/img/batchrocket_cloche/rendement_extraction_chaleur_fn_temperature_sortie_batchrocket.png">
+            </div>
+          </div>
+          <p class="subtitle">En bas, la température moyenne des fumées dans la cheminée. En vertical, le rendement d'extraction correspondant. </br>Source : <a class="ref">UZUME</a></p>
+
+          <p>Par exemple, un poêle Batchrocket dont les gaz sortent à 150°C en moyenne a un rendement d'extraction de 89%. </p>
+          <p>Le rendement global du poêle est donné par la formule : </p>
+          <div class="row">
+            <div class="lead col-sm-10 col-sm-offset-1" style="background:#a1bf6b">
+              <p>Rendement total = rendement d'extraction x rendement de combustion.</p>
+            </div>
+          </div>
+
+          <p>Le rendement de combustion d'un Batchrocket sur une flambée vive est de 98%. Dans notre exemple, le rendement total est donc de 89 x 0,98 = 87%.</p>
+
           <h2 class="title">
                 <a name="autres_systemes"></a>Les autres systèmes</h2>
           <p>Un système très classique en Europe de l'Ouest est de faire passer les gaz dans une série de chicanes empilées les unes sur les autres. Il existe en fait beaucoup de variété dans les différents systèmes de récupération de la chaleur.</p>
@@ -278,6 +311,8 @@
             </div>
           </div>
           <p class="subtitle">Schémas de poêles en fonte Norvégiens des années 1800. </br>Source : <a class="ref">The Book of Masonry Stoves, David Lyle, 1984, p. 53.</a></p>
+
+
           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
             <div class="modal-dialog">
               <div class="modal-content">
