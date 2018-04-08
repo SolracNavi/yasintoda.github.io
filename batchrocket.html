@@ -10,10 +10,20 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        wrapping: false
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -91,23 +101,37 @@
           d'auto-construction que nous écrivons, et d'articles internet comme ce site ou le site <a href="http://batchrocket.eu/fr/">batchrocket.eu/fr/</a> qu'un de nos membres a traduit en français.</p>
         <p>Voici quatres exemples de poêles de masse réalisés par UZUME dont le coeur de chauffe est un Batchrocket :</p>
         </br>
-        <ul class="row gallery">
-          <li class="col-sm-6">
-            <img class="img-responsive" src="./assets/img/batchrocket_012017/batchrocket_012017_86_bis.JPG">
-          </li>
-          <li class="col-sm-6">
-            <img class="img-responsive" src="./assets/img/batchrocket_072016/batchrocket_072016_39.JPG">
-          </li>
-          <li class="col-sm-6">
-            <img class="img-responsive" src="./assets/img/batchrocket_042017/batchrocket_042017_3.JPG">
-          </li>
-          <li class="col-sm-6">
-            <img class="img-responsive" src="./assets/img/batchrocket_092017/batchrocket_092017_001.JPG">
-          </li>
-        </ul>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="row gallery">
+              <li class="col-sm-6">
+                <a href="./assets/img/batchrocket_012017/batchrocket_012017_86_bis.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                      <img src="./assets/img/batchrocket_012017/batchrocket_012017_86_bis.JPG" class="img-responsive"></a>
+              </li>
+              <li class="col-sm-6">
+                <a href="./assets/img/batchrocket_072016/batchrocket_072016_39.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                      <img src="./assets/img/batchrocket_072016/batchrocket_072016_39.JPG" class="img-responsive"></a>
+              </li>
+              <li class="col-sm-6">
+                <a href="./assets/img/batchrocket_042017/batchrocket_042017_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                      <img src="./assets/img/batchrocket_042017/batchrocket_042017_3.JPG" class="img-responsive"></a>
+              </li>
+              <li class="col-sm-6">
+                <a href="./assets/img/batchrocket_092017/batchrocket_092017_001.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                      <img src="./assets/img/batchrocket_092017/batchrocket_092017_001.JPG" class="img-responsive"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <p class="subtitle">À gauche, poêle en briques réfractaires avec un enduit terre; à droite, poêle avec un habillage en briques de terre crue.
           </br>
           En bas, à gauche, poêle en briques de terre crue; à droite, poêle en briques réfractaires avec banc en briques de terre crue.</p>
+
+
+
+
         <h2 class="title">
                 <a name="origines"></a>Les origines</h2>
 
