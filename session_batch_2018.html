@@ -2,16 +2,26 @@
 <html lang="fr">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>
     Session Batch 2018
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+  
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
 <body>

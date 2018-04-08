@@ -7,11 +7,22 @@
     Le principe des cloches et leur utilisation avec les Batchrockets
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+  
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
 <body>
@@ -141,21 +152,32 @@
           <p>Voici quelques magnifiques poêles construits par <a href="https://estufasdeinercia.wordpress.com">Eduardo Marquina</a> utilisants le principe des cloches ainsi que beaucoup d'imagination dans la réalisation des formes :</p>
 
 
-
+          <div class="row">
+          <div class="col-sm-12">
           <ul class="row gallery">
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_1.JPG">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_4.JPG">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_2.JPG">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_6.JPG">
-            </li>
+          <li class="col-sm-4">
+          <a href="./assets/img/ressources_externes/eduardo_marquina_1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_1.JPG" class="img-responsive"></a>
+          </li>
+          <li class="col-sm-4">
+          <a href="./assets/img/ressources_externes/eduardo_marquina_2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_2.JPG" class="img-responsive"></a>
+          </li>
+          <li class="col-sm-4">
+          <a href="./assets/img/ressources_externes/eduardo_marquina_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_3.JPG" class="img-responsive"></a>
+          </li>
+          <li class="col-sm-4">
+          <a href="./assets/img/ressources_externes/eduardo_marquina_4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_4.JPG" class="img-responsive"></a>
+          </li>
+          <li class="col-sm-4">
+          <a href="./assets/img/ressources_externes/eduardo_marquina_5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_5.JPG" class="img-responsive"></a>
+          </li>
           </ul>
+          </div>
+          </div>
           <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina et utiliants des cloches.
             </br>Source : <a href="https://estufasdeinercia.wordpress.com" class="ref">Eduardo Marquina, estufas de inercia</a>
           </p>

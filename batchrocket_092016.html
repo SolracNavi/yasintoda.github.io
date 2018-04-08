@@ -7,18 +7,22 @@
     Un Batchrocket de 200 mm avec banc de chauffe
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+  
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ "HTML-CSS": { scale: 100 }});
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
   </script>
-  <script type="text/javascript" src="./assets/js/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -32,20 +36,19 @@
             <div id="navigation">
               <ul class="nav nav-pills nav-stacked">
                 <li class="level1">
-                  <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
+                  <a href="./batchrocket_realisations.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à la page des réalisations</a>
                 </li>
               </ul>
 
               <h3>Plan de l'article</h3>
               <div id="TOC">
                 <ol>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li><a href="#fiche">Fiche technique</a></li>
+                  <li><a href="#plan">Plan 3D du poêle de masse</a></li>
+                  <li><a href="#rq">Remarques et améliorations</a></li>
+                  <li><a href="#photos">Photos</a></li>
                 </ol>
               </div>
-
 
               </ul>
             </div>
@@ -58,16 +61,6 @@
             <h1>Un Batchrocket de 200 mm avec banc de chauffe</h1>
           </div>
           <div class="content-box">
-            <h2 class="title">Plan</h2>
-            <div id="TOC">
-              <ol>
-                <li><a href="#fiche">Fiche technique</a></li>
-                <li><a href="#plan">Plan 3D du poêle de masse</a></li>
-                <li><a href="#rq">Remarques et améliorations</a></li>
-                <li><a href="#photos">Photos</a></li>
-              </ol>
-            </div>
-            <h2 class="title">
             <p>Page en construction.</p>
             <!-- <p>Ce poêle a été construit en Novembre 2016. Il s'agissait de construire un poêle pour un espace de 110 m3 (44 m2 au sol et une hauteur moyenne de 2,5 m) en Ardèche méridionale. L'espace à chauffer correspond à une grande pièce
                                 dans une maison en pierres non isolée. </br>Tous les cotés de la pièce ne donnent pas sur l'extérieur donc le coefficient de déperdition a été estimé a G = 1.4 ce qui signifie que le poêle peut maintenir une différence de

@@ -7,14 +7,22 @@
     Un Batchrocket de 1500 W en double cloche
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+  
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
 <body>
@@ -27,17 +35,17 @@
             <div id="navigation">
               <ul class="nav nav-pills nav-stacked">
                 <li class="level1">
-                  <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
+                  <a href="./batchrocket_realisations.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à la page des réalisations</a>
                 </li>
               </ul>
 
               <h3>Plan de l'article</h3>
               <div id="TOC">
                 <ol>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li><a href="#fiche">Fiche technique</a></li>
+                  <li><a href="#plan">Plan 3D du poêle de masse</a></li>
+                  <li><a href="#rq">Remarques et améliorations</a></li>
+                  <li><a href="#photos">Photos</a></li>
                 </ol>
               </div>
 
@@ -51,15 +59,6 @@
             <h1>Un Batchrocket de 1500 W en double cloche</h1>
           </div>
           <div class="content-box">
-            <h2 class="title">Plan</h2>
-            <div id="TOC">
-              <ol>
-                <li><a href="#fiche">Fiche technique</a></li>
-                <li><a href="#plan">Plan 3D du poêle de masse</a></li>
-                <li><a href="#rq">Remarques et améliorations</a></li>
-                <li><a href="#photos">Photos</a></li>
-              </ol>
-            </div>
             <p>Ce poêle a été construit en Janvier 2017. Il s'agissait de construire un très petit poêle pour un studio de 24 m3 (12 m2 au sol et une hauteur moyenne de 2 m) en Ardèche méridionale.</p>
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2">
@@ -159,294 +158,391 @@
               amélioré en modifiant le système d'air secondaire.</p>
             <p>Par souci de simplicité, le poêle a été construit sans clapet de démarrage. Il est possible d'ajouter un tel clapet pour faciliter les démarrages à froid du poêle. Il faut cependant prendre garde au fait qu'il ne doit pas y avoir de partie
               métallique au dessus du niveau supérieur de la cheminée interne : le métal serait détruit à cause des températures.</p>
+
+
             <a name="photos"></a>
             <h2 class="title">Photos :</h2>
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="row gallery">
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_1.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_2.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_3.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_4.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_5.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_6.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_6.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_7.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_7.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_8.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_8.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_9.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_9.JPG" class="img-responsive"></a>
+                  </li>
 
-            <div class="col-sm-12">
-              <div id="carousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_1.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_2.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_3.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_4.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_5.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_6.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_7.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_8.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_9.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_10.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_11.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_12.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_13.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_14.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_15.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_16.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_17.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_18.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_19.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_20.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_21.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_22.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_23.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_24.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_25.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_26.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_27.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_28.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_29.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_30.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_31.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_32.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_33.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_34.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_35.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_36.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_37.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_38.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_39.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_40.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_41.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_42.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_43.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_44.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_45.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_46.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_47.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_48.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_49.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_50.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_51.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_52.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_54.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_54.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_55.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_56.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_57.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_58.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_59.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_60.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_61.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_62.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_63.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_64.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_65.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_66.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_67.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_68.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_69.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_70.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_71.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_72.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_73.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_74.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_75.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_76.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_77.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_78.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_79.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_80.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_81.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_82.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_83.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_84.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_85.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_86.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_87.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_88.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_89.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/batchrocket_012017/batchrocket_012017_90.JPG" alt="...">
-                  </div>
-                </div>
 
-                <a class="left carousel-control" href="#carousel1" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_10.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_10.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_11.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_11.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_12.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_12.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_13.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_13.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_14.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_14.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_15.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_15.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_16.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_16.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_17.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_17.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_18.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_18.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_19.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_19.JPG" class="img-responsive"></a>
+                  </li>
 
-                <a class="right carousel-control" href="#carousel1" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_20.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_20.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_21.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_21.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_22.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_22.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_23.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_23.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_24.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_24.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_25.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_25.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_26.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_26.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_27.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_27.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_28.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_28.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_29.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_29.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_30.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_30.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_31.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_31.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_32.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_32.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_33.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_33.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_34.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_34.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_35.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_35.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_36.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_36.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_37.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_37.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_38.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_38.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_39.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_39.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_40.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_40.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_41.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_41.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_42.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_42.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_43.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_43.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_44.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_44.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_45.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_45.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_46.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_46.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_47.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_47.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_48.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_48.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_49.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_49.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_50.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_50.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_51.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_51.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_52.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_52.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_53.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_53.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_54.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_54.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_55.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_55.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_56.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_56.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_57.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_57.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_58.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_58.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_59.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_59.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_60.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_60.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_61.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_61.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_62.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_62.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_63.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_63.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_64.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_64.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_65.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_65.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_66.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_66.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_67.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_67.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_68.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_68.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_69.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_69.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_70.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_70.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_71.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_71.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_72.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_72.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_73.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_73.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_74.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_74.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_75.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_75.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_76.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_76.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_77.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_77.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_78.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_78.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_79.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_79.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_80.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_80.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_81.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_81.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_82.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_82.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_83.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_83.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_84.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_84.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_85.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_85.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_86.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_86.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_87.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_87.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_88.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_88.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_89.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_89.JPG" class="img-responsive"></a>
+                  </li>
+
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchrocket_012017/batchrocket_012017_90.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/batchrocket_012017/batchrocket_012017_90.JPG" class="img-responsive"></a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <p class="subtitle">Diaporama du chantier. Cliquez sur les flèches pour faire défiler les photos.</p>
+            <p class="subtitle">Diaporama du chantier. Cliquez sur une photo pour l'afficher en plein écran.</p>
+
+
+
             </div>
             <div id='footer'>
               <div id='footer-inner'>

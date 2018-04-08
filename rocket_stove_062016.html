@@ -7,14 +7,22 @@
     Cuisinière de masse V1
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+  
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
 
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
 <body>
@@ -27,17 +35,16 @@
             <div id="navigation">
               <ul class="nav nav-pills nav-stacked">
                 <li class="level1">
-                  <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
+                  <a href="./batchrocket_realisations.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à la page des réalisations</a>
                 </li>
               </ul>
 
               <h3>Plan de l'article</h3>
               <div id="TOC">
                 <ol>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
+                  <li><a href="#fiche">Fiche technique</a></li>
+                  <li><a href="#geopolymeres">Aparté sur les Géopolymères</a></li>
+                  <li><a href="#photos">Photos</a></li>
                 </ol>
               </div>
 
@@ -51,14 +58,6 @@
             <h1>Cuisinière de masse V1</h1>
           </div>
           <div class="content-box">
-            <h2 class="title">Plan</h2>
-            <div id="TOC">
-              <ol>
-                <li><a href="#fiche">Fiche technique</a></li>
-                <li><a href="#geopolymeres">Aparté sur les Géopolymères</a></li>
-                <li><a href="#photos">Photos</a></li>
-              </ol>
-            </div>
             <p>Il s'agissait d'un premier modèle expérimental pour tester les Rocket Stoves, les briques de terre crue, les géopolymères, le système des cloches et les planchas. Un vaste programme et beaucoup de leçons retirées de cette expérience.</p>
             <a name="fiche"></a>
             <h2 class="title">Fiche technique :</h2>
@@ -130,61 +129,69 @@
             <a name="photos"></a>
             <h2 class="title">Photos :</h2>
 
-            <div class="col-sm-12">
-              <div id="carousel1" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_1.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_2.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_3.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_4.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_5.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_6.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_7.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_8.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_9.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_10.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_11.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_12.JPG" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_13.JPG" alt="...">
-                  </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="row gallery">
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_1.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_2.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_3.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_4.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_5.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_6.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_6.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_7.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_7.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_8.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_8.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_9.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_9.JPG" class="img-responsive"></a>
+                  </li>
 
-                </div>
 
-                <a class="left carousel-control" href="#carousel1" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
-
-                <a class="right carousel-control" href="#carousel1" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_10.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_10.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_11.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_11.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_12.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_12.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/rocket_stove_062016/rocket_stove_062016_13.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                          <img src="./assets/img/rocket_stove_062016/rocket_stove_062016_13.JPG" class="img-responsive"></a>
+                  </li>
+                </ul>
               </div>
             </div>
-            <p class="subtitle">Diaporama du chantier. Cliquez sur les flèches pour faire défiler les photos.</p>
+            <p class="subtitle">Diaporama du chantier. Cliquez sur une photo pour l'afficher en plein écran.</p>
+
+
           </div>
           <div id='footer'>
             <div id='footer-inner'>

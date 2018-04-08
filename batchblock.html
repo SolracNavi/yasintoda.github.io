@@ -7,11 +7,22 @@
     Le Batchblock
   </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta charset="UTF-8">
+
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
 <body>
@@ -126,47 +137,42 @@
             </ul>
           </p>
 
-          <p>Pour agrandir les images : clic droit > Afficher l'image.</p>
-          <ul class="row gallery">
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_01.png">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_02.png">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_03.png">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_04.png">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_05.png">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchblock/batchblock_schema_06.png">
-            </li>
-          </ul>
-          </p>
-          <p class="subtitle">
+
+
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="row gallery">
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_01.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_01.png" class="img-responsive"></a>
+                </li>
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_02.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_02.png" class="img-responsive"></a>
+                </li>
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_03.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_03.png" class="img-responsive"></a>
+                </li>
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_04.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_04.png" class="img-responsive"></a>
+                </li>
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_05.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_05.png" class="img-responsive"></a>
+                </li>
+                <li class="col-sm-4">
+                  <a href="./assets/img/batchblock/batchblock_schema_06.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_06.png" class="img-responsive"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="subtitle">Cliquez sur une image pour l'afficher en plein écran.
             </br>Sources : <a class="ref">UZUME, 18 Mars 2018</a>
           </p>
-          <!--
-          <p></p>
-          <p>
-            <ul class="row gallery">
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket">
-              </li>
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket">
-              </li>
-            </ul>
-          </p>
-          <p class="subtitle">
-            </br>Sources : <a class="ref"></a>
-          </p>
-          <p></p> -->
+
         </div>
         <div id='footer'>
           <div id='footer-inner'>
