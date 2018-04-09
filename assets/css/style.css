@@ -352,43 +352,34 @@ span.FootOuter:hover .HoverFoot {
   }
 }
 
-.navigation-box {
-  position: absolute;
-}
 
-.navigation-box a {
+.navbar a {
     color: rgba(0,0,0, 0.8);
     text-decoration: none;
 }
-.navigation-box li a:hover {
+.navbar li a:hover {
     color: black;
     background-color: rgba(161,191,107, 1);
 }
 
-.navigation-box li {
+.navbar li {
   line-height: 0.9;
 }
 
-.navigation-box h2 {
+.navbar h2 {
   color: black;
   padding: 10px;
   margin-top: 0px;
   border-bottom: 1px dotted #ccc;
-  min-height: 100%;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-.navigation-box h3 {
+.navbar h3 {
   color: black;
   padding: 10px;
   margin-top: 0px;
   border-bottom: 1px dotted #ccc;
-  min-height: 100%;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 
