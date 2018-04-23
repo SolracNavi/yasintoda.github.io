@@ -354,6 +354,10 @@ span.FootOuter:hover .HoverFoot {
   border-radius: 5;
 }
 
+.navbar ul {
+  margin-bottom: 30px;
+}
+
 .navbar li {
   line-height: 0.9;
 }
