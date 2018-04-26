@@ -12,24 +12,34 @@
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="level1">
+          <ul class="nav nav-stacked">
+            <li>
               <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
             </li>
           </ul>
 
           <h3>Plan de l'article</h3>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-stacked">
             <li><a href="#intro">Introduction</a></li>
-            <li><a href="#mythe">Le mythe de l'arrivée d'air extérieur</a></li>
+            <li><a href="#myth">Le mythe de l'arrivée d'air extérieur</a></li>
             <li><a href="#passive">Alimentation d'air passive</a></li>
             <li><a href="#directe">Alimentation en air extérieur arrivant directement dans le foyer</a></li>
           </ul>
@@ -42,164 +52,166 @@
         </div>
         <div class="content-box">
 
-          <a name="intro"></a>
-          <h2 class="title">Introduction</h2>
-          <p>Suite à de nombreuses demandes concernant les arrivées d'air par l'intérieur sur les plans que nous diffusons, voici un article expliquant les raisons de ce choix.</p>
-          <p>En effet, sur les modèles que nous proposons, l'air de combustion arrivant dans le foyer est prise depuis <b>l'intérieur de la maison</b> et non pas à l'extérieur de la maison comme c'est souvent le cas. </p>
+
+          <section id="intro">
+            <h2 class="title">Introduction</h2>
+            <p>Suite à de nombreuses demandes concernant les arrivées d'air par l'intérieur sur les plans que nous diffusons, voici un article expliquant les raisons de ce choix.</p>
+            <p>En effet, sur les modèles que nous proposons, l'air de combustion arrivant dans le foyer est prise depuis <b>l'intérieur de la maison</b> et non pas à l'extérieur de la maison comme c'est souvent le cas. </p>
 
 
-          <div class="row">
-            <div class="col-sm-8">
-              <p>Cet article est la traduction de l'article original : <a href="http://woodheat.org/the-outdoor-air-myth-exposed.html">The outdoor air myth exposed</a>. Il est tiré d'un site géré par <em>Wood Heat Organization Inc.</em>, un organisme Canadien
-                non gouvernemental sans but lucratif dédié à l'utilisation responsable du bois comme combustible de chauffage domestique.</p>
-              <p>L'article est traduit ici avec l'autorisation de l'auteur John Gulland et à la condition que le texte ne soit pas altéré. Tous les droits de cet article restent la propriété exclusive de <em>Wood Heat Organization Inc.</em></p>
-              <p>Traduction par UZUME.</p>
-              </br>
-              <p>Pour ceux qui souhaitent voir d'autres avis, voici un document en anglais publié par la MHA (Association des poêliers américains) : <a href="http://heatkit.com/docs/temp/Why%20Outside%20air%20won%27t%20fix%20wood%20burning%20problems.pdf">Why Outside air won't fix wood burning problems.</a>                </p>
-            </div>
-            <div class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/arrivees_d_air/woodheat-logo.png">
-            </div>
-          </div>
-
-
-
-
-          <a name="myth"></a>
-          <h2 class="title">Le mythe de l'arrivée d'air extérieur</h2>
-          <h3>La combustion avec de l'air provenant de l'extérieur était une bonne idée.. jusqu'à ce qu'elle soit étudiée !</h3>
-
-
-          <p>Les codes du bâtiment de diverses juridictions d'Amérique du Nord exigent que les inserts, et dans certains cas les poêles à bois, soient pourvus d'une source d'air de combustion provenant de l'extérieur. Il s'agit le plus souvent d'un trou
-            de dix centimètres de diamètre dans un mur extérieur avec un conduit relié au poêle ou à l'insert, relié directement au foyer ou à un endroit où il peut être chauffé par le feu avant d'entrer dans la pièce. Parfois, l'air est juste amené quelque
-            part dans la pièce.</p>
-
-          <p>Il semble y avoir trois théories derrière cet apport d'air extérieur, selon qui fait l'explication :
-
-            <ol>
-              <li>La première consiste à remplacer l'air aspiré de la maison par le poêle à bois, basée sur l'idée que les maisons sont étanches à l'air et que le poêle à bois y consommera tout l'oxygène.
-              </li>
-              <li>La seconde est de réduire le risque de fumées dans la pièce, même lorsque la pièce est dépressurisée par un grand ventilateur comme dans une hotte.
-              </li>
-              <li>La troisième est d'économiser de l'énergie en utilisant de l'air extérieur plutôt que de l'air intérieur qui a déjà été chauffé.</li>
-            </ol>
-          </p>
-
-          <p>Mais peu importe la théorie que vous choisissez, aucune des trois ne résiste à l'examen scientifique. Il s'avère que l'endroit le plus fiable pour aspirer l'air de combustion est la pièce où l'appareil est installé. Oubliez les approvisionnements
-            d'air extérieur comme moyen de rendre les poêles à bois et les inserts plus efficaces. Si votre code du bâtiment local vous oblige à installer de l'air extérieur, vous n'aurez pas le choix, mais sachez qu'il n'améliorera pas de façon fiable
-            le rendement de votre appareil de chauffage au bois et qu'il n'augmentera pas l'efficacité du système.</p>
-
-          <blockquote style="background:#a1bf6b">Les prétendus avantages de l'arrivée d'air extérieur ne sont pas étayés par les résultats de la recherche.</blockquote>
-
-          <p>Le mythe de l'air de combustion extérieur a commencé il y a presque cinquante ans, lorsque des normes de sécurité et de construction ont été rédigées pour les mobil-homes. Parce qu'elles étaient petites et fabriquées en usine, on croyait que
-            les mobil-homes étaient étanches à l'air. Par conséquent, tous les appareils de chauffage au bois, au mazout et au gaz, les poêles ainsi que les inserts ont dû puiser leur air à l'extérieur. Comme ces approvisionnements d'air étaient invariablement
-            acheminés directement dans le vide sanitaire ventilé sous le mobil-home, ils n'ont pas causé trop de problèmes et on a supposé qu'ils fonctionnaient vraiment.</p>
-
-          <p>Dans les années 1980, lorsque de grands systèmes d'évacuation - comme les tuyaux d'évacuation des hottes où l'air est aspiré par le bas - ont commencé à causer des fuites provenant des inserts et des poêles dans les maisons raisonnablement étanches,
-            un consensus s'est rapidement formé autour de l'idée d'amener l'air de combustion de l'extérieur, tout comme cela avait été fait dans les mobil-homes depuis des décennies. Les experts en domotique et les organismes de réglementation étaient
-            tellement convaincus, en ce qui concerne la question de l'air de combustion extérieur, qu'il a été rendu obligatoire dans la plupart des codes du bâtiment. Malheureusement, la décision d'appliquer ces règles obligatoires relatives à l'air
-            extérieur a été prise avant que l'on fasse des recherches sur leur fonctionnement réel.</p>
-
-          <p>Les prétendus avantages de l'air extérieur ne sont pas étayés par les résultats de la recherche. Des rapports de laboratoire et de terrain ont révélé que l'apport d'air extérieur n'est pas un remède simple ou efficace contre les refoulements
-            et que certaines conceptions pourraient créer un risque d'incendie. Deux formes d'alimentation d'air extérieur ont été utilisées: les alimentations d'air d'appoint passives et les alimentations d'air directement dans le foyer.</p>
-
-          <a name="passive"></a>
-          <h2 class="title">Alimentation d'air passive :</h2>
-          <div class="row">
-            <div class="col-sm-5">
-              <img class="img-responsive" src="./assets/img/arrivees_d_air/passiveair1.gif">
-              <p class="subtitle">
-                Les entrées d'air passives ne sont rien de plus que des trous dans le mur. Les effets du vent peuvent forcer l'air à entrer dans la maison ou l'aspirer hors de la maison, selon l'emplacement du trou par rapport à la direction du vent.</a>
-              </p>
-            </div>
-            <div class="col-sm-7">
-              <p>Une entrée d'air passive n'est pas connectée directement à l'insert ou au foyer du poêle. Étant donné qu'elle est raccordée uniquement à l'environnement de la maison et non à l'appareil, elle ne diffuse de l'air dans une maison que lorsque
-                la pression intérieure est inférieure à la pression extérieure, puisque l'air ne circule que vers des zones de pression inférieure. Les alimentations d'air passives n'améliorent pas le fonctionnement des poêles à bois, elles ne font que
-                rendre la maison moins étanche.</p>
-              <p>Les effets du vent autour de la maison influent également sur la direction et le volume de l'écoulement dans une entrée passive. Si l'entrée d'une arrivée d'air passive se trouve du côté du bâtiment où contre lequel souffle le vent, la pression
-                du vent risque de forcer l'air à entrer dans le bâtiment; si l'entrée d'air se trouve du côté protégé du vent, la zone de dépression créée par le vent est susceptible d'aspirer l'air de la maison, ce qui pourrait la dépressuriser.</p>
-            </div>
-          </div>
-
-
-          <p>Plus important encore, il est trompeur de penser que l'approche consistant à faire un trou dans le mur fournit de l'air de combustion. En fait, les alimentations d'air passives ne fournissent de l'air qu'en réponse aux différences de pression.
-            Par temps froid, lorsque la différence de température produit une différence de pression due à l'effet cheminée, si une alimentation passive d'air est située sous le plan de pression neutre de la maison (et qu'il n' y a pas d'effet de vent
-            et qu'aucun système d'échappement n'est en fonctionnement), l'air s'écoule dans la maison. Si, par contre, l'entrée passive est située au-dessus du plan de pression neutre de la maison, l'air s'échappe.</p>
-
-          <div class="row">
-            <div class="col-sm-7">
-              <p>Il est utile de garder à l'esprit un principe physique essentiel:</p>
-              <p><b>LE FLUX D'AIR SE DIRIGE VERS LES ZONES DE DÉPRESSION</b> à travers n'importe qu'elle ouverture disponible.</p>
-
-              <p>Le vrai problème avec la stratégie de l'alimentation d'air passive est qu'il ne fournit pas d'air de combustion de façon fiable et qu'il ne réduit pas les fuites de combustion de façon fiable. Dans des conditions favorables, il peut faire
-                basculer l'équilibre entre la conduite et les pressions défavorables en faveur d'une évacuation réussie. C'est pourquoi certains spécialistes du chauffage au bois ont signalé des améliorations de performance après l'installation d'une
-                alimentation passive. Cependant, il est également possible qu'une alimentation passive provoque un déversement si de l'air est aspiré hors de la maison dans une zone de basse pression à cause des effets du vent. </p>
-              <p>Une stratégie corrective qui ne fonctionne que de temps en temps et qui peut aggraver le problème n'est pas une bonne stratégie. Une alimentation passive d'air n'est rien de plus qu'une autre fuite incontrôlée dans l'enveloppe de la maison.
-                Une enveloppe de maison qui fuit n'est pas la garantie d'une bonne gestion de l'air de combustion.
-              </p>
-            </div>
-            <div class="col-sm-5">
-              <img class="img-responsive" src="./assets/img/arrivees_d_air/passiveair2.gif">
-            </div>
-          </div>
-
-
-
-          <a name="directe"></a>
-          <h2 class="title">Alimentation en air extérieur arrivant directement dans le foyer :</h2>
-
-          <p>Les alimentations d'air extérieur connectées directement au poêle ou dans l'insert peuvent sembler une bonne idée et on croyait autrefois qu'une alimentation directe isolerait l'appareil de combustion des variations de pression ambiante. Cependant,
-            deux conclusions clés tirées de la recherche sur les approvisionnements en air extérieur servent de mises en garde contre l'utilisation généralisée des approvisionnements arrivant directement dans le foyer:
-          </p>
-
-          <ol>
-            <li>Des fuites de fumée peuvent se produire, même lorsque l'appareil est muni de portes étanches. Si un ventilateur d'extraction comme une hotte de cuisinière dépressurise la pièce à un niveau plus élevé que le tirage produit dans la cheminée,
-              les gaz de combustion s'échapperont par toute ouverture disponible, comme les fuites dans les joints d'étanchéité et les joints entre les sections de cheminée construites en usine (illustration ci-dessous). Étant donné que l'air circule
-              vers des zones de pression plus basse, un système de combustion/ventilation hermétique déversera un volume de fumée plus faible dans la pièce qu'un système plus étanche, mais il continuera de fuir à moins qu'il ne soit parfaitement hermétique.
-              L'étanchéité parfaite n'est pas un objectif réaliste, car il serait difficile à atteindre au moment de la construction ou de l'installation et il est peu probable qu'elle soit permanente.</li>
             <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
-                <img class="img-responsive" src="./assets/img/arrivees_d_air/directair1.gif">
+              <div class="col-sm-8">
+                <p>Cet article est la traduction de l'article original : <a href="http://woodheat.org/the-outdoor-air-myth-exposed.html">The outdoor air myth exposed</a>. Il est tiré d'un site géré par <em>Wood Heat Organization Inc.</em>, un organisme Canadien
+                  non gouvernemental sans but lucratif dédié à l'utilisation responsable du bois comme combustible de chauffage domestique.</p>
+                <p>L'article est traduit ici avec l'autorisation de l'auteur John Gulland et à la condition que le texte ne soit pas altéré. Tous les droits de cet article restent la propriété exclusive de <em>Wood Heat Organization Inc.</em></p>
+                <p>Traduction par UZUME.</p>
+                </br>
+                <p>Pour ceux qui souhaitent voir d'autres avis, voici un document en anglais publié par la MHA (Association des poêliers américains) : <a href="http://heatkit.com/docs/temp/Why%20Outside%20air%20won%27t%20fix%20wood%20burning%20problems.pdf">Why Outside air won't fix wood burning problems.</a>                  </p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/arrivees_d_air/woodheat-logo.png">
               </div>
             </div>
-            <li>L'alimentation directe en air peut inverser le sens de l'écoulement si le capot est exposé à une pression négative supérieure au tirage de la cheminée (illustration ci-dessous). Les gaz d'échappement chauds qui passent dans un conduit d'air
-              de combustion constituent un risque potentiel d'incendie. Les effets de la force du vent autour des bâtiments peuvent être beaucoup plus puissants que les pressions produites par le tirage de cheminée. Le tirage de cheminée varie de zéro
-              à environ 50 Pa dans les installations résidentielles normales, alors que des effets de vent élevés peuvent produire des pressions autour des maisons jusqu' à 100 Pa.</li>
+          </section>
 
-          </ol>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/arrivees_d_air/directair2.gif">
+
+          <section id="myth">
+            <h2 class="title">Le mythe de l'arrivée d'air extérieur</h2>
+            <h3>La combustion avec de l'air provenant de l'extérieur était une bonne idée.. jusqu'à ce qu'elle soit étudiée !</h3>
+
+
+            <p>Les codes du bâtiment de diverses juridictions d'Amérique du Nord exigent que les inserts, et dans certains cas les poêles à bois, soient pourvus d'une source d'air de combustion provenant de l'extérieur. Il s'agit le plus souvent d'un trou
+              de dix centimètres de diamètre dans un mur extérieur avec un conduit relié au poêle ou à l'insert, relié directement au foyer ou à un endroit où il peut être chauffé par le feu avant d'entrer dans la pièce. Parfois, l'air est juste amené
+              quelque part dans la pièce.</p>
+
+            <p>Il semble y avoir trois théories derrière cet apport d'air extérieur, selon qui fait l'explication :
+
+              <ol>
+                <li>La première consiste à remplacer l'air aspiré de la maison par le poêle à bois, basée sur l'idée que les maisons sont étanches à l'air et que le poêle à bois y consommera tout l'oxygène.
+                </li>
+                <li>La seconde est de réduire le risque de fumées dans la pièce, même lorsque la pièce est dépressurisée par un grand ventilateur comme dans une hotte.
+                </li>
+                <li>La troisième est d'économiser de l'énergie en utilisant de l'air extérieur plutôt que de l'air intérieur qui a déjà été chauffé.</li>
+              </ol>
+            </p>
+
+            <p>Mais peu importe la théorie que vous choisissez, aucune des trois ne résiste à l'examen scientifique. Il s'avère que l'endroit le plus fiable pour aspirer l'air de combustion est la pièce où l'appareil est installé. Oubliez les approvisionnements
+              d'air extérieur comme moyen de rendre les poêles à bois et les inserts plus efficaces. Si votre code du bâtiment local vous oblige à installer de l'air extérieur, vous n'aurez pas le choix, mais sachez qu'il n'améliorera pas de façon fiable
+              le rendement de votre appareil de chauffage au bois et qu'il n'augmentera pas l'efficacité du système.</p>
+
+            <blockquote style="background:#a1bf6b">Les prétendus avantages de l'arrivée d'air extérieur ne sont pas étayés par les résultats de la recherche.</blockquote>
+
+            <p>Le mythe de l'air de combustion extérieur a commencé il y a presque cinquante ans, lorsque des normes de sécurité et de construction ont été rédigées pour les mobil-homes. Parce qu'elles étaient petites et fabriquées en usine, on croyait que
+              les mobil-homes étaient étanches à l'air. Par conséquent, tous les appareils de chauffage au bois, au mazout et au gaz, les poêles ainsi que les inserts ont dû puiser leur air à l'extérieur. Comme ces approvisionnements d'air étaient invariablement
+              acheminés directement dans le vide sanitaire ventilé sous le mobil-home, ils n'ont pas causé trop de problèmes et on a supposé qu'ils fonctionnaient vraiment.</p>
+
+            <p>Dans les années 1980, lorsque de grands systèmes d'évacuation - comme les tuyaux d'évacuation des hottes où l'air est aspiré par le bas - ont commencé à causer des fuites provenant des inserts et des poêles dans les maisons raisonnablement
+              étanches, un consensus s'est rapidement formé autour de l'idée d'amener l'air de combustion de l'extérieur, tout comme cela avait été fait dans les mobil-homes depuis des décennies. Les experts en domotique et les organismes de réglementation
+              étaient tellement convaincus, en ce qui concerne la question de l'air de combustion extérieur, qu'il a été rendu obligatoire dans la plupart des codes du bâtiment. Malheureusement, la décision d'appliquer ces règles obligatoires relatives
+              à l'air extérieur a été prise avant que l'on fasse des recherches sur leur fonctionnement réel.</p>
+
+            <p>Les prétendus avantages de l'air extérieur ne sont pas étayés par les résultats de la recherche. Des rapports de laboratoire et de terrain ont révélé que l'apport d'air extérieur n'est pas un remède simple ou efficace contre les refoulements
+              et que certaines conceptions pourraient créer un risque d'incendie. Deux formes d'alimentation d'air extérieur ont été utilisées: les alimentations d'air d'appoint passives et les alimentations d'air directement dans le foyer.</p>
+          </section>
+
+
+          <section id="passive">
+            <h2 class="title">Alimentation d'air passive :</h2>
+            <div class="row">
+              <div class="col-sm-5">
+                <img class="img-responsive" src="./assets/img/arrivees_d_air/passiveair1.gif">
+                <p class="subtitle">
+                  Les entrées d'air passives ne sont rien de plus que des trous dans le mur. Les effets du vent peuvent forcer l'air à entrer dans la maison ou l'aspirer hors de la maison, selon l'emplacement du trou par rapport à la direction du vent.</a>
+                </p>
+              </div>
+              <div class="col-sm-7">
+                <p>Une entrée d'air passive n'est pas connectée directement à l'insert ou au foyer du poêle. Étant donné qu'elle est raccordée uniquement à l'environnement de la maison et non à l'appareil, elle ne diffuse de l'air dans une maison que lorsque
+                  la pression intérieure est inférieure à la pression extérieure, puisque l'air ne circule que vers des zones de pression inférieure. Les alimentations d'air passives n'améliorent pas le fonctionnement des poêles à bois, elles ne font
+                  que rendre la maison moins étanche.</p>
+                <p>Les effets du vent autour de la maison influent également sur la direction et le volume de l'écoulement dans une entrée passive. Si l'entrée d'une arrivée d'air passive se trouve du côté du bâtiment où contre lequel souffle le vent, la
+                  pression du vent risque de forcer l'air à entrer dans le bâtiment; si l'entrée d'air se trouve du côté protégé du vent, la zone de dépression créée par le vent est susceptible d'aspirer l'air de la maison, ce qui pourrait la dépressuriser.</p>
+              </div>
             </div>
-          </div>
 
-          <p>Les preuves d'inversions induites par le vent dans les conduits d'air de combustion sont de plus en plus fréquentes maintenant qu'un si grand nombre de systèmes ont été installés. Lorsque vous entretenez des systèmes avec des conduits d'air
-            de combustion extérieurs directs, vérifiez s'il y a de la suie ou des taches à l'intérieur du conduit. S'il y a des signes d'inversion, débranchez le conduit et bouchez le trou dans l'enveloppe de la maison.
-          </p>
 
-          <p>Il a été suggéré qu'un apport direct d'air de combustion à un appareil de chauffage au bois éliminerait l'impact de sa consommation d'air sur les autres appareils de combustion ventilés dans le bâtiment. Cependant, lorsque leurs portes sont
-            fermées, les appareils de chauffage au bois évacuent relativement peu d'air du logement. Les poêles à bois munis de portes étanches consomment de 0,3 à 0,7 mètre cube d'air par minute, ce qui représente une quantité d'air minime, beaucoup
-            moins importante que celle d'une chaudière au mazout, par exemple. Étant donné que la consommation d'air d'un poêle à bois est si faible, le risque d'inversion d'une arrivée d'air de combustion canalisée l'emporte sur tout avantage obtenu
-            en apportant de l'air extérieur.
-          </p>
-          <p>Un foyer ouvert, en revanche, peut évacuer un tel volume d'air qu'il peut affecter le fonctionnement d'une chaudière à gaz classique ou d'un chauffe-eau, par exemple. Mais les alimentations d'air de combustion directe ne peuvent pas être raccordées
-            efficacement à un foyer sans portes parce qu'une différence de pression insuffisante est créée pour entraîner le débit. Autrement dit, il n' y a pas de façon simple de fournir le volume d'air important utilisé par un foyer ouvert en l'alimentant
-            de l'extérieur, sauf peut-être en ouvrant une fenêtre.
-          </p>
-          <p>Dans certaines circonstances, une alimentation directe en air extérieur peut être jugée nécessaire. S'il est décidé de fournir de l'air de combustion directement à un foyer, il faut le faire en étant pleinement conscient que les déversements
-            sont encore probables si la pièce est sérieusement dépressurisée et, pour des raisons de sécurité, il faut prendre des mesures pour contrôler la température des combustibles adjacents au conduit d'alimentation en air si les effets du vent
-            entraînent un renversement de débit.</p>
-          <blockquote style="background:#a1bf6b">Malgré le fait qu'ils soient inscrits dans certains codes du bâtiment et que ses adhérents soient souvent vocalement contraignants, il n'existe aucune preuve scientifique suggérant que les approvisionnements en air extérieur, soit directement
-            dans la chambre de combustion, soit indirectement dans l'espace habitable, constituent des mesures correctrices fiables et efficaces pour les fuites de combustion provenant de l'appareil auquel l'approvisionnement est destiné.</blockquote>
+            <p>Plus important encore, il est trompeur de penser que l'approche consistant à faire un trou dans le mur fournit de l'air de combustion. En fait, les alimentations d'air passives ne fournissent de l'air qu'en réponse aux différences de pression.
+              Par temps froid, lorsque la différence de température produit une différence de pression due à l'effet cheminée, si une alimentation passive d'air est située sous le plan de pression neutre de la maison (et qu'il n' y a pas d'effet de vent
+              et qu'aucun système d'échappement n'est en fonctionnement), l'air s'écoule dans la maison. Si, par contre, l'entrée passive est située au-dessus du plan de pression neutre de la maison, l'air s'échappe.</p>
 
-          <p>Un poêle ventilé par tirage naturel a besoin d'une alimentation en air de combustion fiable et sans restriction. Étant donné que les approvisionnements passifs d'air extérieur dans des dimensions raisonnables sont inefficaces et que les approvisionnements
-            d'air de combustion directe sont peu fiables et potentiellement dangereux, d'autres options doivent être envisagées. L'alternative la plus évidente est de prélever l'air de combustion à l'intérieur du bâtiment.</p>
+            <div class="row">
+              <div class="col-sm-7">
+                <p>Il est utile de garder à l'esprit un principe physique essentiel:</p>
+                <p><b>LE FLUX D'AIR SE DIRIGE VERS LES ZONES DE DÉPRESSION</b> à travers n'importe qu'elle ouverture disponible.</p>
 
-          <p>Idéalement, un poêle fonctionnant avec un tirage naturel extrait l'air de combustion d'un environnement à pression neutre afin que l'alimentation en air soit régulière et constante. La perfection serait un apport d'air fourni à pression neutre
-            et sans résistance à l'écoulement. Les poêles à bois consomment de l'air de combustion en réponse à la quantité de tirage de cheminée produite par la chaleur de leurs propres gaz de combustion. Un poêle ou un foyer sera difficile à démarrer
-            et risque de refouler lorsqu'il essaie d'obtenir son air de combustion d'un bâtiment fortement dépressurisé. L'étendue de la dépressurisation du bâtiment est déduite du tirage potentiel de la cheminée, comme ceci:</p>
+                <p>Le vrai problème avec la stratégie de l'alimentation d'air passive est qu'il ne fournit pas d'air de combustion de façon fiable et qu'il ne réduit pas les fuites de combustion de façon fiable. Dans des conditions favorables, il peut faire
+                  basculer l'équilibre entre la conduite et les pressions défavorables en faveur d'une évacuation réussie. C'est pourquoi certains spécialistes du chauffage au bois ont signalé des améliorations de performance après l'installation d'une
+                  alimentation passive. Cependant, il est également possible qu'une alimentation passive provoque un déversement si de l'air est aspiré hors de la maison dans une zone de basse pression à cause des effets du vent. </p>
+                <p>Une stratégie corrective qui ne fonctionne que de temps en temps et qui peut aggraver le problème n'est pas une bonne stratégie. Une alimentation passive d'air n'est rien de plus qu'une autre fuite incontrôlée dans l'enveloppe de la maison.
+                  Une enveloppe de maison qui fuit n'est pas la garantie d'une bonne gestion de l'air de combustion.
+                </p>
+              </div>
+              <div class="col-sm-5">
+                <img class="img-responsive" src="./assets/img/arrivees_d_air/passiveair2.gif">
+              </div>
+            </div>
+          </section>
 
-          <blockquote style="background:#a1bf6b" " <b>tirage théorique - dépressurisation = tirage net</b>
+
+          <section id="directe">
+            <h2 class="title">Alimentation en air extérieur arrivant directement dans le foyer :</h2>
+
+            <p>Les alimentations d'air extérieur connectées directement au poêle ou dans l'insert peuvent sembler une bonne idée et on croyait autrefois qu'une alimentation directe isolerait l'appareil de combustion des variations de pression ambiante. Cependant,
+              deux conclusions clés tirées de la recherche sur les approvisionnements en air extérieur servent de mises en garde contre l'utilisation généralisée des approvisionnements arrivant directement dans le foyer:
+            </p>
+
+            <ol>
+              <li>Des fuites de fumée peuvent se produire, même lorsque l'appareil est muni de portes étanches. Si un ventilateur d'extraction comme une hotte de cuisinière dépressurise la pièce à un niveau plus élevé que le tirage produit dans la cheminée,
+                les gaz de combustion s'échapperont par toute ouverture disponible, comme les fuites dans les joints d'étanchéité et les joints entre les sections de cheminée construites en usine (illustration ci-dessous). Étant donné que l'air circule
+                vers des zones de pression plus basse, un système de combustion/ventilation hermétique déversera un volume de fumée plus faible dans la pièce qu'un système plus étanche, mais il continuera de fuir à moins qu'il ne soit parfaitement hermétique.
+                L'étanchéité parfaite n'est pas un objectif réaliste, car il serait difficile à atteindre au moment de la construction ou de l'installation et il est peu probable qu'elle soit permanente.</li>
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <img class="img-responsive" src="./assets/img/arrivees_d_air/directair1.gif">
+                </div>
+              </div>
+              <li>L'alimentation directe en air peut inverser le sens de l'écoulement si le capot est exposé à une pression négative supérieure au tirage de la cheminée (illustration ci-dessous). Les gaz d'échappement chauds qui passent dans un conduit d'air
+                de combustion constituent un risque potentiel d'incendie. Les effets de la force du vent autour des bâtiments peuvent être beaucoup plus puissants que les pressions produites par le tirage de cheminée. Le tirage de cheminée varie de zéro
+                à environ 50 Pa dans les installations résidentielles normales, alors que des effets de vent élevés peuvent produire des pressions autour des maisons jusqu' à 100 Pa.</li>
+
+            </ol>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/arrivees_d_air/directair2.gif">
+              </div>
+            </div>
+
+            <p>Les preuves d'inversions induites par le vent dans les conduits d'air de combustion sont de plus en plus fréquentes maintenant qu'un si grand nombre de systèmes ont été installés. Lorsque vous entretenez des systèmes avec des conduits d'air
+              de combustion extérieurs directs, vérifiez s'il y a de la suie ou des taches à l'intérieur du conduit. S'il y a des signes d'inversion, débranchez le conduit et bouchez le trou dans l'enveloppe de la maison.
+            </p>
+
+            <p>Il a été suggéré qu'un apport direct d'air de combustion à un appareil de chauffage au bois éliminerait l'impact de sa consommation d'air sur les autres appareils de combustion ventilés dans le bâtiment. Cependant, lorsque leurs portes sont
+              fermées, les appareils de chauffage au bois évacuent relativement peu d'air du logement. Les poêles à bois munis de portes étanches consomment de 0,3 à 0,7 mètre cube d'air par minute, ce qui représente une quantité d'air minime, beaucoup
+              moins importante que celle d'une chaudière au mazout, par exemple. Étant donné que la consommation d'air d'un poêle à bois est si faible, le risque d'inversion d'une arrivée d'air de combustion canalisée l'emporte sur tout avantage obtenu
+              en apportant de l'air extérieur.
+            </p>
+            <p>Un foyer ouvert, en revanche, peut évacuer un tel volume d'air qu'il peut affecter le fonctionnement d'une chaudière à gaz classique ou d'un chauffe-eau, par exemple. Mais les alimentations d'air de combustion directe ne peuvent pas être raccordées
+              efficacement à un foyer sans portes parce qu'une différence de pression insuffisante est créée pour entraîner le débit. Autrement dit, il n' y a pas de façon simple de fournir le volume d'air important utilisé par un foyer ouvert en l'alimentant
+              de l'extérieur, sauf peut-être en ouvrant une fenêtre.
+            </p>
+            <p>Dans certaines circonstances, une alimentation directe en air extérieur peut être jugée nécessaire. S'il est décidé de fournir de l'air de combustion directement à un foyer, il faut le faire en étant pleinement conscient que les déversements
+              sont encore probables si la pièce est sérieusement dépressurisée et, pour des raisons de sécurité, il faut prendre des mesures pour contrôler la température des combustibles adjacents au conduit d'alimentation en air si les effets du vent
+              entraînent un renversement de débit.</p>
+            <blockquote style="background:#a1bf6b">Malgré le fait qu'ils soient inscrits dans certains codes du bâtiment et que ses adhérents soient souvent vocalement contraignants, il n'existe aucune preuve scientifique suggérant que les approvisionnements en air extérieur, soit directement
+              dans la chambre de combustion, soit indirectement dans l'espace habitable, constituent des mesures correctrices fiables et efficaces pour les fuites de combustion provenant de l'appareil auquel l'approvisionnement est destiné.</blockquote>
+
+            <p>Un poêle ventilé par tirage naturel a besoin d'une alimentation en air de combustion fiable et sans restriction. Étant donné que les approvisionnements passifs d'air extérieur dans des dimensions raisonnables sont inefficaces et que les approvisionnements
+              d'air de combustion directe sont peu fiables et potentiellement dangereux, d'autres options doivent être envisagées. L'alternative la plus évidente est de prélever l'air de combustion à l'intérieur du bâtiment.</p>
+
+            <p>Idéalement, un poêle fonctionnant avec un tirage naturel extrait l'air de combustion d'un environnement à pression neutre afin que l'alimentation en air soit régulière et constante. La perfection serait un apport d'air fourni à pression neutre
+              et sans résistance à l'écoulement. Les poêles à bois consomment de l'air de combustion en réponse à la quantité de tirage de cheminée produite par la chaleur de leurs propres gaz de combustion. Un poêle ou un foyer sera difficile à démarrer
+              et risque de refouler lorsqu'il essaie d'obtenir son air de combustion d'un bâtiment fortement dépressurisé. L'étendue de la dépressurisation du bâtiment est déduite du tirage potentiel de la cheminée, comme ceci:</p>
+
+            <blockquote style="background:#a1bf6b"> <b>tirage théorique - dépressurisation = tirage net</b>
           </blockquote>
 
           <p>La dépressurisation du bâtiment est en concurrence directe avec le tirage de cheminée. Si la cheminée gagne la compétition, le sens d'écoulement des fumées est vers haut (évacuation réussie); si le ventilateur qui cause la dépressurisation gagne,
@@ -224,6 +236,7 @@
             la dépressurisation.</p>
 
           <p>JG</p>
+          </section>
         </div>
         <div id='footer'>
           <div id='footer-inner'>

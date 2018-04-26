@@ -6,28 +6,30 @@
   <title>
     Les matériaux et fournisseurs
   </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <meta charset='UTF-8'>
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
-  <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="level1">
+          <ul class="nav nav-stacked">
+            <li>
               <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
             </li>
           </ul>
 
           <h3>Plan de l'article</h3>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-stacked">
             <li><a href="#avertissement">Avertissement</a></li>
             <li><a href="#coulis">Le coulis réfractaire</a></li>
             <li><a href="#briques">Les briques réfractaires</a></li>
@@ -45,278 +47,282 @@
         </div>
         <div class="content-box">
 
-          <a name="avertissement"></a>
-          <h2 class="title">Avertissement</h2>
-          <p>Cette page récapitule les différents matériaux que nous utilisons pour nos poêles de masse ainsi que les fournisseurs avec lesquels nous travaillons. <b>Nous ne faisons aucun profit sur les produits listés ci-dessous.</b> </p>
-          <p>Cette page a seulement deux buts :
-            <ol>
-              <li>aider les personnes voulant construire eux-même leur poêle de masse;</li>
-              <li>valoriser nos différents fournisseurs pour la qualité de leur travail.</li>
-            </ol>
-          </p>
-          <a name="coulis"></a>
-          <h2 class="title">Le coulis réfractaire</h2>
-          <p>Le coulis est un mortier fin. Il sert à maçonner les briques ensemble.</p>
-          <p>Jusqu'à présent nous avions utilisé et préconisé le <b>coulis argileux</b> classique vendu par PRSE. Il s'agit d'un mélange de l'argile la plus réfractaire (le kaolin) et de chamotte (de la brique pilée) fine.</p>
-          <p>Avec le recul, nous voyons que l'utilisation de ce mortier possède certaines limites :
-            <ul>
-              <li>Nécessite un dérhumage <i>soigneux</i> : deux semaines de montée en température progressive.</li>
-              <li>Un calepinage très soigné avec si possible le foyer sous une masse de briques conséquente, comme c'est le cas pour nos poêles standards.</li>
-              <li>Un usage aussi soigné : pas de flambées excessivement fortes.</li>
-              <li>Durée de vie limitée</li>
-            </ul>
-          </p>
-          <p>Nous préconisons donc l'usage de <b>coulis réfractaire silicaté</b> vendu aussi par PRSE. Son nom commercial est le "<b>REFRACOL 240</b>". L'usage en maçonnerie est le même que le coulis à l'argile : consistance pâteuse et joints très fins (3
-            mm maximum).</p>
-          <p>La différence est que la prise est beaucoup plus forte. Le démontage, une fois que la prise est faite, est impossible sans briser les briques.</p>
-          <p>Il est très similaire en composition au coulis argileux. La différence c'est qu'il y a du <b>silicate de sodium</b> en plus. </p>
-          <p>Ce produit est de la <b>chimie minérale</b> (comme la chaux ou le ciment) et ne présente donc pas les mêmes inconvénients environnementaux que les produits issus de la chimie organique.</p>
+
+          <section id="avertissement">
+            <h2 class="title">Avertissement</h2>
+            <p>Cette page récapitule les différents matériaux que nous utilisons pour nos poêles de masse ainsi que les fournisseurs avec lesquels nous travaillons. <b>Nous ne faisons aucun profit sur les produits listés ci-dessous.</b> </p>
+            <p>Cette page a seulement deux buts :
+              <ol>
+                <li>aider les personnes voulant construire eux-même leur poêle de masse;</li>
+                <li>valoriser nos différents fournisseurs pour la qualité de leur travail.</li>
+              </ol>
+            </p>
+          </section>
 
 
-          <h3>Fiches techniques et mise en oeuvre</h3>
-          <p>Nous publions ici les fiches techniques du REFRACOL 240 avec l'autorisation du fabricant. Ces fiches restent leur propriété exclusive et ne sont pas publiées sous la même licence que le reste du site :
-            <ul>
-              <li><a href="./assets/docs/materiaux_fournisseurs/fiche_technique_REFRACOL_240.pdf">fiche_technique_REFRACOL_240.pdf</a> </li>
-              <li><a href="./assets/docs/materiaux_fournisseurs/mise_en_oeuvre_REFRACOL_silicates.pdf">mise_en_oeuvre_REFRACOL_silicates.pdf</a> </li>
-            </ul>
-          </p>
-          <p>Un excellent article publié par un poêlier très compétent (Marcus Flynn) est disponible sur ce lien : <a href="https://www.pyromasse.ca/articles/htc_f.html">HTC: Mortier Réfractaire et son usage dans la construction du coeur</a>. Il y explique
-            en détail la mise en oeuvre de ce type de mortier.</p>
+          <section id="coulis">
+            <h2 class="title">Le coulis réfractaire</h2>
+            <p>Le coulis est un mortier fin. Il sert à maçonner les briques ensemble.</p>
+            <p>Jusqu'à présent nous avions utilisé et préconisé le <b>coulis argileux</b> classique vendu par PRSE. Il s'agit d'un mélange de l'argile la plus réfractaire (le kaolin) et de chamotte (de la brique pilée) fine.</p>
+            <p>Avec le recul, nous voyons que l'utilisation de ce mortier possède certaines limites :
+              <ul>
+                <li>Nécessite un dérhumage <i>soigneux</i> : deux semaines de montée en température progressive.</li>
+                <li>Un calepinage très soigné avec si possible le foyer sous une masse de briques conséquente, comme c'est le cas pour nos poêles standards.</li>
+                <li>Un usage aussi soigné : pas de flambées excessivement fortes.</li>
+                <li>Durée de vie limitée</li>
+              </ul>
+            </p>
+            <p>Nous préconisons donc l'usage de <b>coulis réfractaire silicaté</b> vendu aussi par PRSE. Son nom commercial est le "<b>REFRACOL 240</b>". L'usage en maçonnerie est le même que le coulis à l'argile : consistance pâteuse et joints très fins
+              (3 mm maximum).</p>
+            <p>La différence est que la prise est beaucoup plus forte. Le démontage, une fois que la prise est faite, est impossible sans briser les briques.</p>
+            <p>Il est très similaire en composition au coulis argileux. La différence c'est qu'il y a du <b>silicate de sodium</b> en plus. </p>
+            <p>Ce produit est de la <b>chimie minérale</b> (comme la chaux ou le ciment) et ne présente donc pas les mêmes inconvénients environnementaux que les produits issus de la chimie organique.</p>
 
 
+            <h3>Fiches techniques et mise en oeuvre</h3>
+            <p>Nous publions ici les fiches techniques du REFRACOL 240 avec l'autorisation du fabricant. Ces fiches restent leur propriété exclusive et ne sont pas publiées sous la même licence que le reste du site :
+              <ul>
+                <li><a href="./assets/docs/materiaux_fournisseurs/fiche_technique_REFRACOL_240.pdf">fiche_technique_REFRACOL_240.pdf</a> </li>
+                <li><a href="./assets/docs/materiaux_fournisseurs/mise_en_oeuvre_REFRACOL_silicates.pdf">mise_en_oeuvre_REFRACOL_silicates.pdf</a> </li>
+              </ul>
+            </p>
+            <p>Un excellent article publié par un poêlier très compétent (Marcus Flynn) est disponible sur ce lien : <a href="https://www.pyromasse.ca/articles/htc_f.html">HTC: Mortier Réfractaire et son usage dans la construction du coeur</a>. Il y explique
+              en détail la mise en oeuvre de ce type de mortier.</p>
+          </section>
 
-          <a name="briques"></a>
-          <h2 class="title">Les briques réfractaires</h2>
-          <p>Les briques réfractaires à 40% d'alumine ainsi que le mortier réfractaire à l'argile (appelé coulis) utilisés pour les poêles proviennent du briquetier <a href="http://prse.biz/ ">PRSE (Produits Réfractaires du Sud Est)</a>. Ces briques mesurent
-            220x110x60 mm. Tous nos poêles sont basés sur des briques de ces dimensions.</p>
-          <p>Ces briques sont extrêmement résistantes aux chocs thermiques, à la chaleur et aux attaques chimiques (notamment au CO). Elles sont utilisées dans des applications industrielles très exigeantes. Ces briques sont composées d'argile (de type kaolin,
-            en France elle est aussi connue sous le nom d'argile de Limoges) et de briques réfractaires pilées (ce qu'on appelle chamotte, c'est ce qui est utilisé pour les courts de tennis en "terre battue"). Les briques sont d'abord compressées comme
-            des BTC classiques puis elles sont cuites à 1400°C.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/materiaux_fournisseurs/briques_refractaires_PRSE.JPG">
+
+          <section id="briques">
+            <h2 class="title">Les briques réfractaires</h2>
+            <p>Les briques réfractaires à 40% d'alumine ainsi que le mortier réfractaire à l'argile (appelé coulis) utilisés pour les poêles proviennent du briquetier <a href="http://prse.biz/ ">PRSE (Produits Réfractaires du Sud Est)</a>. Ces briques mesurent
+              220x110x60 mm. Tous nos poêles sont basés sur des briques de ces dimensions.</p>
+            <p>Ces briques sont extrêmement résistantes aux chocs thermiques, à la chaleur et aux attaques chimiques (notamment au CO). Elles sont utilisées dans des applications industrielles très exigeantes. Ces briques sont composées d'argile (de type
+              kaolin, en France elle est aussi connue sous le nom d'argile de Limoges) et de briques réfractaires pilées (ce qu'on appelle chamotte, c'est ce qui est utilisé pour les courts de tennis en "terre battue"). Les briques sont d'abord compressées
+              comme des BTC classiques puis elles sont cuites à 1400°C.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/materiaux_fournisseurs/briques_refractaires_PRSE.JPG">
+              </div>
             </div>
-          </div>
-          <p class="subtitle">Des briques réfractaires en attente d'être maçonnées.</p>
-          <p>Elles sont réfractaires parce qu'elles sont faites à partir une argile très pure utilisée pour les porcelaines : le kaolin. C'est ce qui leur donne cette couleur claire. Elles sont aussi faites de chamotte, très stable aux variations de température
-            et poreuse. La porosité des briques permet à l'eau qu'elles contiennent forcément de s'évacuer en se vaporisant sans faire exploser les briques.</p>
-          <h3>Que signifie "réfractaire"?</h3>
-          <p>Réfractaire est la qualité d'un matériau qui résiste à trois choses :
-            <ul>
-              <li>
-                Des températures élevées : 1200°C dans le pire des cas et plusieurs centaines de degrés Celcius en général.
-              </li>
-              <li>
-                Les chocs thermiques : montées en température rapide de 0°C à plusieurs centaines de degrés en quelques minutes.
-              </li>
-              <li>
-                Les attaques chimiques : le monoxyde de Carbone (dans le foyer particulièrement) est acide et désagrège les matériaux. Cette attaque est amplifiée avec les températures élevées.
-              </li>
-            </ul>
-          </p>
-          <h3>Utilisation</h3>
-          <p>Nous recommandons l'usage de ces briques pour :
-            <ul>
-              <li>Le foyer</li>
-              <li>La cheminée interne si elle est en briques</li>
-              <li>La première cloche, celle qui reçoit directement les gaz du coeur de chauffe</li>
-            </ul>
-            Pour le reste du poêle, les matériaux de maçonnerie traditionnelle (adobes, BTC, briques classiques, bauge, faïence, etc..) sont possibles.</p>
-
-          <a name="metal"></a>
-          <h2 class="title">Les profilés métalliques</h2>
-          <p>Les profilés métalliques que nous utilisons sont disponibles partout en France dans des <b>Négoces de métal</b>. Les profilés sont vendus en longueurs de 6m. Certains fabricants proposent de vendre les pièces à la découpe.</p>
-          <p>Attention les prix dans ces négoces sont hautement variables.. mieux vaut avoir une tête de métalleux pour espérer avoir un bon prix !</p>
+            <p class="subtitle">Des briques réfractaires en attente d'être maçonnées.</p>
+            <p>Elles sont réfractaires parce qu'elles sont faites à partir une argile très pure utilisée pour les porcelaines : le kaolin. C'est ce qui leur donne cette couleur claire. Elles sont aussi faites de chamotte, très stable aux variations de température
+              et poreuse. La porosité des briques permet à l'eau qu'elles contiennent forcément de s'évacuer en se vaporisant sans faire exploser les briques.</p>
+            <h3>Que signifie "réfractaire"?</h3>
+            <p>Réfractaire est la qualité d'un matériau qui résiste à trois choses :
+              <ul>
+                <li>
+                  Des températures élevées : 1200°C dans le pire des cas et plusieurs centaines de degrés Celcius en général.
+                </li>
+                <li>
+                  Les chocs thermiques : montées en température rapide de 0°C à plusieurs centaines de degrés en quelques minutes.
+                </li>
+                <li>
+                  Les attaques chimiques : le monoxyde de Carbone (dans le foyer particulièrement) est acide et désagrège les matériaux. Cette attaque est amplifiée avec les températures élevées.
+                </li>
+              </ul>
+            </p>
+            <h3>Utilisation</h3>
+            <p>Nous recommandons l'usage de ces briques pour :
+              <ul>
+                <li>Le foyer</li>
+                <li>La cheminée interne si elle est en briques</li>
+                <li>La première cloche, celle qui reçoit directement les gaz du coeur de chauffe</li>
+              </ul>
+              Pour le reste du poêle, les matériaux de maçonnerie traditionnelle (adobes, BTC, briques classiques, bauge, faïence, etc..) sont possibles.</p>
+          </section>
 
 
+          <section id="metal">
+            <h2 class="title">Les profilés métalliques</h2>
+            <p>Les profilés métalliques que nous utilisons sont disponibles partout en France dans des <b>Négoces de métal</b>. Les profilés sont vendus en longueurs de 6m. Certains fabricants proposent de vendre les pièces à la découpe.</p>
+            <p>Attention les prix dans ces négoces sont hautement variables.. mieux vaut avoir une tête de métalleux pour espérer avoir un bon prix !</p>
+          </section>
 
 
-          <a name="manchons"></a>
-          <h2 class="title">Les manchons isolants pour les cheminées internes</h2>
-          <p>Les cheminées internes que nous utilisons sont construites à partir d'une laine céramique (argile cuite mise sous forme de fibres) réfractaire à 1430°C et isolante.</p>
-          <p>C'est le matériau idéal pour cette application et nous n'en connaissons pas d'autres qui soient de meilleure qualité. Nous prenons beaucoup de précautions pour ce matériau car il est soumis à de très fortes températures et au contact direct
-            des flammes.</p>
-          <p>Ces cheminées internes sont mises en forme spécialement pour nos poêles, mais elles proviennent à l'origine de l'industrie métallurgique où elles sont appelées <i>manchons isolants</i> et où elles servent à faire couler des alliages de métaux
-            en <b>fusion</b>.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket/batchrocket_flammes_cheminee_interne.jpg">
-              <p class="subtitle">Une cheminée interne en laine céramique pendant une flambée de démonstration. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
+          <section id="manchons">
+            <h2 class="title">Les manchons isolants pour les cheminées internes</h2>
+            <p>Les cheminées internes que nous utilisons sont construites à partir d'une laine céramique (argile cuite mise sous forme de fibres) réfractaire à 1430°C et isolante.</p>
+            <p>C'est le matériau idéal pour cette application et nous n'en connaissons pas d'autres qui soient de meilleure qualité. Nous prenons beaucoup de précautions pour ce matériau car il est soumis à de très fortes températures et au contact direct
+              des flammes.</p>
+            <p>Ces cheminées internes sont mises en forme spécialement pour nos poêles, mais elles proviennent à l'origine de l'industrie métallurgique où elles sont appelées <i>manchons isolants</i> et où elles servent à faire couler des alliages de métaux
+              en <b>fusion</b>.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket/batchrocket_flammes_cheminee_interne.JPG">
+                <p class="subtitle">Une cheminée interne en laine céramique pendant une flambée de démonstration. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
+              </div>
             </div>
-          </div>
-          <p>Ces manchons sont aussi utilisés par Peter van den Berg et d'autres poêliers hollandais depuis plusieurs années.</p>
-          <p>Les manchons sont vendus par notre fournisseur belge <a href="www.quinsis.com">QUINSIS</a>. Il faut assembler plusieurs manchons ensemble pour atteindre la hauteur nominale d'une cheminée interne.</p>
-          <table class="table table-bordered text-center">
-            <caption>Tableau résumant les prix et les caractéristiques des manchons isolants pour chaque type de poêle de masse Batchrocket</caption>
-            <thead>
-              <tr>
-                <th class='text-left'>Diamètre interne du manchon (mm)</th>
-                <th class='text-center'>140</th>
-                <th class='text-center'>165</th>
-                <th class='text-center'>200</th>
-                <th class='text-center'>230</th>
-                <th class='text-center'>250</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+            <p>Ces manchons sont aussi utilisés par Peter van den Berg et d'autres poêliers hollandais depuis plusieurs années.</p>
+            <p>Les manchons sont vendus par notre fournisseur belge <a href="www.quinsis.com">QUINSIS</a>. Il faut assembler plusieurs manchons ensemble pour atteindre la hauteur nominale d'une cheminée interne.</p>
+            <table class="table table-bordered text-center">
+              <caption>Tableau résumant les prix et les caractéristiques des manchons isolants pour chaque type de poêle de masse Batchrocket</caption>
+              <thead>
+                <tr>
+                  <th class='text-left'>Diamètre interne du manchon (mm)</th>
+                  <th class='text-center'>140</th>
+                  <th class='text-center'>165</th>
+                  <th class='text-center'>200</th>
+                  <th class='text-center'>230</th>
+                  <th class='text-center'>250</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class='text-left'>
+                    <b>Épaisseur (mm)</b>
+                  </td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                  <td>20</td>
+                </tr>
                 <td class='text-left'>
-                  <b>Épaisseur (mm)</b>
+                  <b>Hauteur de chaque manchon (mm)</b>
                 </td>
-                <td>20</td>
-                <td>20</td>
-                <td>20</td>
-                <td>20</td>
-                <td>20</td>
-              </tr>
-              <td class='text-left'>
-                <b>Hauteur de chaque manchon (mm)</b>
-              </td>
-              <td>200</td>
-              <td>305</td>
-              <td>400</td>
-              <td>600</td>
-              <td>305</td>
-              </tr>
-              <tr>
-                <td class='text-left'>
-                  <b>Prix unitaire hors taxes</b>
-                </td>
-                <td>21,35 €</td>
-                <td>25,16 €</td>
-                <td>31,15 €</td>
-                <td>43,28 €</td>
-                <td>30,52 €</td>
-              </tr>
-              <tr>
-                <td class='text-left'>
-                  <b>Nombre de pièces pour atteindre la hauteur nominale</b>
-                </td>
-                <td>4</td>
-                <td>3</td>
-                <td>3</td>
-                <td>2</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td class='text-left'>
-                  <b>Prix total hors taxes</b>
-                </td>
-                <td><b>85,40 €</b></td>
-                <td><b>75,48 €</b></td>
-                <td><b>93,45 €</b></td>
-                <td><b>86,56 €</b></td>
-                <td><b>122,08 €</b></td>
-              </tr>
-            </tbody>
-          </table>
-          <p>Les prix indiqués sont <b>hors taxe</b> (la TVA belge est à 21%), <b>hors livraison</b> (compter entre 30 et 70€ hors taxes pour la France) et qu'il y a <b>un surcoût de 25€</b> hors taxe pour les commandes des moins de 350€ hors taxe.</p>
-          <p>Ils correspondent à des manchons isolants en laine céramique classée à 1430°C et durcie avec de la Silice colloïdale.</p>
-          <p>La laine céramique utilisée est bio-soluble en environ 2 mois (MAC-value de +- 60-70 jours). C'est-à-dire que si elle est inhalée, elle se dissoudra d'elle même après cette période de temps. C'est beau par rapport à ce qui a pu être fait dans
-            le passé, mais prenez tout de même quelques des précautions : un masque et une paire de gants lors des découpes et manipulations.</p>
-          <p>La documentation technique du matériau, fournie par QUINSIS, est disponible ici : <a href="./assets/docs/technical_datasheet_ceramic_fibre_1430.pdf">technical_datasheet_ceramic_fibre_1430.pdf</a></p>
-          <h3>Commande</h3>
-          <p>Pour commander des manchons isolants, <b><a href="./contact.html">contactez-nous</a></b> et nous vous mettrons en contact avec notre fournisseur.</p>
-          <p>Nous avons besoin des informations suivantes :
+                <td>200</td>
+                <td>305</td>
+                <td>400</td>
+                <td>600</td>
+                <td>305</td>
+                </tr>
+                <tr>
+                  <td class='text-left'>
+                    <b>Prix unitaire hors taxes</b>
+                  </td>
+                  <td>21,35 €</td>
+                  <td>25,16 €</td>
+                  <td>31,15 €</td>
+                  <td>43,28 €</td>
+                  <td>30,52 €</td>
+                </tr>
+                <tr>
+                  <td class='text-left'>
+                    <b>Nombre de pièces pour atteindre la hauteur nominale</b>
+                  </td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td class='text-left'>
+                    <b>Prix total hors taxes</b>
+                  </td>
+                  <td><b>85,40 €</b></td>
+                  <td><b>75,48 €</b></td>
+                  <td><b>93,45 €</b></td>
+                  <td><b>86,56 €</b></td>
+                  <td><b>122,08 €</b></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Les prix indiqués sont <b>hors taxe</b> (la TVA belge est à 21%), <b>hors livraison</b> (compter entre 30 et 70€ hors taxes pour la France) et qu'il y a <b>un surcoût de 25€</b> hors taxe pour les commandes des moins de 350€ hors taxe.</p>
+            <p>Ils correspondent à des manchons isolants en laine céramique classée à 1430°C et durcie avec de la Silice colloïdale.</p>
+            <p>La laine céramique utilisée est bio-soluble en environ 2 mois (MAC-value de +- 60-70 jours). C'est-à-dire que si elle est inhalée, elle se dissoudra d'elle même après cette période de temps. C'est beau par rapport à ce qui a pu être fait dans
+              le passé, mais prenez tout de même quelques des précautions : un masque et une paire de gants lors des découpes et manipulations.</p>
+            <p>La documentation technique du matériau, fournie par QUINSIS, est disponible ici : <a href="./assets/docs/technical_datasheet_ceramic_fibre_1430.pdf">technical_datasheet_ceramic_fibre_1430.pdf</a></p>
+            <h3>Commande</h3>
+            <p>Pour commander des manchons isolants, <b><a href="./contact.html">contactez-nous</a></b> et nous vous mettrons en contact avec notre fournisseur.</p>
+            <p>Nous avons besoin des informations suivantes :
+              <ul>
+                <li>Votre commande détaillée</li>
+                <li>Vos nom et prénom</li>
+                <li>Votre adresse de livraison</li>
+                <li>Votre numéro de téléphone</li>
+              </ul>
+              Le fabriquant vous enverra ensuite un devis à régler avant l'envoi.</p>
+            <h3>Utilisation</h3>
+            <p>Pour rendre ces manchons plus résistants encore et pour les manipuler sans respirer de poussière nous les peignons (intérieur/extérieur) avec du coulis réfractaire. Le coulis va durcir et former une couche protectrice entre la flamme et le
+              manchon. Il est aussi possible de les peindre avec une barbotine d'argile.</p>
+            <p>Les cheminées internes sont aussi collées entre elles avec du coulis réfractaire ou une barbotine d'argile.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_11.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Une cheminée interne en laine céramique étant peinte avec du coulis réfractaire. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
+            <p>Le port est découpé à l'aide d'une lame de scie à métaux.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_19.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Détail de la découpe du port dans la cheminée interne. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
+            <p>Pour les mettre en position, nous utilisons un mélange de vermiculite et d'argile qui sert aussi de joint de dilatation. Le joint recouvre bien toutes les parties en contact pour les sceller hermétiquement. Il faut compacter un peu le mélange
+              vermiculite/argile et le tasser aussi doucement lors de la mise en place. Il y a peu de rétraction au séchage que l'on peut limiter en tassant quand le mélange est encore un peu humide.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_23.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Une cheminée interne mise en position avec un mélange de vermiculite et d'argile. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
+          </section>
+
+
+          <section id="vitres">
+            <h2 class="title">Les vitres réfractaires et joints</h2>
+            <p>Les vitres réfractaires de 4 mm d'épaisseur utilisées pour les portes vitrées peuvent être commandées chez <a href="http://insert-glass.com/ ">INSERT-GLASS</a>. Elles y sont vendues à 380€/m2. Sinon, elles sont aussi disponibles chez les miroitiers-vitriers.</p>
+            <p>Les joints de porte plats autocollants de 10x2 mm utilisés pour la liaison vitre/métal sont aussi vendus en rouleau de 250 cm par <a href="http://insert-glass.com/ ">INSERT-GLASS</a>. Si vous faites une commande de plus de 50€ et que vous
+              comptez sur un rouleau gratuit, précisez leur bien votre intention en répondant à leur mail de facturation. </p>
+            <p>Ils vendent aussi de la tresse céramique utilisée pour l'étanchéité porte/cadre.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/materiaux_fournisseurs/vitre_refractaire.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Une vitre réfractaire sur une porte de four.</p>
+            <h3>Utilisation</h3>
+            <p>La vitrocéramique peut s'utiliser pour des portes vitrées, mais aussi pour des planchas. Pour des petites tailles (30x40 cm par exemple), c'est possible de mettre des marmites directement dessus. Pour des plus grandes tailles (60x60 cm par
+              exemple) le fournisseur nous a assuré que ça marcherait.. reste à le vérifier.</p>
+            <p>Il est aussi possible de récupérer des vitrocéramiques noires de plaques à induction. La découpe se fait comme pour le verre classique avec un diamant.</p>
+          </section>
+
+
+          <section id="thermometres">
+            <h2 class="title">Les thermomètres à tige</h2>
+            <p>Outil indispensable pour jauger de la température dans la cheminée d'évacuation et actionner le clapet de démarrage au bon moment. Le thermomètre à tige est aussi utile dans la porte du four noir.</p>
+            <p>Nous n'avons pas de distributeur francais, mais un italien : <a href="https://www.giemmespoleto.com/fr/">GiemmeSpoleto</a>.</p>
+            <p>Le thermomètre est d'excellente qualité, il est vendu sous le nom <a href="https://www.giemmespoleto.com/fr/thermometres-a-four/244-thermometre-a-four-inox-500-c-fixation-a-vis.html">"Thermomètre à four inox 500 °C fixation à vis"</a> et sa
+              référence est <b>g244</b>.</p>
+          </section>
+
+
+          <section id="materiel">
+            <h2 class="title">Le matériel pour un chantier</h2>
             <ul>
-              <li>Votre commande détaillée</li>
-              <li>Vos nom et prénom</li>
-              <li>Votre adresse de livraison</li>
-              <li>Votre numéro de téléphone</li>
+              <li>1 Scie à eau sur table. Disque de 350 mm de diamètre.</li>
+              <li>Plusieurs m2 de carton plat de 5mm d'épaisseur ;</li>
+              <li>2 tréteaux et des planches pour y poser les outils ;</li>
+              <li>2 auges de maçon ;</li>
+              <li>3 seaux en caoutchouc ;</li>
+              <li>2 éponges de chantier ;</li>
+              <li>1 rouleau de scotch résistant (pour le carton au sol et sur les murs) ;</li>
+              <li>1 rallonge ;</li>
+              <li>2 enrouleurs ;</li>
+              <li>1 équerre de maçon ;</li>
+              <li>2 niveaux à bulle de 40 ou 50 cm;</li>
+              <li>1 niveau à bulle de 100 cm ou plus ;</li>
+              <li>1 règle de maçon de 150 cm ou plus ;</li>
+              <li>1 meuleuse d'angle avec disque diamant en 125 mm de diamètre ;</li>
+              <li>1 perceuse filaire ;</li>
+              <li>1 tête de malaxage ;</li>
+              <li>2 truelles carrées de 14 cm ;</li>
+              <li>2 petits marteaux (plus efficaces que les maillets en caoutchouc) ;</li>
+              <li>1 spatule ;</li>
+              <li>1 lisseuse ;</li>
+              <li>1 platoir ;</li>
+              <li>1 ciseau à briques ;</li>
+              <li>2 langues de chat ;</li>
+              <li>2 truelles classiques ;</li>
+              <li>1 balai ;</li>
+              <li>2 paires de gants en plastique (pour la maçonnerie avec le coulis REFRACOL qui est alcalin) ;</li>
+              <li>4 serre joints ;</li>
+              <li>EPI classiques (casques anti-bruit, gants, etc..) ;</li>
+              <li>1 hachette ;</li>
             </ul>
-            Le fabriquant vous enverra ensuite un devis à régler avant l'envoi.</p>
-          <h3>Utilisation</h3>
-          <p>Pour rendre ces manchons plus résistants encore et pour les manipuler sans respirer de poussière nous les peignons (intérieur/extérieur) avec du coulis réfractaire. Le coulis va durcir et former une couche protectrice entre la flamme et le manchon.
-            Il est aussi possible de les peindre avec une barbotine d'argile.</p>
-          <p>Les cheminées internes sont aussi collées entre elles avec du coulis réfractaire ou une barbotine d'argile.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_11.jpg">
-            </div>
-          </div>
-          <p class="subtitle">Une cheminée interne en laine céramique étant peinte avec du coulis réfractaire. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
-          <p>Le port est découpé à l'aide d'une lame de scie à métaux.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_19.jpg">
-            </div>
-          </div>
-          <p class="subtitle">Détail de la découpe du port dans la cheminée interne. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
-          <p>Pour les mettre en position, nous utilisons un mélange de vermiculite et d'argile qui sert aussi de joint de dilatation. Le joint recouvre bien toutes les parties en contact pour les sceller hermétiquement. Il faut compacter un peu le mélange
-            vermiculite/argile et le tasser aussi doucement lors de la mise en place. Il y a peu de rétraction au séchage que l'on peut limiter en tassant quand le mélange est encore un peu humide.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket_082017/batchrocket_082017_23.jpg">
-            </div>
-          </div>
-          <p class="subtitle">Une cheminée interne mise en position avec un mélange de vermiculite et d'argile. </br>Source : <a class="ref">Pascal Burnet, Stage UZUME, 2017.</a></p>
-
-          <a name="vitres"></a>
-          <h2 class="title">Les vitres réfractaires et joints</h2>
-          <p>Les vitres réfractaires de 4 mm d'épaisseur utilisées pour les portes vitrées peuvent être commandées chez <a href="http://insert-glass.com/ ">INSERT-GLASS</a>. Elles y sont vendues à 380€/m2. Sinon, elles sont aussi disponibles chez les miroitiers-vitriers.</p>
-          <p>Les joints de porte plats autocollants de 10x2 mm utilisés pour la liaison vitre/métal sont aussi vendus en rouleau de 250 cm par <a href="http://insert-glass.com/ ">INSERT-GLASS</a>. Si vous faites une commande de plus de 50€ et que vous comptez
-            sur un rouleau gratuit, précisez leur bien votre intention en répondant à leur mail de facturation. </p>
-          <p>Ils vendent aussi de la tresse céramique utilisée pour l'étanchéité porte/cadre.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/materiaux_fournisseurs/vitre_refractaire.JPG">
-            </div>
-          </div>
-          <p class="subtitle">Une vitre réfractaire sur une porte de four.</p>
-          <h3>Utilisation</h3>
-          <p>La vitrocéramique peut s'utiliser pour des portes vitrées, mais aussi pour des planchas. Pour des petites tailles (30x40 cm par exemple), c'est possible de mettre des marmites directement dessus. Pour des plus grandes tailles (60x60 cm par exemple)
-            le fournisseur nous a assuré que ça marcherait.. reste à le vérifier.</p>
-          <p>Il est aussi possible de récupérer des vitrocéramiques noires de plaques à induction. La découpe se fait comme pour le verre classique avec un diamant.</p>
-
-
-          <a name="thermometres"></a>
-          <h2 class="title">Les thermomètres à tige</h2>
-          <p>Outil indispensable pour jauger de la température dans la cheminée d'évacuation et actionner le clapet de démarrage au bon moment. Le thermomètre à tige est aussi utile dans la porte du four noir.</p>
-          <p>Nous n'avons pas de distributeur francais, mais un italien : <a href="https://www.giemmespoleto.com/fr/">GiemmeSpoleto</a>.</p>
-          <p>Le thermomètre est d'excellente qualité, il est vendu sous le nom <a href="https://www.giemmespoleto.com/fr/thermometres-a-four/244-thermometre-a-four-inox-500-c-fixation-a-vis.html">"Thermomètre à four inox 500 °C fixation à vis"</a> et sa
-            référence est <b>g244</b>.</p>
-
-
-          <a name="materiel"></a>
-          <h2 class="title">Le matériel pour un chantier</h2>
-          <ul>
-            <li>1 Scie à eau sur table. Disque de 350 mm de diamètre.</li>
-            <li>Plusieurs m2 de carton plat de 5mm d'épaisseur ;</li>
-            <li>2 tréteaux et des planches pour y poser les outils ;</li>
-            <li>2 auges de maçon ;</li>
-            <li>3 seaux en caoutchouc ;</li>
-            <li>2 éponges de chantier ;</li>
-            <li>1 rouleau de scotch résistant (pour le carton au sol et sur les murs) ;</li>
-            <li>1 rallonge ;</li>
-            <li>2 enrouleurs ;</li>
-            <li>1 équerre de maçon ;</li>
-            <li>2 niveaux à bulle de 40 ou 50 cm;</li>
-            <li>1 niveau à bulle de 100 cm ou plus ;</li>
-            <li>1 règle de maçon de 150 cm ou plus ;</li>
-            <li>1 meuleuse d'angle avec disque diamant en 125 mm de diamètre ;</li>
-            <li>1 perceuse filaire ;</li>
-            <li>1 tête de malaxage ;</li>
-            <li>2 truelles carrées de 14 cm ;</li>
-            <li>2 petits marteaux (plus efficaces que les maillets en caoutchouc) ;</li>
-            <li>1 spatule ;</li>
-            <li>1 lisseuse ;</li>
-            <li>1 platoir ;</li>
-            <li>1 ciseau à briques ;</li>
-            <li>2 langues de chat ;</li>
-            <li>2 truelles classiques ;</li>
-            <li>1 balai ;</li>
-            <li>2 paires de gants en plastique (pour la maçonnerie avec le coulis REFRACOL qui est alcalin) ;</li>
-            <li>4 serre joints ;</li>
-            <li>EPI classiques (casques anti-bruit, gants, etc..) ;</li>
-            <li>1 hachette ;</li>
-          </ul>
-
-
-
-
-
+          </section>
         </div>
-
         <div id='footer'>
           <div id='footer-inner'>
             <div class='footer-text'>

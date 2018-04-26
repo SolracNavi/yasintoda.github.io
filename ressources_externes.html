@@ -6,43 +6,45 @@
   <title>
     Ressources externes
   </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  <meta charset='UTF-8'>
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
-  <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="level1">
+          <ul class="nav nav-stacked">
+            <li>
               <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
             </li>
           </ul>
 
           <h3>Plan de l'article</h3>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-stacked">
             <li><a href="#livres">Les livres</a></li>
-            <ul>
+            <ol>
               <li><a href="#vital">Poêles à accumulation</a> </li>
               <li><a href="#oxalis">Manuel d'autoconstruction d'OXALIS</a> </li>
               <li><a href="#lyle">The Book of Masonry Stoves</a> </li>
-            </ul>
+            </ol>
             <li><a href="#sites">Les sites</a></li>
-            <ul>
+            <ol>
               <li><a href="#batchrocket">Batchrocket.eu</a> </li>
               <li><a href="#mha">MHA webzine</a> </li>
               <li><a href="#eduardo">Estufas de Inercia</a> </li>
               <li><a href="#kirpichiki">Kirpichiki</a> </li>
               <li><a href="#numiah">Numiah Permaculture</a> </li>
               <li><a href="#feufollet">Association Feufollet</a> </li>
-            </ul>
+            </ol>
           </ul>
         </nav>
       </div>
@@ -53,224 +55,246 @@
         </div>
         <div class="content-box">
 
-          <a name="livres"></a>
-          <h2 class="title">Les livres</h2>
 
-          <a name="vital"></a>
-          <h3 class="title-small">Poêles à accumulation - Le meilleur du chauffage au bois, Vital Bies et Marie Milesi</h3>
-          <ul class="row gallery">
-            <li class="col-sm-8">
-              <p>LA référence pour aborder les poêles de masse.</p>
-              <p>À la fois synthétique et précis, c'est le livre qui a relancé les poêles de masse en France. Il est le fruit d'un énorme travail de recherche et clarifie beaucoup de notions pour ceux qui voudraient se lancer dans l'aventure.</p>
-              <p>Attention au plans d'autoconstructions, ceux-ci ont été modifiés depuis la publication du livre. Les modifications sont disponibles sur le blog donné en lien dans le livre.</p>
-              <p>Une partie de l'énorme travail de Vital Bies est visible ici : <a href="http://www.mvhabitation.com/-Realisations-.html">MVHabitation</a>, association <a href="https://sites.google.com/site/assodes2mains/">Dès 2 mains</a>, <a href="http://www.afpma.pro/">AFPMA</a>.</p>
-              <p>Le livre est disponible sur ce lien : <a href="https://www.amazon.fr/Po%C3%AAles-%C3%A0-accumulation-meilleur-chauffage/dp/2914717806">Poêles à accumulation : Le meilleur du chauffage au bois</a></p>
-            </li>
-            <li class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/ressources_externes/poeles_a_accumulation.JPG">
-            </li>
-          </ul>
+          <section id="livres">
+            <h2 class="title">Les livres</h2>
+          </section>
 
-          <a name="oxalis"></a>
-          <h3 class="title-small">Manuel d'autoconstruction d'OXALIS</h3>
-          <p>LA référence en auto-construction de poêles de masse. </p>
-          <p>Le manuel et les plans sketchup permettent de construire des poêles de type finlandais (à contre courant). Plusieurs centaines de ces poêles (400 aux dernières nouvelles) ont été construits en France.. pour de bonnes raisons : Les rendements
-            sont bons, le modèle a été extrèmement simplifié par rapport à ce qui faisait auparavant, de très nombreux retours d'expérience leur ont permis de mettre en place un modèle fiable, adapté à l'autoconstruction, à la cuisson avec des bacs Gastronorm.
-          </p>
-          <p>Quelques petits commentaires de notre coté :
-            <ul>
-              <li>Nous pensons que ces poêles devraient être construits avec clapets d'obstructions étanches à 5%, ainsi qu'avec des arrivées d'air étanches et refermées systématiquement à la fin de chaque flambée. Sinon les rendements totaux sont à minorer
-                de plusieurs dizaines de pourcents.</li>
-              <li>Nos analyses de combustion montrent que ces foyers ont tendance à s'emballer assez rapidement (en dessous de 10-11% d'O2 d'après nos mesures) et à polluer si l'emballement se produit.</li>
-              <li>Pour une meilleure durabilité, nous pensons qu'il est très important de maçonner ces foyers avec du coulis silicaté (type REFRACOL 240) plutôt que du coulis argileux (kaolin/chamotte). L'idéal serait peut-être de mettre des feuillards metalliques
-                et des cornières aux arêtes du coeur de chauffe, pour le compresser et éviter que les briques ne bougent sous l'effet des cycles de dilatation/refroidissement.</li>
-              <li>Les bancs longs sont source de problèmes de démarrage et n'apportent pas beaucoup de rendement supplémentaire. Si le poêle ne peut pas être placé juste à coté du conduit de cheminée, les dossiers chauffants en cloche avec un clapet de démarrage
-                au bout (en position haute) permettrait d'améliorer le fonctionnement.</li>
+
+          <section id="vital">
+            <h3 class="title-small">Poêles à accumulation - Le meilleur du chauffage au bois, Vital Bies et Marie Milesi</h3>
+            <ul class="row gallery">
+              <li class="col-sm-8">
+                <p>LA référence pour aborder les poêles de masse.</p>
+                <p>À la fois synthétique et précis, c'est le livre qui a relancé les poêles de masse en France. Il est le fruit d'un énorme travail de recherche et clarifie beaucoup de notions pour ceux qui voudraient se lancer dans l'aventure.</p>
+                <p>Attention au plans d'autoconstructions, ceux-ci ont été modifiés depuis la publication du livre. Les modifications sont disponibles sur le blog donné en lien dans le livre.</p>
+                <p>Une partie de l'énorme travail de Vital Bies est visible ici : <a href="http://www.mvhabitation.com/-Realisations-.html">MVHabitation</a>, association <a href="https://sites.google.com/site/assodes2mains/">Dès 2 mains</a>, <a href="http://www.afpma.pro/">AFPMA</a>.</p>
+                <p>Le livre est disponible sur ce lien : <a href="https://www.amazon.fr/Po%C3%AAles-%C3%A0-accumulation-meilleur-chauffage/dp/2914717806">Poêles à accumulation : Le meilleur du chauffage au bois</a></p>
+              </li>
+              <li class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/ressources_externes/poeles_a_accumulation.JPG">
+              </li>
             </ul>
-          </p>
-          </li>
-          <p>Des stages de formation sont organisés tous les mois et permettent d'apprendre à construire trois modèles de même forme mais de puissance différente. Le manuel est disponible sur le site de l'association : <a href="http://www.oxalis-asso.org/?page_id=3177">oxalis-asso.org/?page_id=3177</a>.
-          </p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/ressources_externes/poele_de_masse_OXALIS.JPG">
-            </div>
-          </div>
-          <p class="subtitle">Test de combustion d'un poêle OXALIS 8kW avec four sur le dessus.
-            </br>Source : <a class="ref">Association UZUME</a>
-          </p>
+
+          </section>
 
 
-          <a name="lyle"></a>
-          <h3 class="title-small">The Book of Masonry Stoves, David Lyle, 1984</h3>
-          <ul class="row gallery">
-            <li class="col-sm-6">
-              <p>Ouvrage fondamental qui a introduit les poêles de masse aux US. L'approche est historique et l'auteur a fait beaucoup de recherches sur les poêles d'Europe de l'Est, notamment de Russie. Cette mise en perspective permet de comprendre à quel
-                point les poêles de masse ont joué un rôle crucial dans quasiment tous les pays froids du monde.</P>
-              <p>Les plans de poêles fournis nous montrent l'ingéniosité des anciens poêliers, l'intégration réfléchie des poêles de masse dans le quotidien des habitants de nombreux pays, et permettent d'apercevoir l'énorme saut qualitatif des poêles actuels.</p>
-              <p>Globalement c'est plutôt un ouvrage de recherche sur les anciennes pratiques car les "nouvelles pratiques" n'existaient pas encore. Les dessins sont parlants, magnifiques. C'est une excellente source d'inspiration pour tout poêlier-pyromane.
-              </p>
-              <p>Le livre est disponible <a href="https://www.amazon.fr/Book-Masonry-Stoves-Rediscovering-Warming/dp/1890132098">sur ce lien</a>.</p>
-
-
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/book_masonry_stoves_David_Lyle.JPG">
-            </li>
-          </ul>
-
-
-          <a name="sites"></a>
-          <h2 class="title">Les sites</h2>
-
-          <a name="outils-autonomie"></a>
-          <a href="https://www.outils-autonomie.fr/"><h3 class="title-small">Outils-autonomie.fr</h3></a>
-          <ul class="row gallery">
-            <li class="col-sm-8">
-              <p>On peut difficilement renier ses origines et l'association "Les Outils de l'Autonomie", C'EST l'origine d'UZUME qui ne fait qu'ajouter une dimension à son travail préliminaire.</p>
-              <p><b>Christophe GLAZIOU</b>, passionné d'autonomie énergétique de la première heure, travaille discrètement mais sans relâche sur toutes les technologies pertinentes, concrètement efficaces pour ceux qui choisissent la voie d'une plus grande
-                autonomie. Éolien, solaire, bois, eau.. tout y est.</p>
-              <p>Sur son site vous ne trouverez pas de longs discours, mais simplement les plans d'<b>outils éprouvés qui remplissent les fonctions qu'on attend d'eux</b>. Ceux-ci sont tous les fruits d'une énorme maîtrise technique couplée à beaucoup d'expérience..</p>
-              <p>Artisan Chaudronnier et formateur en métallerie, c'est le métalleux de <a href="http://www.tripalium.org/">TRIPALIUM</a> et un des co-auteurs du manuel <a href="https://www.tripalium.org/manuel">Construire une éolienne</a> qui est devenu
-                au fil des ans LA référence mondiale du petit éolien.</p>
-              <p>Depuis les débuts de son travail avec UZUME, toute la métallerie de nos poêles et cuisinières a fait un formidable bond en avant en terme de qualité et de beauté. Nos formations sont maintenant beaucoup plus enrichissantes pour les stagiaires
-                grâce à l'atelier métallerie qu'il anime.</p>
-              <p>Le lien vers le site de l'association Loi 1901 <a href="https://www.outils-autonomie.fr/">Les Outils de l'Autonomie</a>.</p>
-            </li>
-            <li class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/ressources_externes/rocket_stove_cuiseur_outils_autonomie.JPG">
-              <p class="subtitle">Rocket Stove cuiseur.
-                </br>Source : <a class="ref" href="https://www.outils-autonomie.fr/">Les Outils de l'Autonomie</a>
-              </p>
-            </li>
-          </ul>
-
-
-          <a name="batchrocket"></a>
-          <a href="http://batchrocket.eu/fr"><h3 class="title-small">Batchrocket.eu</h3></a>
-          <ul class="row gallery">
-            <li class="col-sm-8">
-              <p>Impossible de ne pas présenter ici le fruit du travail minutieux, inlassable, passionné de Peter van den Berg.</p>
-              <p>Le Batchrocket c'est un pavé dans la mare. Un foyer minuscule, étrange, horizontal raccordé à une cheminée.. à l'intérieur du poêle ! Une arrivée d'air secondaire unique, ressemblant à un "cobra", amenant de l'air préchauffé dans des flammes
-                oscillant en une forme de double vortex..! Des résultats de combustion époustouflants et des plans de construction diffusés librement.</p>
-              <p>Par rapport aux foyers de la fin des années 80 sur lesquels il a commencé à travailler, les Batchrocket sont un saut en avant considérable. Ils n'ont aussi rien à envier aux foyers industriels les plus récents.</p>
-              <p>Peter a passé beaucoup de temps à travailler sur la conception du Batchrocket : plus de 500 flambées analysées jusqu'à maintenant (début 2018), mais plus de temps encore à expliquer avec minutie les détails de conception de poêles tout entiers
-                pour tout pyromane en puissance sur le forum anglo-saxon <a href="http://donkey32.proboards.com/">donkey32.proboards.com</a> et sur d'autres forums ainsi que sur invitation un peu partout dans le monde.. une belle oeuvre de générosité.</p>
-              <p>Le lien vers son site : <a href="http://batchrocket.eu/fr">batchrocket.eu/fr</a></p>
-            </li>
-            <li class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/ressources_externes/batchrocket_core177-3part.JPG">
-              <p class="subtitle">Batchrocket moulé.
-                </br>Source : <a class="ref" href="http://batchrocket.eu/fr">Peter van den Berg, Batchrocket.eu</a>
-              </p>
-            </li>
-          </ul>
-
-          <a name="mha"></a>
-          <a href="http://mha-net.org/docs/v8n2/v8n2.htm"><h3 class="title-small">MHA webzine</h3></a>
-
-          <p>Une mine d'or. La MHA est l'association des poêliers nord-américains. Beaucoup de moyens, beaucoup de tests, beaucoup de publications.</p>
-          <p>Ils organisent chaque année une grande rencontre entre professionnels et publient des comptes rendus détaillés. Le lien vers le compte rendu des rencontres de 2017 est diponible ici : <a href="http://mha-net.org/docs/v8n2/wildac17i.htm">2017 MHA Annual Meeting</a>.</p>
-          <p>Le lien vers leur magazine web : <a href="http://mha-net.org/docs/v8n2/v8n2.htm">MHA Webzine</a></p>
-
-          <a name="eduardo"></a>
-          <a href="https://estufasdeinercia.wordpress.com"><h3 class="title-small">Estufas de Inercia</h3></a>
-          <ul class="row gallery">
-            <li class="col-sm-8">
-              <p>Eduardo Marquina est un poêlier espagnol explorant les nombreuses formes permises par des poêles de masse utilisant des cloches. Beaucoup de créativité, des poêles surprenants, bien intégrés, avec différentes techniques d'enduits (Tadelak,
-                Trabadillo, terre, etc..), des sytèmes d'eau chaude sanitaire intégrés aux poêles.</p>
-              <p>Son site diffuse des informations en Open-source sur les sytèmes d'eau chaude sanitaires, les techniques d'enduits et divers autres sujets liés aux poêles de masse. </p>
-              <p>Le lien vers son site : <a href="https://estufasdeinercia.wordpress.com">estufasdeinercia.wordpress.com</a></p>
-              <p>Nous collaborons régulièrement avec lui, c'est un homme très généreux, d'une grande valeur à qui nous devons beaucoup, tant pour l'inspiration que les conseils.</p>
-            </li>
-            <li class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_3.JPG">
-              <p class="subtitle"> Un poêle de masse intégré dans un mur.
-                </br>Source : <a class="ref">Eduardo Marquina</a>
-              </p>
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_1.JPG">
-            </div>
-            <div class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_2.JPG">
-            </div>
-            <p class="subtitle">À droite, satellite de chauffage à l'étage.
+          <section id="oxalis">
+            <h3 class="title-small">Manuel d'autoconstruction d'OXALIS</h3>
+            <p>LA référence en auto-construction de poêles de masse. </p>
+            <p>Le manuel et les plans sketchup permettent de construire des poêles de type finlandais (à contre courant). Plusieurs centaines de ces poêles (400 aux dernières nouvelles) ont été construits en France.. pour de bonnes raisons : Les rendements
+              sont bons, le modèle a été extrèmement simplifié par rapport à ce qui faisait auparavant, de très nombreux retours d'expérience leur ont permis de mettre en place un modèle fiable, adapté à l'autoconstruction, à la cuisson avec des bacs
+              Gastronorm.
             </p>
-            <div class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_4.JPG">
-            </div>
-            <div class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_5.JPG">
-            </div>
-          </div>
-          <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina.
-            </br>Source : <a class="ref">Eduardo Marquina</a>
-          </p>
-
-          <a name="kirpichiki"></a>
-          <a href="http://kirpichiki.pro/gallery.html"><h3 class="title-small">Kirpichiki</h3></a>
-          <p>Dans le monde du poêle de masse les poêliers, ingénieurs, inventeurs russes sont véritablement incontournables. C'est une nation entière qui a développé un savoir-faire et un art de vivre toujours vivace autour de leurs poêles de masse. Difficile
-            d'imaginer une maison paysanne russe sans poêle de masse !</p>
-          <p>Il nous est impossible d'imaginer ce que serait devenus les poêles de masse sans les travaux des russes W.E. Groume-Grimailo, IS. Podgorodnikov, I. Kuznetsov. Les deux premiers pour leur apport technique majeur et le dernier pour la conception
-            et la publication de nombreux modèles de poêles.</p>
-          <p>Par rapport aux poêles d'Europe de l'Ouest et des États Unis, les poêles russes se caractérisent par leur taille, leur très forte inertie (sûrement liée au climat..), leur multi-fonctionnalité (chauffage, eau chaude, cuisson sur plancha, four
-            à pain, séchoir, fumoir, lit, etc..), l'utilisation de matériaux simples, "low-tech" et de techniques également simples et ingénieuses. </p>
-          <p>Aujourd'hui, l'équipe de Kirpichiki publie beaucoup d'articles et de photos sur la construction des poêles de masse russes et réalise des poêles avec une maitrise technique incroyable : des briques réfractaires, des double peaux, des armatures
-            seulement là où c'est nécessaire. Une pensée sur le long terme, sur la robustesse.</p>
-          <p>Quasiment tous leurs poêles sont renforcés par un cadre métallique en cornière. C'est une technique très ingénieuse où le cadre est fabriqué avant le poêle et ce dernier est maçonné à l'intérieur. La fabrication du cadre demande du travail,
-            mais le montage des briques devient très facile et le poêle TRÈS solide ou, comme ils disent : "thermo-intensif".</p>
-          <p>Le lien de leurs réalisations ici (en Russe) : <a href="http://kirpichiki.pro/gallery.html">http://kirpichiki.pro/gallery.html</a> </p>
-
-
-          <a name="numiah"></a>
-          <a href="https://www.numiah.permacultureardeche.fr/services"><h3 class="title-small">Numiah Permaculture</h3></a>
-          <ul class="row gallery">
-            <li class="col-sm-6">
-              <p>Des formations sur la construction de Rocket Stoves par un permaculteur au grand coeur et avec une vision très synthètique.</p>
-              <p>Nous avons organisé plusieurs formations en collaboration avec Bruno Torrente. Les formations permettent de construire des Rocket stoves classiques avec bidons et bancs en bauge. Leur puissance est faible : ils sont à réserver pour des espaces
-                petits ou très bien isolés. Par contre, ils sont très très abordables et faciles à faire en auto-construction.</p>
-              <p>Le lien ici : <a href="https://www.numiah.permacultureardeche.fr/services">numiah.permacultureardeche.fr/services</a> </p>
+            <p>Quelques petits commentaires de notre coté :
+              <ul>
+                <li>Nous pensons que ces poêles devraient être construits avec clapets d'obstructions étanches à 5%, ainsi qu'avec des arrivées d'air étanches et refermées systématiquement à la fin de chaque flambée. Sinon les rendements totaux sont à minorer
+                  de plusieurs dizaines de pourcents.</li>
+                <li>Nos analyses de combustion montrent que ces foyers ont tendance à s'emballer assez rapidement (en dessous de 10-11% d'O2 d'après nos mesures) et à polluer si l'emballement se produit.</li>
+                <li>Pour une meilleure durabilité, nous pensons qu'il est très important de maçonner ces foyers avec du coulis silicaté (type REFRACOL 240) plutôt que du coulis argileux (kaolin/chamotte). L'idéal serait peut-être de mettre des feuillards
+                  metalliques et des cornières aux arêtes du coeur de chauffe, pour le compresser et éviter que les briques ne bougent sous l'effet des cycles de dilatation/refroidissement.</li>
+                <li>Les bancs longs sont source de problèmes de démarrage et n'apportent pas beaucoup de rendement supplémentaire. Si le poêle ne peut pas être placé juste à coté du conduit de cheminée, les dossiers chauffants en cloche avec un clapet de
+                  démarrage au bout (en position haute) permettrait d'améliorer le fonctionnement.</li>
+              </ul>
+            </p>
             </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/ressources_externes/numiah_rocket_stoves.JPG">
-              <p class="subtitle">Stage de construction de Rocket Stoves.
-                </br>Source : <a class="ref">Bruno Torrente</a>
+            <p>Des stages de formation sont organisés tous les mois et permettent d'apprendre à construire trois modèles de même forme mais de puissance différente. Le manuel est disponible sur le site de l'association : <a href="http://www.oxalis-asso.org/?page_id=3177">oxalis-asso.org/?page_id=3177</a>.
+            </p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/ressources_externes/poele_de_masse_OXALIS.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Test de combustion d'un poêle OXALIS 8kW avec four sur le dessus.
+              </br>Source : <a class="ref">Association UZUME</a>
+            </p>
+          </section>
+
+
+          <section id="lyle">
+            <h3 class="title-small">The Book of Masonry Stoves, David Lyle, 1984</h3>
+            <ul class="row gallery">
+              <li class="col-sm-6">
+                <p>Ouvrage fondamental qui a introduit les poêles de masse aux US. L'approche est historique et l'auteur a fait beaucoup de recherches sur les poêles d'Europe de l'Est, notamment de Russie. Cette mise en perspective permet de comprendre à
+                  quel point les poêles de masse ont joué un rôle crucial dans quasiment tous les pays froids du monde.</P>
+                <p>Les plans de poêles fournis nous montrent l'ingéniosité des anciens poêliers, l'intégration réfléchie des poêles de masse dans le quotidien des habitants de nombreux pays, et permettent d'apercevoir l'énorme saut qualitatif des poêles
+                  actuels.</p>
+                <p>Globalement c'est plutôt un ouvrage de recherche sur les anciennes pratiques car les "nouvelles pratiques" n'existaient pas encore. Les dessins sont parlants, magnifiques. C'est une excellente source d'inspiration pour tout poêlier-pyromane.
+                </p>
+                <p>Le livre est disponible <a href="https://www.amazon.fr/Book-Masonry-Stoves-Rediscovering-Warming/dp/1890132098">sur ce lien</a>.</p>
+
+
+              </li>
+              <li class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/book_masonry_stoves_David_Lyle.JPG">
+              </li>
+            </ul>
+          </section>
+
+
+          <section id="sites">
+            <h2 class="title">Les sites</h2>
+          </section>
+
+
+          <section id="outils-autonomie">
+            <a href="https://www.outils-autonomie.fr/"><h3 class="title-small">Outils-autonomie.fr</h3></a>
+            <ul class="row gallery">
+              <li class="col-sm-8">
+                <p>On peut difficilement renier ses origines et l'association "Les Outils de l'Autonomie", C'EST l'origine d'UZUME qui ne fait qu'ajouter une dimension à son travail préliminaire.</p>
+                <p><b>Christophe GLAZIOU</b>, passionné d'autonomie énergétique de la première heure, travaille discrètement mais sans relâche sur toutes les technologies pertinentes, concrètement efficaces pour ceux qui choisissent la voie d'une plus grande
+                  autonomie. Éolien, solaire, bois, eau.. tout y est.</p>
+                <p>Sur son site vous ne trouverez pas de longs discours, mais simplement les plans d'<b>outils éprouvés qui remplissent les fonctions qu'on attend d'eux</b>. Ceux-ci sont tous les fruits d'une énorme maîtrise technique couplée à beaucoup
+                  d'expérience..</p>
+                <p>Artisan Chaudronnier et formateur en métallerie, c'est le métalleux de <a href="http://www.tripalium.org/">TRIPALIUM</a> et un des co-auteurs du manuel <a href="https://www.tripalium.org/manuel">Construire une éolienne</a> qui est devenu
+                  au fil des ans LA référence mondiale du petit éolien.</p>
+                <p>Depuis les débuts de son travail avec UZUME, toute la métallerie de nos poêles et cuisinières a fait un formidable bond en avant en terme de qualité et de beauté. Nos formations sont maintenant beaucoup plus enrichissantes pour les stagiaires
+                  grâce à l'atelier métallerie qu'il anime.</p>
+                <p>Le lien vers le site de l'association Loi 1901 <a href="https://www.outils-autonomie.fr/">Les Outils de l'Autonomie</a>.</p>
+              </li>
+              <li class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/ressources_externes/rocket_stove_cuiseur_outils_autonomie.JPG">
+                <p class="subtitle">Rocket Stove cuiseur.
+                  </br>Source : <a class="ref" href="https://www.outils-autonomie.fr/">Les Outils de l'Autonomie</a>
+                </p>
+              </li>
+            </ul>
+          </section>
+
+
+          <section id="batchrocket">
+            <a href="http://batchrocket.eu/fr"><h3 class="title-small">Batchrocket.eu</h3></a>
+            <ul class="row gallery">
+              <li class="col-sm-8">
+                <p>Impossible de ne pas présenter ici le fruit du travail minutieux, inlassable, passionné de Peter van den Berg.</p>
+                <p>Le Batchrocket c'est un pavé dans la mare. Un foyer minuscule, étrange, horizontal raccordé à une cheminée.. à l'intérieur du poêle ! Une arrivée d'air secondaire unique, ressemblant à un "cobra", amenant de l'air préchauffé dans des flammes
+                  oscillant en une forme de double vortex..! Des résultats de combustion époustouflants et des plans de construction diffusés librement.</p>
+                <p>Par rapport aux foyers de la fin des années 80 sur lesquels il a commencé à travailler, les Batchrocket sont un saut en avant considérable. Ils n'ont aussi rien à envier aux foyers industriels les plus récents.</p>
+                <p>Peter a passé beaucoup de temps à travailler sur la conception du Batchrocket : plus de 500 flambées analysées jusqu'à maintenant (début 2018), mais plus de temps encore à expliquer avec minutie les détails de conception de poêles tout
+                  entiers pour tout pyromane en puissance sur le forum anglo-saxon <a href="http://donkey32.proboards.com/">donkey32.proboards.com</a> et sur d'autres forums ainsi que sur invitation un peu partout dans le monde.. une belle oeuvre de générosité.</p>
+                <p>Le lien vers son site : <a href="http://batchrocket.eu/fr">batchrocket.eu/fr</a></p>
+              </li>
+              <li class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/ressources_externes/batchrocket_core177-3part.JPG">
+                <p class="subtitle">Batchrocket moulé.
+                  </br>Source : <a class="ref" href="http://batchrocket.eu/fr">Peter van den Berg, Batchrocket.eu</a>
+                </p>
+              </li>
+            </ul>
+          </section>
+
+
+          <section id="mha">
+            <a href="http://mha-net.org/docs/v8n2/v8n2.htm"><h3 class="title-small">MHA webzine</h3></a>
+
+            <p>Une mine d'or. La MHA est l'association des poêliers nord-américains. Beaucoup de moyens, beaucoup de tests, beaucoup de publications.</p>
+            <p>Ils organisent chaque année une grande rencontre entre professionnels et publient des comptes rendus détaillés. Le lien vers le compte rendu des rencontres de 2017 est diponible ici : <a href="http://mha-net.org/docs/v8n2/wildac17i.htm">2017 MHA Annual Meeting</a>.</p>
+            <p>Le lien vers leur magazine web : <a href="http://mha-net.org/docs/v8n2/v8n2.htm">MHA Webzine</a></p>
+          </section>
+
+
+          <section id="eduardo">
+            <a href="https://estufasdeinercia.wordpress.com"><h3 class="title-small">Estufas de Inercia</h3></a>
+            <ul class="row gallery">
+              <li class="col-sm-8">
+                <p>Eduardo Marquina est un poêlier espagnol explorant les nombreuses formes permises par des poêles de masse utilisant des cloches. Beaucoup de créativité, des poêles surprenants, bien intégrés, avec différentes techniques d'enduits (Tadelak,
+                  Trabadillo, terre, etc..), des sytèmes d'eau chaude sanitaire intégrés aux poêles.</p>
+                <p>Son site diffuse des informations en Open-source sur les sytèmes d'eau chaude sanitaires, les techniques d'enduits et divers autres sujets liés aux poêles de masse. </p>
+                <p>Le lien vers son site : <a href="https://estufasdeinercia.wordpress.com">estufasdeinercia.wordpress.com</a></p>
+                <p>Nous collaborons régulièrement avec lui, c'est un homme très généreux, d'une grande valeur à qui nous devons beaucoup, tant pour l'inspiration que les conseils.</p>
+              </li>
+              <li class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_3.JPG">
+                <p class="subtitle"> Un poêle de masse intégré dans un mur.
+                  </br>Source : <a class="ref">Eduardo Marquina</a>
+                </p>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_1.JPG">
+              </div>
+              <div class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_2.JPG">
+              </div>
+              <p class="subtitle">À droite, satellite de chauffage à l'étage.
               </p>
-            </li>
-          </ul>
-
-
-          <a name="feufollet"></a>
-          <a href="http://www.feufollet.org/"><h3 class="title-small">Association Feufollet</h3></a>
-          <ul class="row gallery">
-            <li class="col-sm-8">
-              <p>Association de pyromanes très engagés et absolument passionnés de combustion du bois et du ré-emploi de matériaux.</p>
-              <p>Ils organisent des stages de formation autour des Rocket Stoves, des Batchrockets, et des cuiseurs Rocket. Ils organisent aussi la cuisine durant des évènements (festivals, rencontres, etc..). La cuisson est faite uniquement avec différents
-                cuiseurs Rocket qu'ils ont conçu.</p>
-              <p>Les cuiseurs Rocket sont vraiment excellents à l'usage, les rendements sont hauts, la pollution basse, le travail de bidonnerie et de culottage est soigné. </p>
-              <p>Ils organisent régulièrement "Les rencontres Pyromaniaques" qui ont permis de créer beaucoup de liens (nous en sommes la preuve !) au sein du réseau des poêles de masse.</p>
-              <p>Le lien vers leur site : <a href="http://www.feufollet.org/">feufollet.org</a> </p>
-
-            </li>
-            <li class="col-sm-4">
-              <img class="img-responsive" src="./assets/img/ressources_externes/feufollet_cuiseur_rocket.JPG">
-              <p class="subtitle">Cuiseur Rocket de 60L construit par Feufollet
-                </br>Source : <a class="ref">Association Feufollet</a>
-              </p>
-            </li>
-          </ul>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/ressources_externes/feufollet_rocket_stoves.JPG">
+              <div class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_4.JPG">
+              </div>
+              <div class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/eduardo_marquina_5.JPG">
+              </div>
             </div>
-          </div>
-          <p class="subtitle">Rocket Stove construit par Feufollet.
-            </br>Source : <a class="ref">Association Feufollet</a>
-          </p>
+            <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina.
+              </br>Source : <a class="ref">Eduardo Marquina</a>
+            </p>
+          </section>
 
+
+          <section id="kirpichiki">
+            <a href="http://kirpichiki.pro/gallery.html"><h3 class="title-small">Kirpichiki</h3></a>
+            <p>Dans le monde du poêle de masse les poêliers, ingénieurs, inventeurs russes sont véritablement incontournables. C'est une nation entière qui a développé un savoir-faire et un art de vivre toujours vivace autour de leurs poêles de masse. Difficile
+              d'imaginer une maison paysanne russe sans poêle de masse !</p>
+            <p>Il nous est impossible d'imaginer ce que serait devenus les poêles de masse sans les travaux des russes W.E. Groume-Grimailo, IS. Podgorodnikov, I. Kuznetsov. Les deux premiers pour leur apport technique majeur et le dernier pour la conception
+              et la publication de nombreux modèles de poêles.</p>
+            <p>Par rapport aux poêles d'Europe de l'Ouest et des États Unis, les poêles russes se caractérisent par leur taille, leur très forte inertie (sûrement liée au climat..), leur multi-fonctionnalité (chauffage, eau chaude, cuisson sur plancha, four
+              à pain, séchoir, fumoir, lit, etc..), l'utilisation de matériaux simples, "low-tech" et de techniques également simples et ingénieuses. </p>
+            <p>Aujourd'hui, l'équipe de Kirpichiki publie beaucoup d'articles et de photos sur la construction des poêles de masse russes et réalise des poêles avec une maitrise technique incroyable : des briques réfractaires, des double peaux, des armatures
+              seulement là où c'est nécessaire. Une pensée sur le long terme, sur la robustesse.</p>
+            <p>Quasiment tous leurs poêles sont renforcés par un cadre métallique en cornière. C'est une technique très ingénieuse où le cadre est fabriqué avant le poêle et ce dernier est maçonné à l'intérieur. La fabrication du cadre demande du travail,
+              mais le montage des briques devient très facile et le poêle TRÈS solide ou, comme ils disent : "thermo-intensif".</p>
+            <p>Le lien de leurs réalisations ici (en Russe) : <a href="http://kirpichiki.pro/gallery.html">http://kirpichiki.pro/gallery.html</a> </p>
+          </section>
+
+
+          <section id="numiah">
+            <a href="https://www.numiah.permacultureardeche.fr/services"><h3 class="title-small">Numiah Permaculture</h3></a>
+            <ul class="row gallery">
+              <li class="col-sm-6">
+                <p>Des formations sur la construction de Rocket Stoves par un permaculteur au grand coeur et avec une vision très synthètique.</p>
+                <p>Nous avons organisé plusieurs formations en collaboration avec Bruno Torrente. Les formations permettent de construire des Rocket stoves classiques avec bidons et bancs en bauge. Leur puissance est faible : ils sont à réserver pour des
+                  espaces petits ou très bien isolés. Par contre, ils sont très très abordables et faciles à faire en auto-construction.</p>
+                <p>Le lien ici : <a href="https://www.numiah.permacultureardeche.fr/services">numiah.permacultureardeche.fr/services</a> </p>
+              </li>
+              <li class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/ressources_externes/numiah_rocket_stoves.JPG">
+                <p class="subtitle">Stage de construction de Rocket Stoves.
+                  </br>Source : <a class="ref">Bruno Torrente</a>
+                </p>
+              </li>
+            </ul>
+          </section>
+
+
+          <section id="feufollet">
+            <a href="http://www.feufollet.org/"><h3 class="title-small">Association Feufollet</h3></a>
+            <ul class="row gallery">
+              <li class="col-sm-8">
+                <p>Association de pyromanes très engagés et absolument passionnés de combustion du bois et du ré-emploi de matériaux.</p>
+                <p>Ils organisent des stages de formation autour des Rocket Stoves, des Batchrockets, et des cuiseurs Rocket. Ils organisent aussi la cuisine durant des évènements (festivals, rencontres, etc..). La cuisson est faite uniquement avec différents
+                  cuiseurs Rocket qu'ils ont conçu.</p>
+                <p>Les cuiseurs Rocket sont vraiment excellents à l'usage, les rendements sont hauts, la pollution basse, le travail de bidonnerie et de culottage est soigné. </p>
+                <p>Ils organisent régulièrement "Les rencontres Pyromaniaques" qui ont permis de créer beaucoup de liens (nous en sommes la preuve !) au sein du réseau des poêles de masse.</p>
+                <p>Le lien vers leur site : <a href="http://www.feufollet.org/">feufollet.org</a> </p>
+
+              </li>
+              <li class="col-sm-4">
+                <img class="img-responsive" src="./assets/img/ressources_externes/feufollet_cuiseur_rocket.JPG">
+                <p class="subtitle">Cuiseur Rocket de 60L construit par Feufollet
+                  </br>Source : <a class="ref">Association Feufollet</a>
+                </p>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/ressources_externes/feufollet_rocket_stoves.JPG">
+              </div>
+            </div>
+            <p class="subtitle">Rocket Stove construit par Feufollet.
+              </br>Source : <a class="ref">Association Feufollet</a>
+            </p>
+          </section>
 
         </div>
         <div id='footer'>

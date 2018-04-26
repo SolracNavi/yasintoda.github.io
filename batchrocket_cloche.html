@@ -25,28 +25,28 @@
   </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-              <ul class="nav nav-pills nav-stacked">
-                <li class="level1">
-                  <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
-                </li>
-              </ul>
+          <ul class="nav nav-stacked">
+            <li>
+              <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
+            </li>
+          </ul>
 
-              <h3>Plan de l'article</h3>
-              <ul class="nav nav-pills nav-stacked">
-                  <li><a href="#intro">Introduction</a></li>
-                  <li><a href="#principe">Le principe des cloches</a></li>
-                  <li><a href="#avantages_cloches">Les avantages des cloches</a></li>
-                  <li><a href="#dimensionnement">Le dimensionnement des cloches</a></li>
-                  <li><a href="#regles_cloches">Les règles de construction des cloches</a></li>
-                  <li><a href="#rendement_accumulateurs">Le rendement des accumulateurs</a></li>
-                  <li><a href="#autres_systemes">Les autres systèmes</a></li>
-                </ul>
+          <h3>Plan de l'article</h3>
+          <ul class="nav nav-stacked">
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#principe">Le principe des cloches</a></li>
+            <li><a href="#avantages_cloches">Les avantages des cloches</a></li>
+            <li><a href="#dimensionnement">Le dimensionnement des cloches</a></li>
+            <li><a href="#regles_cloches">Les règles de construction des cloches</a></li>
+            <li><a href="#rendement_accumulateurs">Le rendement des accumulateurs</a></li>
+            <li><a href="#autres_systemes">Les autres systèmes</a></li>
+          </ul>
         </nav>
       </div>
       <div class="col-sm-10">
@@ -55,301 +55,307 @@
           <h1>Le principe des cloches et leur utilisation avec les Batchrockets</h1>
         </div>
         <div class="content-box">
-          <h2 class="title">
-                <a name="intro"></a>Introduction</h2>
+          <section id="intro">
+            <h2 class="title">Introduction</h2>
 
-          <p>Les poêles de masse sont composés d'un <b>coeur de chauffe</b> dont le but est de brûler le bois le plus efficacement possible, et d'un <b>système de récupération de la chaleur</b> dont le but est de transmettre la chaleur des fumées à la masse.
-          </p>
-          <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-              <img src="./assets/img/batchrocket_proportions/schema_poele_de_masse_recuperation_combustion.png" class="img-responsive">
-            </div>
-          </div>
-          <p class="subtitle ">Schéma des deux parties principales d'un poêle de masse. </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
-          <p>Dans notre cas <b>le système de récupération de la chaleur est une cloche</b> et cet article explique son fonctionnement.
-
-          <h2 class="title">
-                <a name="principe"></a>Le principe</h2>
-
-          <p>Il y a environ 3300 ans, sous la dynastie Shang, les chinois inventèrent le "four dragon" basé sur le principe des cloches. C'est ce même principe que nous réutilisons dans nos poêles de masse pour extraire la chaleur des fumées issues de la
-            combustion du bois.
-          </p>
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-              <img class="img-responsive" src="./assets/img/batchrocket_cloche/chinese_kiln_self_reliant_potter.png">
-            </div>
-          </div>
-          <ul class="row gallery">
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchrocket_cloche/climbing_kiln_Mashiko.jpg">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/batchrocket/down-draught_kiln_self_reliant_potter.png">
-            </li>
-          </ul>
-          </p>
-          <p class="subtitle">En haut, Schéma d'un four "dragon" de potier chinois fonctionnant sous le principe des cloches;</br>À gauche, photo d'un four dragon réalisé au Japon avec des cloches en série; à droite, schéma d'un four à briques en simple cloche.</br>Sources
-            : <a class="ref">The Self-Reliant Potter: Refractories and Kilns, Henrik Norsker, 1987, p. 58 et 50.</a> et
-            <a class="ref" href="https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg">wikimedia.org</a>
-          </p>
-          <p>Le principe des cloches se conçoit par analogie avec l'eau : dans un lac, l'eau coule très lentement. Ceci lui laisse le temps de se <b>stratifier par couche de température</b>. L'eau la plus froide est en bas, donc si avec un tuyau on pompait
-            l'eau du fond du lac, on obtiendrait l'eau la plus froide.</p>
-          <p>A contrario, dans un torrent le débit est plus rapide et le chemin plus tortueux : tout se mélange et on ne peut extraire qu'une eau à une température moyenne.</p>
-          <p>L'idée des cloches est de faire entrer les gaz rapides et turbulents issus du coeur de chauffe (l'eau du torrent) dans un grand espace (le lac) de sorte que les gaz ralentissent suffisamment pour qu'ils se stratifient naturellement par couche
-            de température : les gaz chauds en haut et les gaz froids en bas. </p>
-          <p>Ainsi, en créant <b>une ouverture tout en bas de la cloche</b>, on récupère toujours <b>les gaz les plus froids</b>. Ce sont des gaz d'évacuation qui seront éjectés par la cheminée.</p>
-          <p>
-            <ul class="row gallery">
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_chicanes.png">
-              </li>
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_cloche.png">
-              </li>
-            </ul>
-          </p>
-          <p class="subtitle">À gauche, schéma d'un poêle de masse à chicanes. À droite, schéma d'un poêle de masse utilisant le principe des cloches.
-            </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
-          <p>Une autre manière d'appréhender le système des cloches :
-            <ol>
-              <li>Au contact des briques, les gaz donnent leur chaleur et se refroidissent.</li>
-              <li>À cause de la stratification, plus les gaz se refroidissent, plus ils descendent dans la cloche.</li>
-              <li>Lorsqu'ils sont suffisamment froids, ils atteignent le niveau de la sortie situé en bas de la cloche.</li>
-              <li>La cheminée d'évacuation les éjecte ensuite vers l'extérieur de la maison.</li>
-            </ol>
-          </p>
-          <p>Ainsi, plus les gaz sont en contact avec une surface importante de briques, plus ils seront froids en sortie. On peut soit avoir toute cette surface dans une unique cloche, soit dans une série de petites cloches comme pour le four "dragon".
-            Dans nos poêles, nous utilisons surtout une cloche accolée en série à un banc de chauffe qui est lui même une cloche.</p>
-
-
-          <h2 class="title">
-                <a name="avantages_cloches"></a>Les avantages des cloches</h2>
-
-          <p>Le système des cloches provient des fours à briques. Il y a été très utilisé pour une raison précise : dans une cloche, les gaz descendent vers la sortie en empruntant tous les chemins possibles de manière uniforme. Les températures sont donc
-            uniformes par couche de niveau dans une cloche. La partie haute de la cloche est toujours la plus chaude et plus on descend, plus la température diminue.</p>
-
-          <div class="col-sm-12">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket_cloche/canaux_cloche.png">
-            </div>
-          </div>
-          <p class="subtitle">Schéma de circulation des gaz dans des canaux ascendants ou descendants. </br>Source : <a class="ref">The Rational Construction of Furnaces, W.E. Groume-Grimailo, Petrograd, Russia, 1911, p. 91.</a></p>
-          <p>Dans les poêles de masse, l'utilisation du système des cloches permet :
-            <ul>
-              <li>D'éviter les "points chauds". La température est uniforme par couche de niveau donc la maçonnerie est moins sollicitée.</li>
-              <li>De diminuer les frottements qui ralentissent les gaz et obligent à utiliser des cheminées avec un fort tirage.</li>
-              <li>Une grande variété de formes possibles, ce qui est un plus pour les rénovations et qui nous permet de faire des bancs de chauffe.</li>
-              <li>L'intérieur des cloches est un grand espace vide excellent pour y placer un four.</li>
-            </ul>
-          </p>
-
-          <p>Voici quelques magnifiques poêles construits par <a href="https://estufasdeinercia.wordpress.com">Eduardo Marquina</a> utilisants le principe des cloches ainsi que beaucoup d'imagination dans la réalisation des formes :</p>
-
-
-          <div class="row">
-          <div class="col-sm-12">
-          <ul class="row gallery">
-          <li class="col-sm-4">
-          <a href="./assets/img/ressources_externes/eduardo_marquina_1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-              <img src="./assets/img/ressources_externes/eduardo_marquina_1.JPG" class="img-responsive"></a>
-          </li>
-          <li class="col-sm-4">
-          <a href="./assets/img/ressources_externes/eduardo_marquina_2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-              <img src="./assets/img/ressources_externes/eduardo_marquina_2.JPG" class="img-responsive"></a>
-          </li>
-          <li class="col-sm-4">
-          <a href="./assets/img/ressources_externes/eduardo_marquina_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-              <img src="./assets/img/ressources_externes/eduardo_marquina_3.JPG" class="img-responsive"></a>
-          </li>
-          <li class="col-sm-4">
-          <a href="./assets/img/ressources_externes/eduardo_marquina_4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-              <img src="./assets/img/ressources_externes/eduardo_marquina_4.JPG" class="img-responsive"></a>
-          </li>
-          <li class="col-sm-4">
-          <a href="./assets/img/ressources_externes/eduardo_marquina_5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
-              <img src="./assets/img/ressources_externes/eduardo_marquina_5.JPG" class="img-responsive"></a>
-          </li>
-          </ul>
-          </div>
-          </div>
-          <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina et utiliants des cloches.
-            </br>Source : <a href="https://estufasdeinercia.wordpress.com" class="ref">Eduardo Marquina, estufas de inercia</a>
-          </p>
-
-
-          <h3>Four blanc ? Four noir ?</h3>
-          <p>Les poêles de masse sont aussi des outils de cuisson très pratiques. Le four est chaud pendant toute la saison de chauffe. Pendant ou juste après une flambée le four est à sa température maximale. Ensuite la température du four diminue graduellement
-            jusqu'à la prochaine flambée. On ne règle pas la température du four : on attend que le four ait la bonne température pour y enfourner le plat.
-            <ul class="row gallery">
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_four_blanc.png">
-              </li>
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_four_noir.png">
-              </li>
-            </ul>
-          </p>
-          <p class="subtitle">À gauche, schéma d'un poêle de masse équipé d'un four blanc. À droite, le même poêle mais avec un four noir.
-            </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
-          <p>Dans un poêle de masse, deux types de four sont possibles :
-            <ul>
-              <li>Dans un <b>four noir</b> les gaz chauds sont en contact direct avec les plats de cuisson (ou les pizzas, pains, etc..). Le four devient "noir" parce que les suies (du carbone) s'y déposent. Les températures maximales atteintes sont de l'ordre
-                de 500°C.</li>
-              <li>Dans un <b>four blanc</b> les gaz sont en contact avec les parois externes du four. La partie intérieure du four reste toujours "blanche" parce qu'aucune suie ne s'y dépose. Les températures maximales atteintes sont de l'ordre de 250°C.</li>
-            </ul>
-            Les avantages principaux d'un four noir sont la simplicité de mise en oeuvre, l'utilisation de la porte du four noir comme d'une trappe de visite et finalement la vue des flammes :
-          </p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tm7P0OzEXlI"></iframe>
+            <p>Les poêles de masse sont composés d'un <b>coeur de chauffe</b> dont le but est de brûler le bois le plus efficacement possible, et d'un <b>système de récupération de la chaleur</b> dont le but est de transmettre la chaleur des fumées à la
+              masse.
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <img src="./assets/img/batchrocket_proportions/schema_poele_de_masse_recuperation_combustion.png" class="img-responsive">
               </div>
             </div>
-          </div>
-          <p class="subtitle">Vidéo d'un four noir pendant la flambée. Ça en jette.</p>
-          <h2 class="title">
-                <a name="dimensionnement"></a>Le dimensionnement des cloches</h2>
+            <p class="subtitle ">Schéma des deux parties principales d'un poêle de masse. </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
+            <p>Dans notre cas <b>le système de récupération de la chaleur est une cloche</b> et cet article explique son fonctionnement.</p>
+          </section>
 
-          <p>Plus les gaz chauds libérés par la combustion du bois entrent en contact avec des surfaces froides, plus ces gaz vont être refroidis. La chaleur intense des gaz est captée, absorbée par les parois du poêle qui rediffuseront cette chaleur doucement
-            et sur une longue période de temps.</p>
-          <p>L'objectif est que les gaz sortent de la cheminée d'évacuation <b>au minimum à une température d'environ 80-100°C</b>. En dessous de cette température, les gaz risquent de condenser dans la cheminée d'évacuation. Pour information, la température
-            de sortie des gaz dans les cheminées industrielles est plutôt aux alentours de 140°C.</p>
-          <p>Parfois, la course aux rendements nous entraîne à essayer de grappiller toutes les calories possibles. Néanmoins, un poêle à 80% de rendement total qui fonctionne vaut mille fois un poêle à 90% de rendement total qui refoule une fois sur deux.</p>
-          <p>Par expérimentation, on a trouvé un lien de proportionnalité entre les surfaces internes du poêle qui sont "absorbantes" et la puissance des coeurs de chauffe. </p>
-          <p>Ainsi, chaque taille de batchrocket a une surface de cloche qui lui correspond : </p>
-          <div class="row">
-            <div class="container col-sm-12">
-              <table class="table table-bordered text-center">
-                <caption>Tableau résumant les surfaces d'échange pour chaque type de poêle de masse Batchrocket</caption>
-                <thead>
-                  <tr>
-                    <th class='text-left'>Diamètre de la cheminée interne (mm)</th>
-                    <th class='text-center'>140</th>
-                    <th class='text-center'>165</th>
-                    <th class='text-center'>200</th>
-                    <th class='text-center'>230</th>
-                    <th class='text-center'>250</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class='text-left'>
-                      <b>SIA en simple cloche (m2)</b>
-                    </td>
-                    <td>4,6</td>
-                    <td>6,4</td>
-                    <td>9,4</td>
-                    <td>12,5</td>
-                    <td>14,7</td>
-                  </tr>
-                  <tr>
-                    <td class='text-left'>
-                      <b>SIA en double cloche (m2)</b>
-                    </td>
-                    <td>3,9</td>
-                    <td>5,4</td>
-                    <td>8,0</td>
-                    <td>10,6</td>
-                    <td>12,5</td>
-                  </tr>
-                </tbody>
-              </table>
+
+
+          <section id="principe">
+            <h2 class="title">Le principe</h2>
+
+            <p>Il y a environ 3300 ans, sous la dynastie Shang, les chinois inventèrent le "four dragon" basé sur le principe des cloches. C'est ce même principe que nous réutilisons dans nos poêles de masse pour extraire la chaleur des fumées issues de
+              la combustion du bois.
+            </p>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/chinese_kiln_self_reliant_potter.png">
+              </div>
             </div>
-          </div>
-          <p>La SIA signifie Surface Interne Absorbante. Elle traduit le fait que toutes les parois internes du poêle n'absorbent pas la chaleur. Ainsi, dans la SIA d'un poêle en cloche, on ne compte pas :
-            <ul>
-              <li>Les parois isolées par l'intérieur ou constituées d'un matériau isolant;</li>
-              <li>Le sol du poêle;</li>
-              <li>Les parois qui émettent de la chaleur, c'est à dire tout le coeur de chauffe.</li>
-            </ul>
-            À l'inverse, on compte :
-            <ul>
-              <li>
-                <p>Les parois internes faites d'un matériau non-isolant avec lesquelles les fumées sont en contact pendant leur descente vers la base de la cheminée d'évacuation;</p>
+            <ul class="row gallery">
+              <li class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/climbing_kiln_Mashiko.jpg">
               </li>
-              <li>
-                <p>Cas particulier : on compte pour <b>moitié</b> les parois de la cheminée d'évacuation si elle n'est pas faite d'un matériau isolant.</p>
-                <p> En effet, les gaz montent dans la cheminée d'évacuation ce qui fait qu'ils n'échangent pas leur chaleur aussi bien que s'ils descendaient.</p>
+              <li class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/batchrocket/down-draught_kiln_self_reliant_potter.png">
               </li>
             </ul>
+            </p>
+            <p class="subtitle">En haut, Schéma d'un four "dragon" de potier chinois fonctionnant sous le principe des cloches;</br>À gauche, photo d'un four dragon réalisé au Japon avec des cloches en série; à droite, schéma d'un four à briques en simple cloche.</br>Sources
+              : <a class="ref">The Self-Reliant Potter: Refractories and Kilns, Henrik Norsker, 1987, p. 58 et 50.</a> et
+              <a class="ref" href="https://commons.wikimedia.org/wiki/File:Climbing_kiln_Mashiko.jpg">wikimedia.org</a>
+            </p>
+            <p>Le principe des cloches se conçoit par analogie avec l'eau : dans un lac, l'eau coule très lentement. Ceci lui laisse le temps de se <b>stratifier par couche de température</b>. L'eau la plus froide est en bas, donc si avec un tuyau on pompait
+              l'eau du fond du lac, on obtiendrait l'eau la plus froide.</p>
+            <p>A contrario, dans un torrent le débit est plus rapide et le chemin plus tortueux : tout se mélange et on ne peut extraire qu'une eau à une température moyenne.</p>
+            <p>L'idée des cloches est de faire entrer les gaz rapides et turbulents issus du coeur de chauffe (l'eau du torrent) dans un grand espace (le lac) de sorte que les gaz ralentissent suffisamment pour qu'ils se stratifient naturellement par couche
+              de température : les gaz chauds en haut et les gaz froids en bas. </p>
+            <p>Ainsi, en créant <b>une ouverture tout en bas de la cloche</b>, on récupère toujours <b>les gaz les plus froids</b>. Ce sont des gaz d'évacuation qui seront éjectés par la cheminée.</p>
+            <p>
+              <ul class="row gallery">
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_chicanes.png">
+                </li>
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_cloche.png">
+                </li>
+              </ul>
+            </p>
+            <p class="subtitle">À gauche, schéma d'un poêle de masse à chicanes. À droite, schéma d'un poêle de masse utilisant le principe des cloches.
+              </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
+            <p>Une autre manière d'appréhender le système des cloches :
+              <ol>
+                <li>Au contact des briques, les gaz donnent leur chaleur et se refroidissent.</li>
+                <li>À cause de la stratification, plus les gaz se refroidissent, plus ils descendent dans la cloche.</li>
+                <li>Lorsqu'ils sont suffisamment froids, ils atteignent le niveau de la sortie situé en bas de la cloche.</li>
+                <li>La cheminée d'évacuation les éjecte ensuite vers l'extérieur de la maison.</li>
+              </ol>
+            </p>
+            <p>Ainsi, plus les gaz sont en contact avec une surface importante de briques, plus ils seront froids en sortie. On peut soit avoir toute cette surface dans une unique cloche, soit dans une série de petites cloches comme pour le four "dragon".
+              Dans nos poêles, nous utilisons surtout une cloche accolée en série à un banc de chauffe qui est lui même une cloche.</p>
+          </section>
 
 
-            Une cloche peut être en brique ou en métal, cela n'a pas d'incidence sur la surface de cloche correspondante.
-          </p>
-          <h2 class="title">
-                <a name="regles_cloches"></a>Les règles de construction des cloches</h2>
+          <section id="avantages_cloches">
+            <h2 class="title">Les avantages des cloches</h2>
 
-          <p>En pratique, trois règles de base permettent de construire des cloches :
-            <ul>
-              <li>À chaque taille de Batchrocket correspond une certaine <b>surface de cloche</b> qu'il faut respecter pour que les gaz sortent à la bonne température.
-                <p>C'est la SIA du paragraphe précédent. Pour un Batchrocket donné, plus la SIA est importante, plus les gaz vont sortir froids. Mieux vaut sortir trop chaud que trop froid !</p>
-              </li>
-              <li>La première surface que voient les gaz en sortant de la cheminée interne (quasi-systématiquement la face interne du sommet du poêle) doit mesurer <b>au moins 5 fois la section de la cheminée interne</b> et doit être <b>au moins 30 cm au dessus de la sortie de la cheminée interne</b>.
-                <p>Par exemple, pour un batchrocket dont la cheminée interne mesure 200 mm de diamètre, la section vaut environ 31400 mm2 donc la surface du sommet du poêle, coté intérieur, doit faire au moins 5 x 31400 mm2 = 157000 mm2. Cela correspond
-                  à un carré d'environ 400 mm x 400 mm.</p>
-              </li>
-              <li>À chaque fois que les gaz changent de direction, la section de la conduite doit être <b>supérieure ou égale à 1,5 ou 2 fois la section de la cheminée interne</b>. Minimum 1,5 fois dans les tournants à 90° et minimum 2 fois dans les tournants
-                à 180°.
-                </br>Ces changements de direction se retrouvent à la base de la cheminée d'évacuation, à chaque changement de cloche et dans les bancs de chauffe.
-              </li>
-            </ul>
-          </p>
-          <p>Pour le reste, les formes n'ont quasiment pas d'importance vis-à-vis des cloches.</p>
+            <p>Le système des cloches provient des fours à briques. Il y a été très utilisé pour une raison précise : dans une cloche, les gaz descendent vers la sortie en empruntant tous les chemins possibles de manière uniforme. Les températures sont donc
+              uniformes par couche de niveau dans une cloche. La partie haute de la cloche est toujours la plus chaude et plus on descend, plus la température diminue.</p>
 
-
-          <a name="rendement_accumulateurs"></a>
-          <h2 class="title">
-                Le rendement des accumulateurs</h2>
-          <p>Une cloche est un <em>accumulateur</em> de chaleur. Son objectif est d'extraire la chaleur des fumées et de la restituer doucement par la suite.</p>
-          <p>Pour ceux qui ont déjà construit leur poêle et qui veulent connaitre son rendement, voici un graphique faisant le lien entre la température moyenne des gaz dans la cheminée d'évacuation et le rendement d'extraction de l'accumulateur.</p>
-          <p>Attention, ce graphique n'est valable que pour une flambée vive sur un Batchrocket ! Pour un poêle en fonte par exemple, les rendements doivent être sous-estimés.</p>
-          <p>Les hypothèses de calcul de ce graphique sont les suivantes :</p>
-          <ul>
-            <li>Qualité de la combustion : 500 ppm de CO moyen</li>
-            <li>Excès d'air : 13 % d’O2 moyen (flambée vive)</li>
-            <li>On ne tient pas compte de l'énergie latente de vaporisation de l'eau (rendement PCI)</li>
-            <li>Basé sur la méthode CONDAR de la MHA</li>
-          </ul>
-
-
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-              <img class="img-responsive" src="./assets/img/batchrocket_cloche/rendement_extraction_chaleur_fn_temperature_sortie_batchrocket.png">
+            <div class="col-sm-12">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/canaux_cloche.png">
+              </div>
             </div>
-          </div>
-          <p class="subtitle">En bas, la température moyenne des fumées dans la cheminée. En vertical, le rendement d'extraction correspondant. </br>Source : <a class="ref">UZUME</a></p>
+            <p class="subtitle">Schéma de circulation des gaz dans des canaux ascendants ou descendants. </br>Source : <a class="ref">The Rational Construction of Furnaces, W.E. Groume-Grimailo, Petrograd, Russia, 1911, p. 91.</a></p>
+            <p>Dans les poêles de masse, l'utilisation du système des cloches permet :
+              <ul>
+                <li>D'éviter les "points chauds". La température est uniforme par couche de niveau donc la maçonnerie est moins sollicitée.</li>
+                <li>De diminuer les frottements qui ralentissent les gaz et obligent à utiliser des cheminées avec un fort tirage.</li>
+                <li>Une grande variété de formes possibles, ce qui est un plus pour les rénovations et qui nous permet de faire des bancs de chauffe.</li>
+                <li>L'intérieur des cloches est un grand espace vide excellent pour y placer un four.</li>
+              </ul>
+            </p>
 
-          <p>Par exemple, un poêle Batchrocket dont les gaz sortent à 150°C en moyenne a un rendement d'extraction de 89%. </p>
-          <p>Le rendement global du poêle est donné par la formule : </p>
-          <div class="row">
-            <div class="lead col-sm-10 col-sm-offset-1" style="background:#a1bf6b">
-              <p>Rendement total = rendement d'extraction x rendement de combustion.</p>
+            <p>Voici quelques magnifiques poêles construits par <a href="https://estufasdeinercia.wordpress.com">Eduardo Marquina</a> utilisants le principe des cloches ainsi que beaucoup d'imagination dans la réalisation des formes :</p>
+
+
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="row gallery">
+                  <li class="col-sm-4">
+                    <a href="./assets/img/ressources_externes/eduardo_marquina_1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_1.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/ressources_externes/eduardo_marquina_2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_2.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/ressources_externes/eduardo_marquina_3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_3.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/ressources_externes/eduardo_marquina_4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_4.JPG" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/ressources_externes/eduardo_marquina_5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+              <img src="./assets/img/ressources_externes/eduardo_marquina_5.JPG" class="img-responsive"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <p>Le rendement de combustion d'un Batchrocket sur une flambée vive est de 98%. Dans notre exemple, le rendement total est donc de 89 x 0,98 = 87%.</p>
-
-          <h2 class="title">
-                <a name="autres_systemes"></a>Les autres systèmes</h2>
-          <p>Un système très classique en Europe de l'Ouest est de faire passer les gaz dans une série de chicanes empilées les unes sur les autres. Il existe en fait beaucoup de variété dans les différents systèmes de récupération de la chaleur.</p>
-          <p>Ces systèmes ont même été réutilisés pour augmenter le rendement des poêles en fonte. L'objectif est toujours le même : faire que les gaz issus de la combustion entrent en contact avec une certaine surface de briques ou de métal pour que les
-            gaz sortent de la cheminée à une température d'environ 100°C.</p>
-          <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
-              <img class="img-responsive" src="./assets/img/batchrocket_cloche/norwegian_cast_iron_stoves.jpg">
-            </div>
-          </div>
-          <p class="subtitle">Schémas de poêles en fonte Norvégiens des années 1800. </br>Source : <a class="ref">The Book of Masonry Stoves, David Lyle, 1984, p. 53.</a></p>
+            <p class="subtitle">Poêles de masse conçus et construits par Eduardo Marquina et utiliants des cloches.
+              </br>Source : <a href="https://estufasdeinercia.wordpress.com" class="ref">Eduardo Marquina, estufas de inercia</a>
+            </p>
 
 
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
+            <h3>Four blanc ? Four noir ?</h3>
+            <p>Les poêles de masse sont aussi des outils de cuisson très pratiques. Le four est chaud pendant toute la saison de chauffe. Pendant ou juste après une flambée le four est à sa température maximale. Ensuite la température du four diminue graduellement
+              jusqu'à la prochaine flambée. On ne règle pas la température du four : on attend que le four ait la bonne température pour y enfourner le plat.
+              <ul class="row gallery">
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_four_blanc.png">
+                </li>
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/batchrocket_cloche/schema_poele_de_masse_four_noir.png">
+                </li>
+              </ul>
+            </p>
+            <p class="subtitle">À gauche, schéma d'un poêle de masse équipé d'un four blanc. À droite, le même poêle mais avec un four noir.
+              </br><a class="ref">Schéma réalisé par G. Stephens, association UZUME.</a></p>
+            <p>Dans un poêle de masse, deux types de four sont possibles :
+              <ul>
+                <li>Dans un <b>four noir</b> les gaz chauds sont en contact direct avec les plats de cuisson (ou les pizzas, pains, etc..). Le four devient "noir" parce que les suies (du carbone) s'y déposent. Les températures maximales atteintes sont de
+                  l'ordre de 500°C.</li>
+                <li>Dans un <b>four blanc</b> les gaz sont en contact avec les parois externes du four. La partie intérieure du four reste toujours "blanche" parce qu'aucune suie ne s'y dépose. Les températures maximales atteintes sont de l'ordre de 250°C.</li>
+              </ul>
+              Les avantages principaux d'un four noir sont la simplicité de mise en oeuvre, l'utilisation de la porte du four noir comme d'une trappe de visite et finalement la vue des flammes :
+            </p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tm7P0OzEXlI"></iframe>
                 </div>
               </div>
             </div>
-          </div>
+            <p class="subtitle">Vidéo d'un four noir pendant la flambée. Ça en jette.</p>
+          </section>
+
+
+          <section id="dimensionnement">
+            <h2 class="title">Le dimensionnement des cloches</h2>
+
+            <p>Plus les gaz chauds libérés par la combustion du bois entrent en contact avec des surfaces froides, plus ces gaz vont être refroidis. La chaleur intense des gaz est captée, absorbée par les parois du poêle qui rediffuseront cette chaleur doucement
+              et sur une longue période de temps.</p>
+            <p>L'objectif est que les gaz sortent de la cheminée d'évacuation <b>au minimum à une température d'environ 80-100°C</b>. En dessous de cette température, les gaz risquent de condenser dans la cheminée d'évacuation. Pour information, la température
+              de sortie des gaz dans les cheminées industrielles est plutôt aux alentours de 140°C.</p>
+            <p>Parfois, la course aux rendements nous entraîne à essayer de grappiller toutes les calories possibles. Néanmoins, un poêle à 80% de rendement total qui fonctionne vaut mille fois un poêle à 90% de rendement total qui refoule une fois sur deux.</p>
+            <p>Par expérimentation, on a trouvé un lien de proportionnalité entre les surfaces internes du poêle qui sont "absorbantes" et la puissance des coeurs de chauffe. </p>
+            <p>Ainsi, chaque taille de batchrocket a une surface de cloche qui lui correspond : </p>
+            <div class="row">
+              <div class="container col-sm-12">
+                <table class="table table-bordered text-center">
+                  <caption>Tableau résumant les surfaces d'échange pour chaque type de poêle de masse Batchrocket</caption>
+                  <thead>
+                    <tr>
+                      <th class='text-left'>Diamètre de la cheminée interne (mm)</th>
+                      <th class='text-center'>140</th>
+                      <th class='text-center'>165</th>
+                      <th class='text-center'>200</th>
+                      <th class='text-center'>230</th>
+                      <th class='text-center'>250</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class='text-left'>
+                        <b>SIA en simple cloche (m2)</b>
+                      </td>
+                      <td>4,6</td>
+                      <td>6,4</td>
+                      <td>9,4</td>
+                      <td>12,5</td>
+                      <td>14,7</td>
+                    </tr>
+                    <tr>
+                      <td class='text-left'>
+                        <b>SIA en double cloche (m2)</b>
+                      </td>
+                      <td>3,9</td>
+                      <td>5,4</td>
+                      <td>8,0</td>
+                      <td>10,6</td>
+                      <td>12,5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p>La SIA signifie Surface Interne Absorbante. Elle traduit le fait que toutes les parois internes du poêle n'absorbent pas la chaleur. Ainsi, dans la SIA d'un poêle en cloche, on ne compte pas :
+              <ul>
+                <li>Les parois isolées par l'intérieur ou constituées d'un matériau isolant;</li>
+                <li>Le sol du poêle;</li>
+                <li>Les parois qui émettent de la chaleur, c'est à dire tout le coeur de chauffe.</li>
+              </ul>
+              À l'inverse, on compte :
+              <ul>
+                <li>
+                  <p>Les parois internes faites d'un matériau non-isolant avec lesquelles les fumées sont en contact pendant leur descente vers la base de la cheminée d'évacuation;</p>
+                </li>
+                <li>
+                  <p>Cas particulier : on compte pour <b>moitié</b> les parois de la cheminée d'évacuation si elle n'est pas faite d'un matériau isolant.</p>
+                  <p> En effet, les gaz montent dans la cheminée d'évacuation ce qui fait qu'ils n'échangent pas leur chaleur aussi bien que s'ils descendaient.</p>
+                </li>
+              </ul>
+
+
+              Une cloche peut être en brique ou en métal, cela n'a pas d'incidence sur la surface de cloche correspondante.
+            </p>
+          </section>
+
+
+          <section id="regles_cloches">
+            <h2 class="title">Les règles de construction des cloches</h2>
+
+            <p>En pratique, trois règles de base permettent de construire des cloches :
+              <ul>
+                <li>À chaque taille de Batchrocket correspond une certaine <b>surface de cloche</b> qu'il faut respecter pour que les gaz sortent à la bonne température.
+                  <p>C'est la SIA du paragraphe précédent. Pour un Batchrocket donné, plus la SIA est importante, plus les gaz vont sortir froids. Mieux vaut sortir trop chaud que trop froid !</p>
+                </li>
+                <li>La première surface que voient les gaz en sortant de la cheminée interne (quasi-systématiquement la face interne du sommet du poêle) doit mesurer <b>au moins 5 fois la section de la cheminée interne</b> et doit être <b>au moins 30 cm au dessus de la sortie de la cheminée interne</b>.
+                  <p>Par exemple, pour un batchrocket dont la cheminée interne mesure 200 mm de diamètre, la section vaut environ 31400 mm2 donc la surface du sommet du poêle, coté intérieur, doit faire au moins 5 x 31400 mm2 = 157000 mm2. Cela correspond
+                    à un carré d'environ 400 mm x 400 mm.</p>
+                </li>
+                <li>À chaque fois que les gaz changent de direction, la section de la conduite doit être <b>supérieure ou égale à 1,5 ou 2 fois la section de la cheminée interne</b>. Minimum 1,5 fois dans les tournants à 90° et minimum 2 fois dans les tournants
+                  à 180°.
+                  </br>Ces changements de direction se retrouvent à la base de la cheminée d'évacuation, à chaque changement de cloche et dans les bancs de chauffe.
+                </li>
+              </ul>
+            </p>
+            <p>Pour le reste, les formes n'ont quasiment pas d'importance vis-à-vis des cloches.</p>
+          </section>
+
+
+          <section id="rendement_accumulateurs">
+            <h2 class="title">Le rendement des accumulateurs</h2>
+            <p>Une cloche est un <em>accumulateur</em> de chaleur. Son objectif est d'extraire la chaleur des fumées et de la restituer doucement par la suite.</p>
+            <p>Pour ceux qui ont déjà construit leur poêle et qui veulent connaitre son rendement, voici un graphique faisant le lien entre la température moyenne des gaz dans la cheminée d'évacuation et le rendement d'extraction de l'accumulateur.</p>
+            <p>Attention, ce graphique n'est valable que pour une flambée vive sur un Batchrocket ! Pour un poêle en fonte par exemple, les rendements doivent être sous-estimés.</p>
+            <p>Les hypothèses de calcul de ce graphique sont les suivantes :</p>
+            <ul>
+              <li>Qualité de la combustion : 500 ppm de CO moyen</li>
+              <li>Excès d'air : 13 % d’O2 moyen (flambée vive)</li>
+              <li>On ne tient pas compte de l'énergie latente de vaporisation de l'eau (rendement PCI)</li>
+              <li>Basé sur la méthode CONDAR de la MHA</li>
+            </ul>
+
+
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/rendement_extraction_chaleur_fn_temperature_sortie_batchrocket.png">
+              </div>
+            </div>
+            <p class="subtitle">En bas, la température moyenne des fumées dans la cheminée. En vertical, le rendement d'extraction correspondant. </br>Source : <a class="ref">UZUME</a></p>
+
+            <p>Par exemple, un poêle Batchrocket dont les gaz sortent à 150°C en moyenne a un rendement d'extraction de 89%. </p>
+            <p>Le rendement global du poêle est donné par la formule : </p>
+            <div class="row">
+              <div class="lead col-sm-10 col-sm-offset-1" style="background:#a1bf6b">
+                <p>Rendement total = rendement d'extraction x rendement de combustion.</p>
+              </div>
+            </div>
+
+            <p>Le rendement de combustion d'un Batchrocket sur une flambée vive est de 98%. Dans notre exemple, le rendement total est donc de 89 x 0,98 = 87%.</p>
+          </section>
+
+
+          <section id="autres_systemes">
+            <h2 class="title">Les autres systèmes</h2>
+            <p>Un système très classique en Europe de l'Ouest est de faire passer les gaz dans une série de chicanes empilées les unes sur les autres. Il existe en fait beaucoup de variété dans les différents systèmes de récupération de la chaleur.</p>
+            <p>Ces systèmes ont même été réutilisés pour augmenter le rendement des poêles en fonte. L'objectif est toujours le même : faire que les gaz issus de la combustion entrent en contact avec une certaine surface de briques ou de métal pour que les
+              gaz sortent de la cheminée à une température d'environ 100°C.</p>
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <img class="img-responsive" src="./assets/img/batchrocket_cloche/norwegian_cast_iron_stoves.jpg">
+              </div>
+            </div>
+            <p class="subtitle">Schémas de poêles en fonte Norvégiens des années 1800. </br>Source : <a class="ref">The Book of Masonry Stoves, David Lyle, 1984, p. 53.</a></p>
+          </section>
+
+        
         </div>
         <div id='footer'>
           <div id='footer-inner'>

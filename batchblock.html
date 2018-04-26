@@ -25,22 +25,23 @@
   </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="level1">
+          <ul class="nav nav-stacked">
+            <li>
               <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
             </li>
           </ul>
 
           <h3>Plan de l'article</h3>
-          <ul class="nav nav-pills nav-stacked">
-            <li><a href="#photos">Photos de poêles basés sur le Batchblock</a></li>
+          <ul class="nav nav-stacked">
             <li><a href="#pk">Pourquoi le Batchblock ?</a></li>
+            <li><a href="#photos">Photos de poêles basés sur le Batchblock</a></li>
+            <li><a href="#carac">Les caractéristiques du Batchblock</a></li>
             <li><a href="#licence">Licence</a></li>
             <li><a href="#dimensions">Les dimensions</a></li>
             <li><a href="#vues_3D">Vues 3D du Batchblock</a></li>
@@ -48,157 +49,169 @@
         </nav>
       </div>
       <div class="col-sm-10">
-
         <div class="title-box">
           <h1>Le Batchblock</h1>
         </div>
         <div class="content-box">
-          <p><b>Article en cours d'édition.</b> </p>
 
 
-          <a name="photos"></a>
-          <h2 class="title">Photos de poêles basés sur le Batchblock</h2>
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-              <ul class="row gallery">
-                <li class="col-sm-6">
-                  <a href="./assets/img/batchrocket_plans/cuisiniere_de_masse_V5_032518_03.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+          <section id="pk">
+            <h2 class="title">Pourquoi le Batchblock ?</h2>
+            <p>Le Batchblock, comme le Batchrocket et le Rocket Stove sont des <b>coeurs de chauffe</b>. Leur objectif principal est de brûler le bois le plus proprement possible. </p>
+            <p>À ce niveau, rien à dire. Les 3 coeurs de chauffe parviennent à des combustions extrêmement complètes et peu polluantes. Les gains possibles en terme de combustion sont marginaux.</p>
+            <p>Alors pourquoi remplacer le Batchrocket et le Rocket Stove ? </p>
+            <div class="row">
+              <div class="lead col-sm-8 col-sm-offset-2" style="background:#a1bf6b">
+                <p>La qualité de la combustion n'est pas le seul objectif qui importe pour un poêle de masse. Il doit aussi être :
+                  <ol>
+                    <li>Durable</li>
+                    <li>Beau</li>
+                    <li>Fonctionnel</li>
+                    <li>Compact</li>
+                    <li>Peu cher</li>
+                  </ol>
+                </p>
+
+              </div>
+            </div>
+
+            <p><b>Le Rocket Stove n'était pas fonctionnel.</b> Sa puissance était très limitée par son petit foyer, ce qui le rend inapproprié pour la plupart des habitations sous un climat tempéré. Le foyer à chargement vertical ne permettait pas d'avoir
+              une porte, ce qui était dangereux (enfumage et chutes de bois brûlant).</p>
+            <p><b>Le Batchrocket était fonctionnel, mais pas compact et moyennement durable.</b> La cheminée interne était démesurément haute, ce qui obligeait à faire des poêles très grands et rendait impossible la conception de cuisinières de masse (!!).
+              Les gaz sortaient de la cheminée interne en étant très chauds, ce qui obligeait à utiliser des matériaux réfractaires dans l'enceinte qui recevait les gaz en sortie de la cheminée interne. </p>
+            <p>De plus, les briques, sous l'influence des cycles de dilatation répétés, ont une fâcheuse tendance à se déplacer (c'est l'effet "chenille"). Peu importe le mortier utilisé, c'est une affaire de temps (parfois plus d'une dizaine d'années).
+              La seule manière de faire des poêles durables, robustes, fonctionnels sur le long terme, c'est d'empêcher le déplacement latéral des briques. Tous les industriels et les professionnels expérimentés du secteur l'ont, à notre connaissance,
+              bien compris.
+            </p>
+            <p><b>Le Batchblock est une synthèse de ces expériences.</b> Il est devenu possible de le concevoir après la découverte d'une nouvelle forme au niveau du turbuleur (voir <a href="./session_batch_2018.html">Session Batch 2018</a>). Celle-ci remplace
+              la cheminée interne des Batchrocket par un demi-octogone qui génère énormément de turbulences dans un tout petit volume.</p>
+          </section>
+
+
+
+          <section id="photos">
+            <h2 class="title">Photos de poêles basés sur le Batchblock</h2>
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <ul class="row gallery">
+                  <li class="col-sm-6">
+                    <a href="./assets/img/batchrocket_plans/cuisiniere_de_masse_V5_032518_03.JPG" data-toggle="lightbox" data-gallery="example-gallery">
                         <img src="./assets/img/batchrocket_plans/cuisiniere_de_masse_V5_032518_03.JPG" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-6">
-                  <a href="./assets/img/varaire_032518/IMG_0109.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                  </li>
+                  <li class="col-sm-6">
+                    <a href="./assets/img/varaire_032518/IMG_0109.JPG" data-toggle="lightbox" data-gallery="example-gallery">
                         <img src="./assets/img/varaire_032518/IMG_0109.JPG" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-12">
-                  <a href="./assets/img/batchrocket_042018/batchrocket_042018_89.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+                  </li>
+                  <li class="col-sm-12">
+                    <a href="./assets/img/batchrocket_042018/batchrocket_042018_89.JPG" data-toggle="lightbox" data-gallery="example-gallery">
                         <img src="./assets/img/batchrocket_042018/batchrocket_042018_89.JPG" class="img-responsive"></a>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <p class="subtitle">Poêles de masse basés sur le Batchblock. </br>Cliquez sur une image pour l'afficher en plein écran.
-          </p>
+            <p class="subtitle">Poêles de masse basés sur le Batchblock. </br>Cliquez sur une image pour l'afficher en plein écran.
+            </p>
+          </section>
 
 
-          <a name="pk"></a>
-          <h2 class="title">Pourquoi le Batchblock ?</h2>
-          <p>Le Batchblock, comme le Batchrocket et le Rocket Stove sont des <b>coeurs de chauffe</b>. Leur objectif principal est de brûler le bois le plus proprement possible. </p>
-          <p>À ce niveau, rien à dire. Les 3 coeurs de chauffe parviennent à des combustions extrêmement complètes et peu polluantes. Les gains possibles en terme de combustion sont marginaux.</p>
-          <p>Alors pourquoi remplacer le Batchrocket et le Rocket Stove ? </p>
-          <div class="row">
-            <div class="lead col-sm-8 col-sm-offset-2" style="background:#a1bf6b">
-              <p>La qualité de la combustion n'est pas le seul objectif qui importe pour un poêle de masse. Il doit aussi être :
+          <section id="carac">
+            <h2 class="title">Les caractéristiques du Batchblock :</h2>
+            <ul>
+              <li>Tout le coeur de chauffe est en forme de "bloc", ce qui lui permet d'être contraint par un cadre métallique. Ce cadre n'est pas en contact avec les flammes et les gaz chauds, il ne se dilate donc que très peu. Il limite la dilatation des
+                briques et du mortier, ce qui permet plusieurs choses :
                 <ol>
-                  <li>Durable</li>
-                  <li>Beau</li>
-                  <li>Fonctionnel</li>
-                  <li>Compact</li>
-                  <li>Peu cher</li>
+                  <li>Le mortier résiste plus longtemps car il est moins sollicité en cisaillement</li>
+                  <li>Le foyer est plus résistant aux coups de bûches</li>
+                  <li>Même si le mortier casse, le poêle reste fonctionnel car le coeur est maintenu en place par le cadre métallique</li>
                 </ol>
-              </p>
-
-            </div>
-          </div>
-
-          <p><b>Le Rocket Stove n'était pas fonctionnel.</b> Sa puissance était très limitée par son petit foyer, ce qui le rend inapproprié pour la plupart des habitations sous un climat tempéré. Le foyer à chargement vertical ne permettait pas d'avoir
-            une porte, ce qui était dangereux (enfumage et chutes de bois brûlant).</p>
-          <p><b>Le Batchrocket était fonctionnel, mais pas compact et moyennement durable.</b> La cheminée interne était démesurément haute, ce qui obligeait à faire des poêles très grands et rendait impossible la conception de cuisinières de masse (!!).
-            Les gaz sortaient de la cheminée interne en étant très chauds, ce qui obligeait à utiliser des matériaux réfractaires dans l'enceinte qui recevait les gaz en sortie de la cheminée interne. </p>
-          <p>De plus, les briques, sous l'influence des cycles de dilatation répétés, ont une fâcheuse tendance à se déplacer (c'est l'effet "chenille"). Peu importe le mortier utilisé, c'est une affaire de temps (parfois plus d'une dizaine d'années). La
-            seule manière de faire des poêles durables, robustes, fonctionnels sur le long terme, c'est d'empêcher le déplacement latéral des briques. Tous les industriels et les professionnels expérimentés du secteur l'ont, à notre connaissance, bien
-            compris.
-          </p>
-          <p><b>Le Batchblock est une synthèse de ces expériences.</b> Il est devenu possible de le concevoir après la découverte d'une nouvelle forme au niveau du turbuleur (voir <a href="./session_batch_2018.html">Session Batch 2018</a>). Celle-ci remplace
-            la cheminée interne des Batchrocket par un demi-octogone qui génère énormément de turbulences dans un tout petit volume.</p>
-          <h3>Les caractéristiques du Batchblock sont les suivantes :</h3>
-          <ul>
-            <li>Tout le coeur de chauffe est en forme de "bloc", ce qui lui permet d'être contraint par un cadre métallique. Ce cadre n'est pas en contact avec les flammes et les gaz chauds, il ne se dilate donc que très peu. Il limite la dilatation des briques
-              et du mortier, ce qui permet plusieurs choses :
-              <ol>
-                <li>Le mortier résiste plus longtemps car il est moins sollicité en cisaillement</li>
-                <li>Le foyer est plus résistant aux coups de bûches</li>
-                <li>Même si le mortier casse, le poêle reste fonctionnel car le coeur est maintenu en place par le cadre métallique</li>
-              </ol>
-            </li>
-            <li style="padding-top: 1em;">Le coeur est maçonné avec un mortier réfractaire (type REFRACOL 240). Un mortier d'argile est une option moins durable.
-              </br> Les linteaux sur le sommet du coeur de chauffe ne sont pas maçonnés. Ils sont amovibles pour l'entretien périodique.
-            </li>
-            <li style="padding-top: 1em;">Tout le coeur est maçonné avec des linteaux (de longues briques) réfractaires. Deux raisons :
-              <ol>
-                <li>Le foyer est plus solide car il y a moins de points de faiblesse (les joints).</li>
-                <li>La construction est beaucoup plus rapide et facile</li>
-              </ol>
-            </li>
-            <li style="padding-top: 1em;">Le turbuleur est un demi-octogone (un carré avec deux triangles dans les coins) en briques réfractaires. Ces briques n'ont <b>pas</b> besoin d'être isolantes.</li>
-            <li style="padding-top: 1em;">Les gaz passent d'abord dans un four noir où ils y finissent leur combustion. Ils descendent ensuite pour sortir par dessous le foyer. Cette configuration permet aux gaz de sortir aux alentours de 400-500°C maximum. À ces températures, plus
-              besoin d'utiliser des matériaux réfractaires.</li>
-            <li style="padding-top: 1em;">Autour de ce coeur de chauffe il doit y avoir une deuxième peau en briques (pas nécessairement réfractaires). Entre le coeur et la deuxième peau, il doit y avoir un joint de dilatation <b>en carton</b> et un remplissage de l'espace libre restant
-              avec un mortier quelconque (de terre, de chaux, ..). Le remplissage permet un meilleur transfert de chaleur entre le coeur et la deuxième peau.</li>
-            <li style="padding-top: 1em;">Le fait que les gaz très chauds doivent changer plusieurs fois de direction et descendre en dessous du niveau du foyer (ils n'aiment pas ça !) alors qu'ils sont encore très chauds rend l'échange de chaleur entre les gaz et les briques très efficace. En d'autres termes : à puissance
-              égale, les Batchblocks ont besoin d'un accumulateur (banc de chauffe par exemple) plus petit que les Batchrocket. La surface d'échange (SIA) est diminuée d'environ 40%. Les poêles sont donc plus compacts, moins lourds et moins chers.</li>
-              <li style="padding-top: 1em;">L'air secondaire préchauffé arrive directement devant la fente. Cet air est apporté par une pièce métallique d'usure simple à fabriquer (durée de vie estimée de 3 ans) : le "Cobra". Cet air secondaire n'est <b>pas facultatif</b>. Trois raisons :
+              </li>
+              <li style="padding-top: 1em;">Le coeur est maçonné avec un mortier réfractaire (type REFRACOL 240). Un mortier d'argile est une option moins durable.
+                </br> Les linteaux sur le sommet du coeur de chauffe ne sont pas maçonnés. Ils sont amovibles pour l'entretien périodique.
+              </li>
+              <li style="padding-top: 1em;">Tout le coeur est maçonné avec des linteaux (de longues briques) réfractaires. Deux raisons :
+                <ol>
+                  <li>Le foyer est plus solide car il y a moins de points de faiblesse (les joints).</li>
+                  <li>La construction est beaucoup plus rapide et facile</li>
+                </ol>
+              </li>
+              <li style="padding-top: 1em;">Le turbuleur est un demi-octogone (un carré avec deux triangles dans les coins) en briques réfractaires. Ces briques n'ont <b>pas</b> besoin d'être isolantes.</li>
+              <li style="padding-top: 1em;">Les gaz passent d'abord dans un four noir où ils y finissent leur combustion. Ils descendent ensuite pour sortir par dessous le foyer. Cette configuration permet aux gaz de sortir aux alentours de 400-500°C maximum. À ces températures, plus
+                besoin d'utiliser des matériaux réfractaires.</li>
+              <li style="padding-top: 1em;">Autour de ce coeur de chauffe il doit y avoir une deuxième peau en briques (pas nécessairement réfractaires). Entre le coeur et la deuxième peau, il doit y avoir un joint de dilatation <b>en carton</b> et un remplissage de l'espace libre
+                restant avec un mortier quelconque (de terre, de chaux, ..). Le remplissage permet un meilleur transfert de chaleur entre le coeur et la deuxième peau.</li>
+              <li style="padding-top: 1em;">Le fait que les gaz très chauds doivent changer plusieurs fois de direction et descendre en dessous du niveau du foyer (ils n'aiment pas ça !) alors qu'ils sont encore très chauds rend l'échange de chaleur entre les gaz et les briques très
+                efficace. En d'autres termes : à puissance égale, les Batchblocks ont besoin d'un accumulateur (banc de chauffe par exemple) plus petit que les Batchrocket. La surface d'échange (SIA) est diminuée d'environ 40%. Les poêles sont donc plus
+                compacts, moins lourds et moins chers.</li>
+              <li style="padding-top: 1em;">L'air secondaire préchauffé arrive directement devant la fente. Cet air est apporté par une pièce métallique d'usure simple à fabriquer (durée de vie estimée de 3 ans) : le "Cobra". Cet air secondaire n'est <b>pas facultatif</b>. Trois raisons
+                :
                 <ol>
                   <li>La partie verticale du Cobra empêche les bûches d'obstruer la fente</li>
                   <li>La combustion est bien meilleure avec ce système d'arrivée d'air secondaire</li>
                   <li>La partie horizontale du Cobra repose sur un fer plat qui permet d'accéder à la zone sous le foyer, d'où un nettoyage et une inspection aisées</li>
-                </ol></li>
-          </ul>
-
-
-          <a name="licence"></a>
-          <h2 class="title">Licence</h2>
-          <p>Les plans que vous trouverez sur cette page et sur ce site sont distribués librement, sous une licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr ">open-source CC BY-SA 4.0</a> : vous êtes libres de partager, d'utiliser,
-            de transformer ce travail, même pour une utilisation commerciale tant que vous citez les auteurs originaux et que vous partagez les résultats de votre travail sous les mêmes conditions. Dans notre cas, l'auteur original du Batchrocket est
-            <a href="http://batchrocket.eu/fr/">Peter Van Den Berg</a>. Le Batchblock est un coeur de chauffe basé sur le Batchrocket, il reprend donc la même licence.</p>
-
-
-          <a name="dimensions"></a>
-          <h2 class="title">Les dimensions</h2>
-
-
-          <p>Les dimensions sont disponibles sur ces deux liens :
-            <ul>
-              <li><a href="./assets/docs/batchblock/Batchblock_dimensions_040618.ods">Batchblock_dimensions_040618.ods</a> </li>
-              <li><a href="./assets/docs/batchblock/Batchblock_dimensions_040618.pdf">Batchblock_dimensions_040618.pdf</a> </li>
+                </ol>
+              </li>
             </ul>
-          </p>
+          </section>
 
-          <a name="vues_3D"></a>
-          <h2 class="title">Vue 3D du Batchblock</h2>
 
-          <div class="row">
-            <div class="col-sm-12">
-              <ul class="row gallery">
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_01.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_01.png" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_02.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_02.png" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_03.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_03.png" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_04.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_04.png" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_05.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_05.png" class="img-responsive"></a>
-                </li>
-                <li class="col-sm-4">
-                  <a href="./assets/img/batchblock/batchblock_schema_06.png" data-toggle="lightbox" data-gallery="example-gallery">
-                        <img src="./assets/img/batchblock/batchblock_schema_06.png" class="img-responsive"></a>
-                </li>
+          <section id="licence">
+            <h2 class="title">Licence</h2>
+            <p>Les plans que vous trouverez sur cette page et sur ce site sont distribués librement, sous une licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr ">open-source CC BY-SA 4.0</a> : vous êtes libres de partager, d'utiliser,
+              de transformer ce travail, même pour une utilisation commerciale tant que vous citez les auteurs originaux et que vous partagez les résultats de votre travail sous les mêmes conditions. Dans notre cas, l'auteur original du Batchrocket est
+              <a href="http://batchrocket.eu/fr/">Peter Van Den Berg</a>. Le Batchblock est un coeur de chauffe basé sur le Batchrocket, il reprend donc la même licence.</p>
+          </section>
+
+
+          <section id="dimensions">
+            <h2 class="title">Les dimensions</h2>
+
+
+            <p>Les dimensions sont disponibles sur ces deux liens :
+              <ul>
+                <li><a href="./assets/docs/batchblock/Batchblock_dimensions_040618.ods">Batchblock_dimensions_040618.ods</a> </li>
+                <li><a href="./assets/docs/batchblock/Batchblock_dimensions_040618.pdf">Batchblock_dimensions_040618.pdf</a> </li>
               </ul>
+            </p>
+          </section>
+
+
+          <section id="vues_3D">
+            <h2 class="title">Vue 3D du Batchblock</h2>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="row gallery">
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_01.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_01.png" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_02.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_02.png" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_03.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_03.png" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_04.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_04.png" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_05.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_05.png" class="img-responsive"></a>
+                  </li>
+                  <li class="col-sm-4">
+                    <a href="./assets/img/batchblock/batchblock_schema_06.png" data-toggle="lightbox" data-gallery="example-gallery">
+                        <img src="./assets/img/batchblock/batchblock_schema_06.png" class="img-responsive"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <p class="subtitle">Cliquez sur une image pour l'afficher en plein écran.
-            </br>Sources : <a class="ref">UZUME, 18 Mars 2018</a>
-          </p>
+            <p class="subtitle">Cliquez sur une image pour l'afficher en plein écran.
+              </br>Sources : <a class="ref">UZUME, 18 Mars 2018</a>
+            </p>
+          </section>
 
         </div>
         <div id='footer'>

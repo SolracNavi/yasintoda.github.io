@@ -6,28 +6,40 @@
   <title>
     Les stages d'autoconstruction
   </title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
+  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='icon' type='image/x-icon' href='./assets/img/favicon.png'>
+
+  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-sm-2">
         <nav class="navbar navbar-default navbar-fixed-side">
           <h2>Navigation</h2>
-          <ul class="nav nav-pills nav-stacked">
-            <li class="level1">
+          <ul class="nav nav-stacked">
+            <li>
               <a href="./index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Retour à l'accueil du site</a>
             </li>
           </ul>
 
           <h3>Plan de l'article</h3>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-stacked">
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
@@ -36,13 +48,12 @@
         </nav>
       </div>
       <div class="col-sm-10">
-        <p><b>Rédaction en cours !</b> </p>
-
-        <!-- <div class="title-box">
+        <div class="title-box">
           <h1>Les stages d'autoconstruction</h1>
         </div>
         <div class="content-box">
-
+          <p><b>Rédaction en cours !</b> </p>
+          <!--
           <h2 class="title">Apprendre à fabriquer un poêle de masse</h2>
           <div class="col-sm-7">
             </br>
@@ -134,53 +145,60 @@
             </tbody>
           </table> -->
 
-          <a name=""></a>
-          <h2 class="title"></h2>
-          <p></p>
+          </section>
+
+
+          <section id="">
+            <h2 class="title"></h2>
+            <p></p>
 
 
 
 
 
-          <a name=""></a>
-          <h2 class="title"></h2>
-          <p></p>
+          </section>
+
+
+          <section id="">
+            <h2 class="title"></h2>
+            <p></p>
 
 
 
 
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
-              <img class="img-responsive" src="./assets/img/stages_autoconstruction/repas_stages.JPG">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1">
+                <img class="img-responsive" src="./assets/img/stages_autoconstruction/repas_stages.JPG">
+              </div>
             </div>
-          </div>
-          <ul class="row gallery">
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/stages_autoconstruction/">
-            </li>
-            <li class="col-sm-6">
-              <img class="img-responsive" src="./assets/img/stages_autoconstruction">
-            </li>
-          </ul>
-          </p>
-          <p class="subtitle">
-            </br>Sources : <a class="ref"></a>
-          </p>
-          <p></p>
-          <p>
             <ul class="row gallery">
+              <li class="col-sm-6">
+                <img class="img-responsive" src="./assets/img/stages_autoconstruction/">
+              </li>
               <li class="col-sm-6">
                 <img class="img-responsive" src="./assets/img/stages_autoconstruction">
               </li>
-              <li class="col-sm-6">
-                <img class="img-responsive" src="./assets/img/batchrocket">
-              </li>
             </ul>
-          </p>
-          <p class="subtitle">
-            </br>Sources : <a class="ref"></a>
-          </p>
-          <p></p>
+            </p>
+            <p class="subtitle">
+              </br>Sources : <a class="ref"></a>
+            </p>
+            <p></p>
+            <p>
+              <ul class="row gallery">
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/stages_autoconstruction">
+                </li>
+                <li class="col-sm-6">
+                  <img class="img-responsive" src="./assets/img/batchrocket">
+                </li>
+              </ul>
+            </p>
+            <p class="subtitle">
+              </br>Sources : <a class="ref"></a>
+            </p>
+            <p></p>
+          </section>
         </div>
         <div id='footer'>
           <div id='footer-inner'>
