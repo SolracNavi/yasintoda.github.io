@@ -1,0 +1,29 @@
+COMMANDE BRIQUETTERIE SANS MARGE :
+brique_220x110x060	152
+SUPERWOOL 607HT 13mm	1m de nappe
+Refracol 240 seau de 25 kg	1
+
+DÉBIT SANS MARGE :
+brique_030x110x060	2
+brique_060x110x060	5
+brique_100x110x060	12
+brique_110x030x060	2
+brique_110x110x060	13
+brique_130x110x060	2
+brique_160x110x060	8
+brique_190x060x060	4
+brique_190x110x060	1
+brique_220x030x060	3
+brique_220x060x060	4
+brique_220x110x060	117
+brique_220x110x060_percee	1
+cadre_cheminee_evac	1
+clapet_démarrage	1
+clapet_obstruction_disque	1
+fer_plat_50x5x200mm_taraudé_8mm	1
+joint_plat_autocollant_10x2_trappe_visite	1
+joint_superwool_cadre_cheminee_evac	1
+tole_150x150x5mm_percee	1
+tube_177,8x4,5x400mm	1
+vis_8x100mm	1
+

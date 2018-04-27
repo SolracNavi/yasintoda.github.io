@@ -147,10 +147,6 @@ a:visited {
   color: #1d5ea5;
 }
 
-.content-box h1:first-child, .content-box h2:first-child {
-  margin-top: 0px !important;
-}
-
 h2.hidey {
   font-size: 0;
   position: absolute;
