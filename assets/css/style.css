@@ -382,6 +382,32 @@ span.FootOuter:hover .HoverFoot {
   text-align: center;
 }
 
+.language-selection {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.language-selection li {
+  display: inline-block;
+  width: auto;
+  margin: 0 6px;
+  padding: 6px 8px;
+  background-color: transparent;
+}
+
+.language-selection li.active {
+  background-color: rgba(161, 191, 107, 1);
+}
+
+.language-selection li:hover {
+  background-color: #ddd;
+}
+
+.language-selection li a:hover {
+  background-color: transparent;
+}
+
 h3 {
   margin-top: 50px;
   border-bottom: 1px dotted #ccc;
