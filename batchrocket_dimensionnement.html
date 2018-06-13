@@ -35,6 +35,7 @@
           <ul class="nav nav-stacked">
             <li><a href="#principe">Le principe</a></li>
             <ol>
+              <li><a href="#isolation">Comprendre l'isolation</a></li>
               <li><a href="#calcul">Calculer la puissance de chauffe nécesseraire</a></li>
               <li><a href="#masse">Trouver la masse correspondante</a></li>
             </ol>
@@ -57,8 +58,9 @@
 
           <section id="principe">
             <h2 class="title">Le principe</h2>
-
             <p>Le dimensionnement d'un poêle consiste à trouver la taille de poêle adaptée au volume à chauffer.</p>
+
+
 
 
             <section id="calcul">
@@ -89,8 +91,93 @@
             </section>
 
 
+            <section id="isolation">
+              <h3 class="title-small">2. Comprendre la notion d'isolation</h3>
+              <h3>Isolation versus inertie</h3>
+              <p>Beaucoup d'erreurs de dimensionnement sont lié à un confusion entre les notions d'<b>inertie</b> et d'<b>isolation</b> :</p>
+              <ul>
+                <li>Un matériau inertiel (pierre, brique, terre..) va <b>absorber</b> la chaleur ;</li>
+                <li>Un matériau isolant (laine de bois, paille, chanvre..) va <b>renvoyer</b> la chaleur ;</li>
+              </ul>
+              <p>Pour les maisons c'est une différence très importante car si la chaleur du poêle de masse est absorbée par un mur inertiel en contact avec l'extérieur, elle sera ensuite ré-émise vers l'extérieur.. et donc <b>perdue</b> ! </p>
+              <p>Si au contraire les murs de la maison sont isolants, la chaleur sera renvoyée vers l'intérieur pour garder au chaud ses habitants.</p>
+
+              <h3>Quelques comparaisons </h3>
+              <p>Comparons les qualités isolantes de divers matériaux classiques par rapport à un isolant de référence en éco-construction : la fibre de bois.</p>
+              <p>Quelle est l'épaisseur d'un matériau donné qui permet d'atteindre <b>la même isolation</b> que 10 cm de panneau en fibres de bois ? </p>
+
+              <table class="table table-condensed table-bordered table-hover">
+                <thead>
+                  <tr class="success">
+                    <th>Matériaux</th>
+                    <th class="text-right">Conductivité thermique λ en W/(m.K)<a class="ref" href="#references">[1]</a></th>
+                    <th class="text-right">Épaisseur équivalente</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>Panneau en fibres de bois</th>
+                    <td class="text-right">0,04</td>
+                    <td class="text-right">10 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en bottes de paille sur champ</th>
+                    <td class="text-right">0,052</td>
+                    <td class="text-right">13 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en terre-paille à 212 kg/m3 </th>
+                    <td class="text-right">0,078</td>
+                    <td class="text-right">19,5 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en béton cellulaire</th>
+                    <td class="text-right">0,1</td>
+                    <td class="text-right">25 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Enduit correcteur en chaux-chanvre</th>
+                    <td class="text-right">0,11</td>
+                    <td class="text-right">27,5 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en briques Monomur</th>
+                    <td class="text-right">0,12</td>
+                    <td class="text-right">30 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en pisé (terre crue compactée) ou en torchis</th>
+                    <td class="text-right">0,59</td>
+                    <td class="text-right">147,5 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en briques anciennes</th>
+                    <td class="text-right">0,6</td>
+                    <td class="text-right">150 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en agglos (parpaings de ciment)</th>
+                    <td class="text-right">0,95</td>
+                    <td class="text-right">237,5 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en béton de ciment</th>
+                    <td class="text-right">1,6</td>
+                    <td class="text-right">400 cm</td>
+                  </tr>
+                  <tr>
+                    <th>Mur en pierres (calcaire dur ou grès)</th>
+                    <td class="text-right">2,3</td>
+                    <td class="text-right">575 cm</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Vous l'aurez compris, les maisons traditionnelles françaises sont <b>très mal isolées</b> ! Si votre calcul de déperdition abouti à des puissances énormes.. pensez à isoler votre maison avant tout.</p>
+            </section>
+
+
             <section id="masse">
-              <h3 class="title-small">2. Trouver la masse correspondante</h3>
+              <h3 class="title-small">3. Trouver la masse correspondante</h3>
               <h3>Quelle inertie ?</h3>
 
               <p>L'inertie correspond à la durée pendant laquelle le poêle de masse va rayonner sa chaleur après une flambée. L'inertie d'un poêle dépend fortement de l'isolation de la maison ! En effet, plus la maison est froide, plus le poêle va rayonner
@@ -100,7 +187,7 @@
                 peuvent beaucoup varier. Le poêle devient alors trop lourd pour s'adapter aux variations journalières de température.</p>
 
               <h3>Les catégories de poêles</h3>
-              <p>On peut classer les poêles de masse en fonction de leur rapport poids/puissance. En allemagne<a class="ref" href="#references">[1]</a>, la classification des poêles de masse est la suivante :
+              <p>On peut classer les poêles de masse en fonction de leur rapport poids/puissance. En allemagne<a class="ref" href="#references">[2]</a>, la classification des poêles de masse est la suivante :
                 <ul>
                   <li>En dessous de 55 kg de briques par kg de bois, c'est un poêle léger.</li>
                   <li>Entre 55 et 110 kg de briques par kg de bois, c'est un poêle moyen.</li>
@@ -123,7 +210,8 @@
                   <li>Le poêle va encore monter en température et risque de surchauffer. Dans ce cas les briques se dilatent trop fortement et les joints sont fragilisés voir brisés. Des fissures apparaissent : le poêle s'abime.</li>
                 </ol>
                 Or, plus le poêle est lourd, plus il a de l'inertie et plus il va mettre de temps à diffuser sa chaleur. On ne pourra donc pas faire autant de flambées par jour que sur un poêle "léger". Inertie et puissance sont donc incompatibles dans un poêle de masse
-                !</p>
+                !
+              </p>
 
               <h3>L'influence de la maison</h3>
               <p>Le juste équilibre dépend de la maison :
@@ -150,10 +238,10 @@
                 <ol>
                   <ul>\(G=1.8\) pour une maison ancienne non isolée type ferme ou mas</ul>
                   <ul>\(G=1.6\) pour une maison non isolée en briques, pierres maçonnées, parpaings béton</ul>
-                  <ul>\(G=1.4\) pour une maison isolée avec 4cm de polystyrène</ul>
-                  <ul>\(G=1.2\) pour une maison isolée avec 10cm de polystyrène</ul>
-                  <ul>\(G=0.8\) pour une maison type RT2000 en briques Monomur de 37cm par exemple</ul>
-                  <ul>\(G=0.5\) pour une maison type RT2012</ul>
+                  <ul>\(G=1.4\) pour une maison isolée avec 4cm de polystyrène (ou fibre de bois)</ul>
+                  <ul>\(G=1.2\) pour une maison isolée avec 10cm de polystyrène (ou fibre de bois)</ul>
+                  <ul>\(G=0.8\) pour une maison type RT2000</ul>
+                  <ul>\(G=0.5\) pour une maison type RT2012 en briques Monomur de 37,5 cm par exemple</ul>
                   <ul>\(G=0.3\) pour une isolation exceptionnelle (ossature bois/remplissage paille avec de bons apports solaires par exemple)</ul>
                 </ol>
 
@@ -244,7 +332,8 @@
                   <ul>
                     <li>
                       <p>Les occupants font <b>3 flambées par jour</b> quand il fait -5°C. Dans ce cas ils peuvent utiliser un Batchrocket dont le diamètre de la cheminée interne mesure 200 mm et qui dégage 6600W de puissance moyenne sous 3 flambées par
-                        jour.</p>
+                        jour.
+                      </p>
                       <p>En pratique on fait une flambée le matin et une double flambée (deux chargements successifs) le soir. Donc 42 kg de bois par jour quand il fait -5°C.</p>
                     </li>
                     <li>Les occupants ne peuvent faire que 2 flambées par jour quand il fait -5°C. Dans ce cas ils peuvent utiliser un Batchrocket dont le diamètre de la cheminée interne mesure 230 mm et qui dégage 6700W de puissance moyenne sous 2 flambées
@@ -320,15 +409,12 @@
                 <h2 class="title">Références</h2>
                 <div class="EndFoot">
                   <ol>
+                    <li>CEREMA
+                      <em>Synthèse bibliographique des études sur la rénovation thermique du bâti ancien à l’aide de matériaux biosourcés, Octobre 2016</em>. <a href="http://www.cohesion-territoires.gouv.fr/IMG/pdf/synthese_bibliographique_renovation_thermique_du_bati_ancien_avec_isolants_biosources_-_octobre_2016.pdf"</a>
+                      </li>
                     <li>Norbert Senf, MHA
                       <em>Short Course on Masonry Heating Systems</em>. <a href="http://heatkit.com/docs/V8n1.PDF">http://heatkit.com/docs/V8n1.PDF</a>
                     </li>
-                    <!-- <li>Calcul basé sur les données suivantes :
-                  <ul>
-                    <li>1 kg de bois séché à l'air puis brûlé dans un poêle avec un rendement total de 80% libère 3,7 kWh d'énergie.</li>
-                    <li>Les briques ont une capacité thermique massique d'environ 0,000233 kWh/(kg*K).</li>
-                  </ul>
-                </li> -->
                   </ol>
                 </div>
               </section>
