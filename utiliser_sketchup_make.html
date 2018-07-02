@@ -2,21 +2,30 @@
 <html lang="fr">
 
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>
     Comment utiliser Sketchup Make
   </title>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/ekko-lightbox.css">
   <link rel="stylesheet" type="text/css" href='./assets/css/style.css'>
   <link rel="stylesheet" type="text/css" href='./assets/css/font-awesome.min.css'>
-  <link rel="stylesheet" type="text/css" href='./assets/css/ekko-lightbox.css'>
   <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico'>
 
   <script type="text/javascript" src="./assets/js/jquery.js"></script>
   <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/ekko-lightbox.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </head>
+
+
 
 <body data-spy="scroll" data-target=".navbar">
   <div class='container-fluid'>
@@ -36,8 +45,8 @@
             <li><a href="#telecharger">Télécharger et installer Sketchup Make</a></li>
             <li><a href="#utilisation">Utilisation du logiciel</a></li>
             <ol>
-              <li><a href="#template">Choisir une "template"</a></li>
-              <li><a href="#trays">Afficher les "trays"</a></li>
+              <li><a href="#template">Choisir un "modèle par défaut"</a></li>
+              <li><a href="#trays">Afficher les "palettes"</a></li>
               <li><a href="#calques">Les calques</a></li>
               <li><a href="#debit">Obtenir le débit d'un poêle</a></li>
               <li><a href="#symmetrique">Faire le symmétrique d'un poêle</a></li>
@@ -52,15 +61,30 @@
           <h1>Comment utiliser Sketchup Make</h1>
         </div>
         <div class="content-box">
-          <p><b>Rédaction en cours !</b> </p>
 
           <section id="pk">
-            <h2 class="title">Pourquoi Sketchup Make ?</h2>
-            <p>Sketchup Make est un logiciel gratuit qui nous permet de concevoir des modèles 3D de poêles de masse.</p>
-            <p>Coté conception, il nous permet de concevoir des poêles avec des vues 3D, des composants réutilisables, d'obtenir le débit des briques, etc.. </p>
-            <p>Simple d'accès, il permet à ceux qui veulent simplement construire leur poêle d'avoir toutes les informations nécessaires pour le faire.</p>
-            <p>Le logiciel permet aussi de décomposer le poêle et de le voir étage par étage. L'outil "Mesure" permet de mesurer toutes les côtes nécessaires. La vue en 3D permet de comprendre très facilement le fonctionnement du poêle.</p>
-            <p>En un mot, c'est MAGIQUE !</p>
+
+
+
+            <div class="row">
+              <h2 class="title">Pourquoi Sketchup Make ?</h2>
+
+              <div class="col-sm-2">
+                <a href="./assets/img/utiliser_sketchup_make/sketchup_logo.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/sketchup_logo.png" class="img-responsive"></a>
+              </div>
+              <div class="col-sm-10">
+                <p>Sketchup Make est un logiciel gratuit qui nous permet de <b>concevoir des modèles 3D de poêles de masse</b>.</p>
+                <p>Coté conception, il nous permet de concevoir des poêles avec des vues 3D, des composants réutilisables, d'obtenir le débit des briques, etc.. </p>
+                <p><b>Simple d'accès</b>, il permet à ceux qui veulent simplement construire leur poêle d'avoir toutes les informations nécessaires pour le faire.</p>
+                <p>Le logiciel permet aussi de décomposer le poêle et de le <b>voir étage par étage</b>. </p>
+                <p>L'outil "Mètre" permet de <b>mesurer toutes les côtes nécessaires</b>. </p>
+                <p>La vue en 3D permet de <b>comprendre très facilement
+                  le fonctionnement du poêle</b>.</p>
+                <p>En un mot, c'est MAGIQUE !</p>
+
+              </div>
+            </div>
           </section>
 
 
@@ -83,10 +107,11 @@
             <h3>Si vous êtes sur Linux :</h3>
             <p>Téléchargez <a href="https://help.sketchup.com/pl/article/60107">Sketchup Make 2016</a> et installez le en suivant la procédure décrite ici (en anglais) : <a href="https://sysads.co.uk/2016/08/05/install-google-sketchup-make-2016-ubuntu-16-04/">install-google-sketchup-make-2016-ubuntu-16-04</a>.
             </p>
-            <p>Si vous n'y arrivez pas, vous pouvez aussi télécharger <a href="dl.google.com/sketchup/GoogleSketchUpWFR.exe">Sketchup 8</a> et l'installer avec Wine. Normalement la version 8 est bien supportée sous linux et elle devrait fonctionner correctement.
-              L'installation de cette version est plus facile.</p>
+            <p>Si vous n'y arrivez pas, vous pouvez aussi télécharger <a href="dl.google.com/sketchup/GoogleSketchUpWFR.exe">Sketchup 8</a> et l'installer avec Wine. Normalement la version 8 est bien supportée
+              sous linux et elle devrait fonctionner correctement. L'installation de cette version est plus facile.</p>
             <p>Une page d'explication sur l'installation de Sketchup 8 sous Ubuntu est disponible : <a href="https://doc.ubuntu-fr.org/sketchup">https://doc.ubuntu-fr.org/sketchup</a>.</p>
-            <p>Nous publions une version de nos plans sous Sketchup 8. Si vous ne la trouvez pas pour le plan que vous voulez, n'hésitez pas à nous <a href="./contact.html">contacter</a> pour nous demander le plan en version Sketchup 8. </p>
+            <p>Nous publions une version de nos plans sous Sketchup 8. Si vous ne la trouvez pas pour le plan que vous voulez, n'hésitez pas à nous <a href="./contact.html">contacter</a> pour nous demander
+              le plan en version Sketchup 8. </p>
 
 
             <h3>Si rien ne marche :</h3>
@@ -96,62 +121,66 @@
 
           <section id="utilisation">
             <h2 class="title">Utilisation du logiciel</h2>
-            <p>Sketchup est de très loin le logiciel de conception 3D le plus simple et facile à prendre en main. Il est largement utilisé et si vous n'arrivez pas à vous en servir, demandez de l'aide à l'adolescent le plus proche ou allez voir des tutoriels
-              sur Youtube.</p>
-            <p>Pour agrandir une image, positionnez le curseur sur l'image et faites <code>clic droit > Afficher l'image</code>.</p>
-            <p>NB : notre version est en anglais, les termes sont donc en anglais.</p>
+            <p>Sketchup est de très loin le logiciel de conception 3D le plus simple et facile à prendre en main. Il est largement utilisé et si vous n'arrivez pas à vous en servir, demandez de l'aide à l'adolescent
+              le plus proche ou allez voir des tutoriels sur Youtube.</p>
           </section>
 
 
           <section id="template">
-            <h3 class="title-small">1. Choisir une "template" :</h3>
-            <p>Lorsque vous ouvrez le logiciel pour la première fois, il vous demande de choisir une "template" : choisissez "Construction Documentation - Millimeters".</p>
+            <h3 class="title-small">1. Choisir un "modèle par défaut" :</h3>
+            <p>Lorsque vous ouvrez le logiciel pour la première fois, il vous demande de choisir un "modèle par défaut" : choisissez "Document de construction - Millimètres".</p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_01.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_01.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_01.png" class="img-responsive"></a>
               </div>
+
             </div>
-            <p class="subtitle">Sélectionnez "Construction Documentation - Millimeters" et cliquez sur "Start using Sketchup".</p>
+            <p class="subtitle">Sélectionnez "Document de construction - Millimètres" et cliquez sur "Commencer à utiliser Sketchup".</p>
           </section>
 
 
-          <section id="trays">
-            <h3 class="title-small">2. Afficher les "trays"</h3>
+          <section id="palettes">
+            <h3 class="title-small">2. Afficher les "palettes"</h3>
             </br>
             <h4>Pour lire un modèle 3D de poêle :</h4>
-            <p>Vous n'avez besoin que d'un seul "tray" qui sera placé à droite de l'écran.</p>
-            <p>Pour ce faire, aller dans le menu "window", puis "default tray" et sélectionnez uniquement les éléments suivants :
+            <p>Vous n'avez besoin que d'une seule "palette" qui sera placée à droite de l'écran.</p>
+            <p>Pour ce faire, aller dans le menu "fenêtre", puis "palette par défaut" et sélectionnez uniquement les éléments suivants :
               <ul>
-                <li>Entity info</li>
-                <li>Materials</li>
-                <li>Layers</li>
+                <li>Infos sur l'entité</li>
+                <li>Matières</li>
+                <li>Calques</li>
               </ul>
             </p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_02.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_02.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_02.png" class="img-responsive"></a>
               </div>
             </div>
-            <p class="subtitle">Le "default tray" avec les 3 menus importants est à droite.</p>
+            <p class="subtitle">La "palette par défaut" avec les 3 menus importants est à droite.</p>
 
             <h4>Pour concevoir ou modifier un modèle 3D de poêle :</h4>
-            <p>Vous avez besoin de deux "trays".</p>
-            <p>Pour ce faire, aller dans le menu "window", puis "New tray" et sélectionnez "Components". </p>
+            <p>Vous avez besoin de deux "palettes".</p>
+            <p>Pour ce faire, aller dans le menu "fenêtre", puis "Nouvelle palette" (ou nouveau plateau) et sélectionnez "Composants". </p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_03.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_03.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_03.png" class="img-responsive"></a>
               </div>
             </div>
-            <p class="subtitle">Le "tray 1" avec les composants est à gauche.</p>
+            <p class="subtitle">La "Palette 1" avec les composants est à gauche.</p>
           </section>
 
 
           <section id="calques">
             <h3 class="title-small">3. Les calques</h3>
-            <p>Les calques, c'est la fonction géniale de ce logiciel ! Un calque est un ensemble de composants (des briques d'un certain étage par exemple). On peut rendre un calque invisible en le décochant dans le "tray" à droite.</p>
+            <p>Les calques, c'est la fonction géniale de ce logiciel ! Un calque est un ensemble de composants (des briques d'un certain étage par exemple). On peut rendre un calque invisible en le décochant
+              dans la "palette" à droite.</p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_05.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_05.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_05.png" class="img-responsive"></a>
               </div>
             </div>
             <p class="subtitle">
@@ -160,7 +189,8 @@
 
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_06.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_06.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_06.png" class="img-responsive"></a>
               </div>
             </div>
             <p class="subtitle">Les calques de l'habillage, de la plancha et des portes sont décochés : on ne voit que le coeur de chauffe.</p>
@@ -170,49 +200,52 @@
           <section id="debit">
             <h3 class="title-small">4. Obtenir le débit d'un poêle</h3>
             <p>Le débit d'un poêle correpond à la liste de tous les éléments nécessaires pour le construire.</p>
-            <p>Pour l'obtenir, aller dans le menu "window", puis "Model Info" et sélectionnez "Statistics" et "Only components". Là vous aurez une liste de tous les composants du modèle 3D : c'est le débit. Copiez cette liste et imprimez là.</p>
+            <p>Pour l'obtenir, aller dans le menu "fenêtre", puis "Infos sur le modèle" et sélectionnez "Statistiques" et "Composants". Là vous aurez une liste de tous les composants du modèle 3D : c'est
+              le débit. Copiez cette liste et imprimez là.</p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_04.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_04.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_04.png" class="img-responsive"></a>
               </div>
-            </div>
-            <p class="subtitle">La fenêtre pour obtenir le débit.</p>
+              <p class="subtitle">La fenêtre pour obtenir le débit.</p>
           </section>
 
 
           <section id="symmetrique">
             <h3 class="title-small">5. Faire le symmétrique d'un poêle</h3>
             <p>Vous voulez retourner un poêle ? Facile !</p>
-            <p>Sélectionnez tout le modèle en faisant <kbd>Ctrl + a</kbd>. Ensuite <code>clic droit > Retourner selon > direction Rouge</code>.</p>
+            <p>Sélectionnez tout le modèle en faisant <kbd>Ctrl + a</kbd>. Ensuite <code>clic droit > Retourner le long de > direction de l'axe Rouge</code>.</p>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_07.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_07.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_07.png" class="img-responsive"></a>
               </div>
             </div>
             <p class="subtitle">Le poêle est sélectionné.</p>
 
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <img class="img-responsive" src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_08.png">
+                <a href="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_08.png" data-toggle="lightbox" data-gallery="example-gallery" data-type="image">
+                    <img src="./assets/img/utiliser_sketchup_make/utiliser_sketchup_make_08.png" class="img-responsive"></a>
               </div>
             </div>
             <p class="subtitle">Le poêle retourné.</p>
           </section>
 
-        </div>
-        <div id='footer'>
-          <div id='footer-inner'>
-            <div class='footer-text'>
-              Sauf mention contraire, les informations, vidéos, plans, documents provenant de ce site sont disponibles en Open-source :
-              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">
+          </div>
+          <div id='footer'>
+            <div id='footer-inner'>
+              <div class='footer-text'>
+                Sauf mention contraire, les informations, vidéos, plans, documents provenant de ce site sont disponibles en Open-source :
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">
                                             <img alt="Creative Commons License" style="border-width:0;" src="./assets/img/88x31.png" />
                                         </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </body>
 
 </html>
